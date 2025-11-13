@@ -1,0 +1,26 @@
+Title :
+Logo for title in browser
+ 
+Navbar:
+Logo for navbar
+List of all links in Navbar
+Dropdowns(south india, Weekend trips, backpacking trips) names
+Phone Number
+
+Home Page:
+Images for front page display
+Images for curated categories/ Destinations
+List of all the destinations
+Brand color name(hex code)
+
+Footer: 
+Address
+Social media links for footer
+
+Destination Pages:
+Images for display
+Title, caption below title
+About section with SEO optimized content
+Highlights(what to visit, shop, food, etc)
+Reviews(Title for Review section, Name of reviewer, No. of Stars, Date, Description)
+
