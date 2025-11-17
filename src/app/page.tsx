@@ -25,7 +25,7 @@ export default function Hero() {
   // Typing effect for words
   useEffect(() => {
     const current = words[currentWord];
-    let typingSpeed = isDeleting ? 80 : 120;
+    const typingSpeed = isDeleting ? 80 : 120;
 
     const timeout = setTimeout(() => {
       setTypedText((prev) =>
