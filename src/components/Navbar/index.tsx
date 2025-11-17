@@ -55,10 +55,10 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full bg-white shadow-md fixed top-0 left-0 z-50">
+    <nav className="w-full bg-brand shadow-md fixed top-0 left-0 z-50">
       {/* Main Navbar */}
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
-        <Link href="/" className="text-black font-bold text-xl">
+        <Link href="/" className="text-white font-bold text-xl">
           Swadeshi
         </Link>
 
@@ -66,7 +66,7 @@ const Navbar = () => {
         <div className="hidden md:flex gap-8">
           {navLinks.map((section) => (
             <div key={section.key} className="relative group">
-              <button className="flex items-center gap-1 text-black hover:text-black/80 font-medium">
+              <button className="flex items-center gap-1 text-white hover:text-black/80 font-medium">
                 {section.label}
                 <ChevronDown
                   size={16}
