@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        brand: "#22c55e",
+      },
       keyframes: {
         borderDraw: {
           "0%": { borderColor: "transparent" },
