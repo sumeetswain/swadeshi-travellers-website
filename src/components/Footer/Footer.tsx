@@ -12,18 +12,19 @@ export default function Footer() {
         <div>
           <div className="flex items-center gap-2 mb-4">
             <Image
-              src="/logo.webp"
-              alt="Tripper Trails logo"
+              src="/swadeshi-logo.jpeg"
+              alt="Swadeshi Travellers logo"
               width={40}
               height={40}
               className="object-contain"
             />
-            <h3 className="text-lg font-bold">TRIPPER TRAILS</h3>
+            <h3 className="text-lg font-bold">SWADESHI TRAVELLERS</h3>
           </div>
           <p className="text-sm leading-relaxed text-[#444] max-w-xs">
-            At Tripper Trails, we strongly believe in protecting consumer
-            privacy. That’s why we only ask you for information related to the
-            services we provide.
+            We are group of passionate travelers who would like to encourage the
+            enthusiastic travelers to explore India with our vision and form a
+            community of travelers to spread awareness about India and its
+            prosperity.
           </p>
         </div>
 
@@ -114,14 +115,14 @@ export default function Footer() {
             <span className="block w-10 h-[2px] bg-green-500 mt-1"></span>
           </h3>
           <p className="text-[#444] leading-relaxed">
-            Tripper Trails (A unit of Tripper Trails Journeys Pvt. Ltd.)
+            Swadeshi Travellers (A unit of Swadeshi Travellers Pvt. Ltd.)
             <br />
-            #4036, 3rd Floor, 80 Feet Rd, near Sita Circle, next to Saligrama
-            Party Hall,
+            #4036, H.no 12, 2-252, Mallikarjuna Nagar Rd, opp. GSI TRAINING
+            INSTITUTE
             <br />
-            1st Phase, Girinagar,
+            Bandlaguda, Nagole
             <br />
-            Bengaluru, Karnataka 560050
+            Hyderabad, Telangana 500068
           </p>
         </div>
       </div>
@@ -131,7 +132,7 @@ export default function Footer() {
         {/* Social Icons */}
         <div className="flex gap-4">
           <a
-            href="https://www.instagram.com/trippertrails/"
+            href="https://www.instagram.com/swadeshi_traveller/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -144,7 +145,7 @@ export default function Footer() {
             />
           </a>
           <a
-            href="https://www.facebook.com/TripperTrails/"
+            href="https://www.facebook.com/swadeshi.traveller/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -157,7 +158,7 @@ export default function Footer() {
             />
           </a>
           <a
-            href="https://www.youtube.com/@Tripper.Trails"
+            href="https://www.youtube.com/@swadeshitraveller4505"
             target="_blank"
             rel="noopener noreferrer"
           >
