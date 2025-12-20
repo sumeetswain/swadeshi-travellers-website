@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import CuratedCategories from "@/components/CuratedCategories";
+import { PackageLoader } from "@/components/PackageLoader/PackageLoader";
 
 const images = ["/bhutanimage.png", "/cover.png", "/cover.webp"]; // replace with your actual images
 
@@ -122,6 +123,7 @@ export default function Hero() {
         </div>
       </section>
       <CuratedCategories />
+      <PackageLoader destination="Swadeshi" category="swadeshi" />
     </>
   );
 }
