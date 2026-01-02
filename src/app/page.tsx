@@ -4,6 +4,8 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import CuratedCategories from "@/components/CuratedCategories";
 import { PackageLoader } from "@/components/PackageLoader/PackageLoader";
+import CallbackForm from "@/components/CallbackPopup";
+import CallbackButton from "@/components/CallbackButton";
 
 const images = ["/bhutanimage.png", "/cover.png", "/cover.webp"]; // replace with your actual images
 
@@ -124,6 +126,7 @@ export default function Hero() {
       </section>
       <CuratedCategories />
       <PackageLoader destination="Swadeshi" category="swadeshi" />
+      <CallbackButton />
     </>
   );
 }
