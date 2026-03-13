@@ -1,5 +1,7 @@
 "use client";
 
+import { API_ENDPOINT, API_KEY } from "@/api/api";
+import axios from "axios";
 import { useState, FormEvent, useEffect } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -46,8 +48,24 @@ const CallbackPopup: React.FC<{ onClose?: () => void }> = ({ onClose }) => {
 
     try {
       setLoading(true);
+
+      const formData = new FormData();
+
+      formData.append("fullname", fullname);
+      formData.append("mobile", phone);
+      formData.append("email", email);
+      formData.append("no_of_guests", people);
+      formData.append("preferred_start_date", date ? date.toISOString() : "");
+      formData.append("message", message);
+      formData.append("api_key", API_KEY);
+      formData.append("is_expecting_call_back", "yes");
+      formData.append("from_url", window.location.href);
+
+      await axios.post(`${API_ENDPOINT}/website/save-event-enquiry/`, formData);
+
       setSuccess(true);
 
+      // reset form
       setFullname("");
       setPhone("");
       setDate(null);
@@ -55,6 +73,8 @@ const CallbackPopup: React.FC<{ onClose?: () => void }> = ({ onClose }) => {
       setEmail("");
       setMessage("");
       setErrors({});
+    } catch (error) {
+      console.error("Form submit error:", error);
     } finally {
       setLoading(false);
     }
