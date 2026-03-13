@@ -32,6 +32,7 @@ const Navbar = () => {
         { label: "North East", href: "/destinations/northeast" },
       ],
     },
+
     {
       label: "International Trips",
       key: "international",
@@ -64,7 +65,7 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex gap-8">
-          {navLinks.map((section) => (
+          {/* {navLinks.map((section) => (
             <div key={section.key} className="relative group">
               <button className="flex items-center gap-1 text-white hover:text-black/80 font-medium">
                 {section.label}
@@ -74,7 +75,7 @@ const Navbar = () => {
                 />
               </button>
 
-              {/* Hover dropdown */}
+             
               <div className="absolute top-full left-0 bg-white shadow-lg rounded-lg py-2 mt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 translate-y-2">
                 {section.subLinks.map((link) => (
                   <Link
@@ -87,7 +88,19 @@ const Navbar = () => {
                 ))}
               </div>
             </div>
-          ))}
+          ))} */}
+          <Link href="/destinations/pune" className=" text-white">
+            Pune
+          </Link>
+          <Link href="/destinations/chennai" className=" text-white">
+            Chennai
+          </Link>
+          <Link href="/destinations/hyderabad" className=" text-white">
+            Hyderabad
+          </Link>
+          <Link href="/destinations/bangalore" className=" text-white">
+            Bangalore
+          </Link>
         </div>
 
         {/* Sidebar Toggle Button */}
