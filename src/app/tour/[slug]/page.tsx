@@ -1,13 +1,23 @@
 "use client";
-import React from "react";
+
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import { useState } from "react";
-
+import { useParams } from "next/navigation";
+import axios from "axios";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { API_ENDPOINT, API_KEY } from "@/api/api";
+
 export default function TrekPage() {
   const [open, setOpen] = useState<number | null>(null);
   const [activeTab, setActiveTab] = useState("inclusions");
+
   const items = [
     {
       id: 1,
@@ -20,18 +30,38 @@ export default function TrekPage() {
       content: "Begin the trek early...",
     },
   ];
+  const { slug } = useParams();
+  //   console.log("Slug:", slug);
+  const [data, setData] = React.useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      await axios
+        .get(`${API_ENDPOINT}/event-details?slug=${slug}&api_key=${API_KEY}`)
+        .then((res) => {
+          setData(Object.values(res.data));
+        });
+    };
+    fetchData();
+  }, [slug]);
+
+  // ================= UI =================
   return (
     <div className="w-full min-h-screen bg-gray-50">
       {/* Hero Section */}
       <div className="w-full h-[45vh] relative overflow-hidden">
         <img
-          src="/kerala/kerala.png"
+          src={data[0]?.cover_pic}
           alt="Trek Hero"
           className="w-full h-full object-cover"
         />
+        {/* <img
+          src={`url('${data[0]?.cover_pic}')`}
+          alt="Trek Hero"
+          className="w-full h-full object-cover"
+        /> */}
         <div className="absolute inset-0 bg-opacity-30 flex items-end justify-start p-6 md:p-10">
           <h1 className="text-white text-4xl md:text-6xl font-bold">
-            Vasota Fort Trek
+            {data[0]?.name}
           </h1>
         </div>
       </div>
@@ -44,7 +74,9 @@ export default function TrekPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 p-5 bg-white rounded-2xl shadow">
             <div>
               <p className="text-gray-500 text-sm">Duration</p>
-              <p className="font-semibold">1N / 1D</p>
+              <p className="font-semibold">
+                {data[0]?.number_of_nights}N / {data[0]?.number_of_days}D
+              </p>
             </div>
             <div>
               <p className="text-gray-500 text-sm">Difficulty</p>
@@ -52,7 +84,7 @@ export default function TrekPage() {
             </div>
             <div>
               <p className="text-gray-500 text-sm">Pickup & Drop</p>
-              <p className="font-semibold">Location A</p>
+              <p className="font-semibold">{data[0]?.event_location}</p>
             </div>
           </div>
 
@@ -62,53 +94,50 @@ export default function TrekPage() {
             <div className="w-full lg:w-1/2">
               <h2 className="text-3xl font-bold mb-6">Itinerary</h2>
 
-              <div className="space-y-4">
-                {items.map((item) => {
-                  const isOpen = open === item.id;
-
-                  return (
-                    <div
-                      key={item.id}
-                      className={`rounded-2xl border bg-white overflow-hidden transition-colors ${
-                        isOpen ? "border-green-500" : "border-gray-200"
-                      }`}
+              <div className="w-full">
+                <Accordion
+                  type="single"
+                  collapsible
+                  className="w-full space-y-3"
+                >
+                  {data[0]?.addday?.map((day, index) => (
+                    <AccordionItem
+                      key={index}
+                      value={day?.id.toString()}
+                      className="border border-gray-200 rounded-lg px-4"
                     >
-                      <button
-                        onClick={() => setOpen(isOpen ? null : item.id)}
-                        className="flex w-full items-center justify-between p-5 text-left"
+                      <AccordionTrigger
+                        className="
+                              font-inter
+            flex items-start gap-3 text-left
+            hover:no-underline
+            py-4
+            [&[data-state=open]]:border-none
+          "
                       >
-                        {/* Title stays COMPLETELY static */}
-                        <span className="font-medium">{item.title}</span>
+                        <div className="flex items-start w-full gap-3">
+                          {/* Day pill */}
+                          <span className="shrink-0 bg-black text-white text-sm font-semibold px-3 py-1 rounded-full">
+                            Day {day?.daysnumber}
+                          </span>
 
-                        {/* Only icon rotates */}
-                        <motion.span
-                          animate={{ rotate: isOpen ? 180 : 0 }}
-                          transition={{ duration: 0.2, ease: "easeOut" }}
-                          className="flex-shrink-0"
-                        >
-                          <ChevronDown />
-                        </motion.span>
-                      </button>
+                          {/* Title */}
+                          <div className="flex-1 text-left text-base font-medium text-gray-900 break-words">
+                            {day?.name}
+                          </div>
+                        </div>
+                      </AccordionTrigger>
 
-                      <AnimatePresence initial={false}>
-                        {isOpen && (
-                          <motion.div
-                            key="content"
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: "auto", opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            transition={{ duration: 0.25, ease: "easeOut" }}
-                            className="px-5 overflow-hidden"
-                          >
-                            <div className="pb-5 text-gray-600">
-                              {item.content}
-                            </div>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
-                    </div>
-                  );
-                })}
+                      <AccordionContent className="pt-2 pb-4 text-sm text-gray-700 leading-relaxed">
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html: day?.details,
+                          }}
+                        />
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
               </div>
             </div>
 
@@ -145,19 +174,26 @@ export default function TrekPage() {
                     className="space-y-3 text-base p-4 bg-white border rounded-xl"
                   >
                     {activeTab === "inclusions" && (
-                      <>
-                        <p>✔ Breakfast & Lunch</p>
-                        <p>✔ Guided Trek</p>
-                        <p>✔ First Aid Support</p>
-                        <p>✔ Transportation from Pickup Point</p>
-                      </>
+                      <TabsContent value="inclusions">
+                        <div
+                          className="text-sm sm:text-base"
+                          dangerouslySetInnerHTML={{
+                            __html: data[0]?.inclusions,
+                          }}
+                        />
+                      </TabsContent>
                     )}
 
                     {activeTab === "exclusions" && (
                       <>
-                        <p>✘ Dinner</p>
-                        <p>✘ Personal Expenses</p>
-                        <p>✘ Anything not mentioned in inclusions</p>
+                        <TabsContent value="exclusions">
+                          <div
+                            className="text-sm sm:text-base"
+                            dangerouslySetInnerHTML={{
+                              __html: data[0]?.exclusions,
+                            }}
+                          />
+                        </TabsContent>
                       </>
                     )}
                   </motion.div>
@@ -172,8 +208,12 @@ export default function TrekPage() {
           <div className="sticky top-4 space-y-5">
             {/* Price Box */}
             <div className="bg-white p-6 rounded-2xl shadow text-center">
-              <p className="text-gray-500 line-through">₹ 2199</p>
-              <p className="text-3xl font-bold text-green-600">₹ 1849</p>
+              <p className="text-gray-500 line-through">
+                ₹ {data[0]?.price_striked}
+              </p>
+              <p className="text-3xl font-bold text-green-600">
+                ₹ {data[0]?.price}
+              </p>
               <p className="text-gray-500 text-sm">per person (Excl. taxes)</p>
               <button className="w-full mt-4 bg-green-600 text-white py-3 rounded-xl font-semibold hover:bg-green-700 transition">
                 Book Now
