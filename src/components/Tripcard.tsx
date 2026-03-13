@@ -24,7 +24,7 @@ const TripCard = ({ trip, redirect = true }) => {
           className="h-full w-full"
         >
           <Link
-            href={redirect ? `/trip/${trip?.slug}` : "#"}
+            href={redirect ? `/tour/${trip?.slug}` : "#"}
             onClick={(e) => {
               if (!redirect) e.preventDefault();
             }}
@@ -67,7 +67,7 @@ const TripCard = ({ trip, redirect = true }) => {
                       {trip.batches.length
                         ? trip.batches
                             .map((batch) =>
-                              moment.utc(batch.startdate).format("D MMM")
+                              moment.utc(batch.startdate).format("D MMM"),
                             )
                             .join(", ")
                         : "Dates on Request"}
