@@ -29,10 +29,10 @@ export default function PathDrawingBorder({
 }: PathDrawingBorderProps) {
   // Use a viewBox for responsive scaling (using a base reference size)
   const viewBoxWidth = 1000;
-  const viewBoxHeight = 1300; // Approximate aspect ratio of the image containers
+  const viewBoxHeight = 910; // Approximate aspect ratio of the image containers
   // Scale border radius proportionally to viewBox
-  const borderRadiusX = (borderRadius / 120) * viewBoxWidth; // 160px is base width
-  const borderRadiusY = (borderRadius / 120) * viewBoxWidth; // Use same ratio for consistent rounding
+  const borderRadiusX = (borderRadius / 330) * viewBoxWidth;
+  const borderRadiusY = (borderRadius / 300) * viewBoxHeight;
 
   // Calculate the path for a rounded rectangle
   // Starting from top-left, going clockwise
@@ -42,8 +42,8 @@ export default function PathDrawingBorder({
     Q ${viewBoxWidth} 0, ${viewBoxWidth} ${borderRadiusY}
     L ${viewBoxWidth} ${viewBoxHeight - borderRadiusY}
     Q ${viewBoxWidth} ${viewBoxHeight}, ${
-    viewBoxWidth - borderRadiusX
-  } ${viewBoxHeight}
+      viewBoxWidth - borderRadiusX
+    } ${viewBoxHeight}
     L ${borderRadiusX} ${viewBoxHeight}
     Q 0 ${viewBoxHeight}, 0 ${viewBoxHeight - borderRadiusY}
     L 0 ${borderRadiusY}
@@ -52,7 +52,7 @@ export default function PathDrawingBorder({
   `;
 
   // Calculate stroke width in viewBox units
-  const strokeWidthViewBox = (strokeWidth / 120) * viewBoxWidth;
+  const strokeWidthViewBox = (strokeWidth / 110) * viewBoxWidth;
   // Offset the path outward by half the stroke width so the border appears outside
   const offset = strokeWidthViewBox / 2;
 
@@ -61,16 +61,16 @@ export default function PathDrawingBorder({
     M ${borderRadiusX + offset} ${offset}
     L ${viewBoxWidth - borderRadiusX - offset} ${offset}
     Q ${viewBoxWidth - offset} ${offset}, ${viewBoxWidth - offset} ${
-    borderRadiusY + offset
-  }
+      borderRadiusY + offset
+    }
     L ${viewBoxWidth - offset} ${viewBoxHeight - borderRadiusY - offset}
     Q ${viewBoxWidth - offset} ${viewBoxHeight - offset}, ${
-    viewBoxWidth - borderRadiusX - offset
-  } ${viewBoxHeight - offset}
+      viewBoxWidth - borderRadiusX - offset
+    } ${viewBoxHeight - offset}
     L ${borderRadiusX + offset} ${viewBoxHeight - offset}
     Q ${offset} ${viewBoxHeight - offset}, ${offset} ${
-    viewBoxHeight - borderRadiusY - offset
-  }
+      viewBoxHeight - borderRadiusY - offset
+    }
     L ${offset} ${borderRadiusY + offset}
     Q ${offset} ${offset}, ${borderRadiusX + offset} ${offset}
     Z
