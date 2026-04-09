@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
-const images = ["/bhutanimage.png", "/cover.png", "/cover.webp"];
+const images = ["/home/1.png", "/home/2.png", "/home/3.png", "/home/4.png"];
 
 const words = ["Peace", "Adventure", "Freedom"];
 
@@ -15,8 +15,12 @@ export default function HeroSection() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
+      setCurrentImage((prev) => {
+        const next = (prev + 1) % images.length;
+        return next;
+      });
     }, 3000);
+
     return () => clearInterval(interval);
   }, []);
 
@@ -43,13 +47,13 @@ export default function HeroSection() {
   return (
     <section className="relative w-full h-[100vh] overflow-hidden flex items-center justify-center">
       <div className="absolute inset-0">
-        <AnimatePresence>
+        <AnimatePresence initial={false}>
           <motion.div
             key={currentImage}
-            initial={{ x: "100%" }}
-            animate={{ x: 0 }}
-            exit={{ x: "-100%" }}
-            transition={{ duration: 0.6, ease: "easeInOut" }}
+            initial={{ opacity: 0, scale: 1.05 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
             className="absolute inset-0"
           >
             <Image
@@ -61,6 +65,10 @@ export default function HeroSection() {
             />
           </motion.div>
         </AnimatePresence>
+        <div className="absolute inset-0 z-[1] pointer-events-none">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_50%,rgba(0,0,0,0.4)_100%)]" />
+        </div>
       </div>
 
       <div className="relative z-10 text-left text-white px-8 sm:px-16 max-w-3xl">
@@ -73,7 +81,7 @@ export default function HeroSection() {
         </h1>
       </div>
 
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-wrap justify-center items-center gap-24 text-white text-sm sm:text-base">
+      <div className="absolute z-10 bottom-6 left-1/2 transform -translate-x-1/2 flex flex-wrap justify-center items-center gap-24 text-white text-sm sm:text-base">
         <div className="flex flex-col items-center space-y-2">
           <Image
             src="/insta-logo.png"

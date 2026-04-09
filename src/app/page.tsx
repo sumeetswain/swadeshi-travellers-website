@@ -3,6 +3,9 @@ import { PackageLoader } from "@/components/PackageLoader/PackageLoader";
 import CallbackButton from "@/components/CallbackButton";
 import PackageCarousel from "@/components/PackageCarousel";
 import HeroSection from "@/components/HeroSection";
+import Gallery from "@/components/Gallery";
+import FAQ from "@/components/FAQs";
+import ContactForm from "@/components/ContactForm";
 
 const hydTrips = [
   {
@@ -157,6 +160,18 @@ const ultimateIndia = [
   },
 ];
 
+const trips = [
+  {
+    name: "North India",
+    link: "destinations/north-india",
+    image: "/curated/northindia.png",
+  },
+  {
+    name: "South India",
+    link: "destinations/south-india",
+    image: "/curated/southindia.png",
+  },
+];
 export const metadata = {
   title: "Swadeshi",
 };
@@ -164,12 +179,15 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <CuratedCategories />
+      <CuratedCategories data={trips} />
       <PackageLoader title="Upcoming Trips" />
       <PackageCarousel items={hydTrips} title="Epic Weekend Getaways" />
       <PackageCarousel items={incredibleIndia} title="Incredible India" />
       <PackageCarousel items={southernEscapes} title="Southern Escapes" />
       <PackageCarousel items={ultimateIndia} title="Ultimate India" />
+      <Gallery />
+      <ContactForm />
+      <FAQ />
     </>
   );
 }
