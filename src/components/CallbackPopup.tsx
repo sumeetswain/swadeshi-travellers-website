@@ -25,7 +25,7 @@ const formSchema = z.object({
   fullname: z.string().min(1, "Full name is required"),
   phone: z.string().regex(/^\d{10}$/, "Enter a valid phone number"),
   date: z.date({
-    required_error: "Please select a preferred date",
+    message: "Please select a preferred date",
   }),
   people: z.string(),
   departing_from: z.string().min(1, "Select departure city"),
@@ -193,7 +193,7 @@ const CallbackPopup = ({ onClose }: { onClose?: () => void }) => {
                     <FormControl>
                       <DatePicker
                         selected={field.value}
-                        onChange={(d) => field.onChange(d)}
+                        onChange={(d: Date | null) => field.onChange(d)}
                         minDate={new Date()}
                         placeholderText="Select date"
                         className={inputBase}
