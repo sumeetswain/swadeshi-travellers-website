@@ -362,7 +362,7 @@ const stcFeatures = [
   {
     title: "4.8 Google Rating",
     description:
-      "200+ verified five-star reviews. Every trip is run with the same attention to timing, safety, and comfort — whether it's your first STC trip or your tenth.",
+      "200+ verified five-star reviews. Every trip is run with the same attention to timing, safety, and comfort — whether it&#39;s your first STC trip or your tenth.",
     icon: <Star className="w-6 h-6" />,
   },
   {
@@ -374,7 +374,7 @@ const stcFeatures = [
   {
     title: "Train Tickets Included",
     description:
-      "Every STC train package includes sleeper class tickets both ways in the package price. You don't book separately. You don't chase tatkal. The ticket is already yours.",
+      "Every STC train package includes sleeper class tickets both ways in the package price. You don&#39;t book separately. You don&#39;t chase tatkal. The ticket is already yours.",
     icon: <Train className="w-6 h-6" />,
   },
   {
@@ -421,7 +421,7 @@ export default function HomePage() {
 "
         content="Ooty. Coorg. Wayanad. Kerala. Gokarna. Pondicherry. Hampi. Araku. Lonavala. Every Weekend. From ₹3,999.
 
-Swadeshi Traveller Community was built for people who want to travel and not plan. Every package in the portfolio is built around one principle: you board the bus or the train at the stated time, from the stated pickup point, and everything else — the route, the accommodation, the sightseeing order, the return — is handled. STC runs group tour packages every Thursday and Friday from Bangalore and Hyderabad, covering South India's most significant hill stations, beaches, temple circuits, heritage sites, backwaters, and forests. 13 Hyderabad packages. 13+ Bangalore packages. Every destination confirmed. Every itinerary tested. From ₹3,999.
+Swadeshi Traveller Community was built for people who want to travel and not plan. Every package in the portfolio is built around one principle: you board the bus or the train at the stated time, from the stated pickup point, and everything else — the route, the accommodation, the sightseeing order, the return — is handled. STC runs group tour packages every Thursday and Friday from Bangalore and Hyderabad, covering South India&#39;s most significant hill stations, beaches, temple circuits, heritage sites, backwaters, and forests. 13 Hyderabad packages. 13+ Bangalore packages. Every destination confirmed. Every itinerary tested. From ₹3,999.
 "
       />
       <CuratedCategories data={trips} />
@@ -433,7 +433,7 @@ Swadeshi Traveller Community was built for people who want to travel and not pla
       <PackageCarousel items={fromhyd} title="From Hyderabad" />
       {/* <PackageCarousel items={hydTrips} title="Epic Weekend Getaways" /> */}
       <DealsSection
-        title="Guaranteed Seats. Guaranteed Prices."
+        sectionTitle="Guaranteed Seats. Guaranteed Prices."
         deals={deals}
       />
       <p className="text-center font-bold text-3xl text-brand mt-4">
@@ -470,8 +470,8 @@ The STC portfolio covers South India (Ooty, Coorg, Wayanad, Kerala, Gokarna, Pon
           {/* Description */}
           <p className="text-sm md:text-base text-black leading-relaxed max-w-4xl">
             Every Thursday and Friday, STC group tours depart from Bangalore and
-            Hyderabad to South India's most extraordinary destinations. You
-            don't need to research the route, book the train, arrange
+            Hyderabad to South India&#39;s most extraordinary destinations. You
+            don&#39;t need to research the route, book the train, arrange
             accommodation, or coordinate a group. You need to confirm your seat.
             We handle the rest.
             <br />
