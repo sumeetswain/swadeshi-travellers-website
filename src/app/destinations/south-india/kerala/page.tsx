@@ -70,7 +70,7 @@ export default function DestinationPage() {
     {
       question: "Does STC offer an Alleppey houseboat stay?",
       answer:
-        "Both STC Kerala packages include an Alleppey Shikara ride — a traditional wooden boat ride through the Vembanad Lake backwater network. Neither package includes an overnight houseboat stay. The Shikara ride in the 2-day package is available at the site (extra cost). The 4-day package explicitly lists the Shikara ride as self-sponsored. If an overnight houseboat stay is your priority, STC's current Kerala packages are Shikara-based backwater experiences.",
+        "Both STC Kerala packages include an Alleppey Shikara ride — a traditional wooden boat ride through the Vembanad Lake backwater network. Neither package includes an overnight houseboat stay. The Shikara ride in the 2-day package is available at the site (extra cost). The 4-day package explicitly lists the Shikara ride as self-sponsored. If an overnight houseboat stay is your priority, STC&#39;s current Kerala packages are Shikara-based backwater experiences.",
     },
     {
       question:
@@ -95,7 +95,7 @@ export default function DestinationPage() {
     {
       title: "4.8 Google Rating",
       description:
-        "200+ verified five-star reviews. Every trip is run with the same attention to timing, safety, and comfort — whether it's your first STC trip or your tenth.",
+        "200+ verified five-star reviews. Every trip is run with the same attention to timing, safety, and comfort — whether it&#39;s your first STC trip or your tenth.",
       icon: <Star className="w-6 h-6" />,
     },
     {
@@ -113,7 +113,7 @@ export default function DestinationPage() {
     {
       title: "Mountain + Backwater + Beach in One Circuit",
       description:
-        "STC's 4-day Kerala full circuit is the only group tour from Bangalore that covers all three of Kerala's defining landscapes — Munnar's high-altitude tea estates, Alleppey's Vembanad backwaters, and Varkala's cliff beach — in a single Wednesday departure.",
+        "STC&#39;s 4-day Kerala full circuit is the only group tour from Bangalore that covers all three of Kerala&#39;s defining landscapes — Munnar&#39;s high-altitude tea estates, Alleppey&#39;s Vembanad backwaters, and Varkala&#39;s cliff beach — in a single Wednesday departure.",
       icon: <TreePalm className="w-8 h-8 text-gray-700" />,
     },
   ];
@@ -136,8 +136,8 @@ export default function DestinationPage() {
           Kerala Packages from Bangalore
         </h1>
         <DescriptionBox
-          title="Fort Kochi's Colours. Alleppey's Backwaters. Munnar's Tea Gardens. Varkala's Cliff Beach. Two Ways Into God's Own Country. From ₹6,399."
-          content="Kerala does not begin at the airport. It begins the moment the road narrows and the coconut trees close in overhead and the air carries a specific combination of backwater salt and spice and rain-on-red-earth that is particular to this coast. STC runs two Kerala group tour packages from Bangalore: a 2-day Kochi and Alleppey tour from ₹6,399 — Fort Kochi's Jew Town and café lanes, Marari Beach, and the Alleppey backwaters — and a 4-day Kerala full circuit from ₹17,499 in an AC Tempo Traveller that covers Munnar's high-altitude tea estates, the Alleppey backwaters at sunrise, and three different Varkala beach experiences. 4 breakfasts included in the 4-day package."
+          title="Fort Kochi&#39;s Colours. Alleppey&#39;s Backwaters. Munnar&#39;s Tea Gardens. Varkala&#39;s Cliff Beach. Two Ways Into God&#39;s Own Country. From ₹6,399."
+          content="Kerala does not begin at the airport. It begins the moment the road narrows and the coconut trees close in overhead and the air carries a specific combination of backwater salt and spice and rain-on-red-earth that is particular to this coast. STC runs two Kerala group tour packages from Bangalore: a 2-day Kochi and Alleppey tour from ₹6,399 — Fort Kochi&#39;s Jew Town and café lanes, Marari Beach, and the Alleppey backwaters — and a 4-day Kerala full circuit from ₹17,499 in an AC Tempo Traveller that covers Munnar&#39;s high-altitude tea estates, the Alleppey backwaters at sunrise, and three different Varkala beach experiences. 4 breakfasts included in the 4-day package."
         />
         <div className="w-[30%] mx-auto mt-5">
           <Link
@@ -378,11 +378,11 @@ export default function DestinationPage() {
 
             {/* Description */}
             <p className="text-sm md:text-base text-black leading-relaxed max-w-4xl">
-              The 2-day package covers Fort Kochi's Jew Town and the Alleppey
-              backwaters — two days, one overnight, back by Sunday night. The
-              4-day package covers the full Kerala arc from the tea hills at
-              1,600 metres down through the backwaters to the cliff beach at
-              Varkala — with 4 breakfasts, an AC vehicle, and a live
+              The 2-day package covers Fort Kochi&#39;s Jew Town and the
+              Alleppey backwaters — two days, one overnight, back by Sunday
+              night. The 4-day package covers the full Kerala arc from the tea
+              hills at 1,600 metres down through the backwaters to the cliff
+              beach at Varkala — with 4 breakfasts, an AC vehicle, and a live
               Kalaripayattu performance in between. From ₹6,399. Both depart
               every week.
             </p>
