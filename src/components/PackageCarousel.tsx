@@ -3,6 +3,7 @@
 export default function HorizontalImageCarousel({
   title,
   items,
+  description = "",
   cardWidth = 350,
   cardHeight = 350,
   containerWidth = "85%",
@@ -15,6 +16,11 @@ export default function HorizontalImageCarousel({
         <h2 className="w-full max-w-[85%] text-xl font-semibold text-green-600 mb-6">
           {title}
         </h2>
+      )}
+      {description && (
+        <p className="w-full max-w-[85%] text-base text-gray-600 mb-6">
+          {description}
+        </p>
       )}
 
       {/* Centered Carousel Container */}
@@ -35,23 +41,46 @@ export default function HorizontalImageCarousel({
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
 
-                {/* Top Label */}
+                {/* Dark Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-80 group-hover:opacity-100 transition duration-300" />
 
-                {/* Bottom Badge */}
-                {item.badge && (
-                  <div className="absolute bottom-0 left-0 right-0 bg-green-500 text-white text-center py-2 font-medium">
-                    {item.badge}
-                  </div>
-                )}
+                {/* Content */}
+                <div className="absolute inset-0 flex flex-col justify-end p-4 text-white translate-y-6 group-hover:translate-y-0 transition duration-300">
+                  {/* Title */}
+                  <h3 className="text-lg font-semibold">{item.title}</h3>
+
+                  {/* Price */}
+                  {item.price && (
+                    <p className="text-pink-300 font-bold text-xl mt-1">
+                      {item.price}
+                    </p>
+                  )}
+
+                  {/* Sub info */}
+                  {item.subtitle && (
+                    <p className="text-sm text-gray-200 mt-1">
+                      {item.subtitle}
+                    </p>
+                  )}
+
+                  {/* Features */}
+                  {item.features && (
+                    <ul className="mt-2 space-y-1 text-xs text-gray-200 opacity-0 group-hover:opacity-100 transition duration-300">
+                      {item.features.map((f, i) => (
+                        <li key={i}>✦ {f}</li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {/* CTA */}
+                  <button className="mt-3 bg-green-400 text-black text-sm font-medium py-2 rounded-md opacity-0 group-hover:opacity-100 transition duration-300">
+                    View Packages →
+                  </button>
+                </div>
               </div>
-
-              {/* Bottom Title */}
-              <p className="mt-3 text-sm text-gray-900 leading-snug">
-                {item.title}
-              </p>
             </a>
           ))}
         </div>
