@@ -15,50 +15,44 @@ type FAQProps = {
 };
 const defaultFaqs = [
   {
-    question: "What is Tripper Trails?",
+    question: "Do you offer packages from both Bangalore and Hyderabad?",
     answer:
-      "Tripper Trails is a backpacking community which provides end-to-end travel and tour services in India and abroad. With a focus on community trips, we encourage all kinds of travellers including solo, groups or couples wherein the travel itineraries are catered to your preferences and needs.",
+      "Yes — STC runs group tour packages every Thursday and Friday from both cities. Bangalore packages depart from Marathahalli, Silk Board, and Majestic by bus, or from KSR Bengaluru Railway Station by train. Hyderabad packages depart from Nampally, Kacheguda, Begumpet, and Lingampally by train. Both cities have separate package portfolios — check the relevant section on this page or call us at +91 8886051052.",
   },
   {
-    question:
-      "How is Tripper Trails different from other online travel portals?",
+    question: "Are train tickets included in the package price?",
     answer:
-      "At Tripper Trails, we practice what we preach. We are a travel backpacking community with a focus on creating experiences for people which they will remember for a lifetime. Since our operations are conducted in-house, there are no third parties involved which helps us to avoid unnecessary delays or any such hassle.",
+      "Yes — for all train-based packages from both cities, sleeper class non-AC train tickets both ways are included in the package price. You do not need to book separately. The only exception is the Bangalore bus packages (Ooty 2D, Coorg 2D, Wayanad 2D, Chikmagalur 2D, Gokarna 2D, Kochi+Alleppey 2D, Kerala 4D) which depart by bus — bus transport is included in those package prices.",
   },
   {
-    question: "How do I book a trip through Tripper Trails?",
+    question: "How do I confirm my booking?",
     answer:
-      "Booking a trip through Tripper Trails is as easy as it gets. Decide where you want to go, drop us a query either on our website or on our social media handle and we will get back to you with all details. Our team will guide you on how to proceed.",
+      "Pay 50% advance to confirm your seat. The remaining 50% is due 1 day before departure. For bookings made within 3 days of departure, 100% payment is required upfront. Payment confirmation is shared digitally. Call +91 8886051052 or message @swadeshi_traveller_bangalore on Instagram to book.",
   },
   {
-    question: "Can I change the date after booking?",
+    question: "Is food included in the packages?",
     answer:
-      "Yes, you can change the date of your booking until 15 days prior to the date of departure of your trip.",
+      "Most STC packages do not include food — entry tickets and meals are at your own expense unless specified. Exceptions: (1) The Wayanad 2-day bus package from Bangalore includes 2 breakfasts + 1 dinner. (2) The Gokarna + Dandeli 3-day package from Hyderabad includes all Dandeli Day 1 meals — breakfast, lunch, and dinner. (3) The Kerala 4-Day Circuit from Bangalore includes 4 breakfasts. Any package with meals included has this clearly stated in the inclusions.",
   },
   {
-    question: "What are community trips?",
+    question: "What is the minimum group size?",
     answer:
-      "Community trips are where you travel with a group of people you may or may not know to form a community. You meet like-minded people, participate in activities, and experience a destination together.",
+      " A minimum of 10 participants is required to run any STC trip. If the minimum is not met, STC may reschedule the trip or offer an alternative plan. Most departures fill well above the minimum — especially on peak weekends (Oct–Feb, long weekends, Diwali, Christmas, New Year).",
   },
   {
-    question: "Are community trips safe for solo female travellers?",
+    question: "What is the cancellation policy?",
     answer:
-      "Safety of our travellers is our topmost priority. We ensure solo female travellers feel safe and comfortable. Any concerns are immediately addressed by the trip captain and our ground team.",
+      "No refund on the initial booking amount once paid. If you cancel 7 days before departure: 50% of the trip cost is charged. 3–6 days before: 75% charged. Within 3 days: 100% charged (no refund). In case of natural disasters, government restrictions, or unavoidable situations, STC will arrange alternate activities but no monetary refund will be provided.",
   },
   {
-    question: "I am a solo traveller. Which trip would suit me?",
+    question: "Are water sports included in the Gokarna + Dandeli package?",
     answer:
-      "Any of our community trips are ideal for solo travellers. They are budget-friendly and a great way to meet fellow travel enthusiasts.",
+      " Yes — the Gokarna + Dandeli package from Hyderabad (₹4,999) includes all Dandeli water sports: kayaking, zorbing, boating, and river swimming. Indoor games (archery, dart, badminton, rain dance, campfire) are also included on Day 1. River rafting and zipline are available at extra cost. This is the only STC package with water sports fully confirmed in the inclusions.",
   },
   {
-    question: "Can I create my trip plan using my own destination?",
+    question: "Is STC safe? What are your credentials?",
     answer:
-      "Absolutely! You can customise trips across South India, Ladakh, Spiti, Himachal Pradesh, and international destinations like Thailand and Bhutan with the help of our travel experts.",
-  },
-  {
-    question: "Does the mentioned price include the flight ticket fee?",
-    answer:
-      "No, domestic trips do not include flight tickets. International trip packages will specify if airfare is included.",
+      "STC is MSME Certified, ATOAI (Adventure Tour Operators Association of India) Certified, and recognised by StartupIndia. We hold a 4.8 rating on Google from 200+ verified reviews. Every trip has a trained trip captain throughout. First aid is included in most packages. For adventure packages (rafting, trekking, water sports), activities are conducted by authorised operators at the site.",
   },
 ];
 export default function FAQ({ faqs = [], title }: FAQProps) {
