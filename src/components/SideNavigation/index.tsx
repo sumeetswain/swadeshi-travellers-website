@@ -40,12 +40,15 @@ export default function SideNavigation() {
     transform
     origin-right
     -rotate-90
+    z-10
   "
         onClick={() => setOpen(true)}
       >
         Request Callback
       </motion.button>
-      {open && <CallbackPopup onClose={() => setOpen(false)} />}
+      <AnimatePresence>
+        {open && <CallbackPopup onClose={() => setOpen(false)} />}
+      </AnimatePresence>
       <div className="fixed bottom-6 right-6 flex flex-col items-center gap-6 z-50">
         {/* Request Callback Button */}
 
