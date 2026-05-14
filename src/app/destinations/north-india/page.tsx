@@ -3,13 +3,11 @@ import ContactForm from "@/components/ContactForm";
 import CuratedCategories from "@/components/CuratedCategories";
 import DescriptionBox from "@/components/DescriptionBox";
 import FAQ from "@/components/FAQs";
-import FinalCta from "@/components/FinalCTA";
 import PackageCarousel from "@/components/PackageCarousel";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import {
   Camera,
   Compass,
-  DollarSign,
   Globe,
   IndianRupee,
   MapPinIcon,
@@ -23,7 +21,7 @@ const himalayas = [
   {
     title: "Rishikesh",
     price: "Uttarakhand — Ganges",
-    subtitle: "India's adventure capital",
+    subtitle: "India&apos;s adventure capital",
     features: [
       "White water rafting",
       "Bungee jump",
@@ -53,7 +51,7 @@ const himalayas = [
   {
     title: "Leh Ladakh",
     price: "Jammu & Kashmir — Trans-Himalaya",
-    subtitle: "The world's most dramatic road trip",
+    subtitle: "The world&apos;s most dramatic road trip",
     features: [
       "Magnetic Hill",
       "Pangong Lake",
@@ -374,7 +372,7 @@ export default function BhutanPage() {
         title="North India Tour Packages"
         content="The Himalayas. The Desert Forts. The Sacred Rivers. The Floating Gardens of Dal Lake. Coming Soon from Bangalore & Hyderabad.
 
-North India is the part of India that rewrites scale. The Himalayas — the highest mountain range on earth, visible on clear days from cities 200 kilometres away — run along its northern edge. The Thar Desert fills the western boundary with dune systems and mediaeval forts. The Gangetic plain between them holds three of the oldest continuously inhabited cities in the world: Varanasi, where the ghats have been burning at the river's edge since the 11th century BCE; Mathura, where Krishna was born; and Agra, where a 17th-century emperor built his wife a tomb out of white marble that now receives more visitors than any other monument in India. Kashmir sits above all of it, in a valley above 1,600 metres, with its Dal Lake houseboats and the Mughal gardens and the apple orchards and the Pir Panjal mountains on three sides.
+North India is the part of India that rewrites scale. The Himalayas — the highest mountain range on earth, visible on clear days from cities 200 kilometres away — run along its northern edge. The Thar Desert fills the western boundary with dune systems and mediaeval forts. The Gangetic plain between them holds three of the oldest continuously inhabited cities in the world: Varanasi, where the ghats have been burning at the river&#39;s edge since the 11th century BCE; Mathura, where Krishna was born; and Agra, where a 17th-century emperor built his wife a tomb out of white marble that now receives more visitors than any other monument in India. Kashmir sits above all of it, in a valley above 1,600 metres, with its Dal Lake houseboats and the Mughal gardens and the apple orchards and the Pir Panjal mountains on three sides.
 
 Swadeshi Traveller Community is building group tour packages to all of this — from Bangalore and Hyderabad, by overnight train, every Thursday and Friday, at the same price transparency and trip-captain standard as every South India package in the current portfolio. North India packages are in development. Leave your details below to be the first to know when they go live.
 "
@@ -386,8 +384,8 @@ Swadeshi Traveller Community is building group tour packages to all of this — 
           </h2>
 
           <p className="mt-2 text-sm sm:text-base text-black/80 max-w-3xl">
-            Leave your name, mobile number, and which destination you're most
-            excited about. We'll notify you the moment it goes live.
+            Leave your name, mobile number, and which destination you&apos;re
+            most excited about. We&apos;ll notify you the moment it goes live.
           </p>
 
           <a
@@ -408,7 +406,7 @@ Swadeshi Traveller Community is building group tour packages to all of this — 
       {/* Title */}
       <CuratedCategories data={trips} />
       <p className="w-[85%] mx-auto text-start  font-bold text-3xl text-brand mt-20">
-        Where We're Going — North India Destinations in Development
+        Where We&apos;re Going — North India Destinations in Development
       </p>
       <p className="w-[85%] mx-auto text-start font-bold text-xl text-brand/80 mt-2">
         These are the destinations STC is building packages for. Tell us which
@@ -445,7 +443,7 @@ Swadeshi Traveller Community is building group tour packages to all of this — 
           {/* Description */}
           <p className="text-sm md:text-base text-black leading-relaxed max-w-4xl">
             Leave your details above and we will notify you when the first North
-            India package goes live. In the meantime, STC's South India
+            India package goes live. In the meantime, STC&apos;s South India
             portfolio covers 40+ destinations every weekend from ₹3,999. Every
             Thursday and Friday. From Bangalore and Hyderabad.
           </p>
