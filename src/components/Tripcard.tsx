@@ -8,8 +8,30 @@ import {
 import moment from "moment";
 import { useState } from "react";
 
-const TripCard = ({ trip, redirect = true }) => {
+type Batch = {
+  startdate: string;
+};
+
+type Trip = {
+  slug: string;
+  name: string;
+  number_of_nights: number;
+  number_of_days: number;
+  startpoint: string;
+  batches: Batch[];
+  price: string;
+  price_striked?: string;
+  list_pic: string;
+};
+
+type TripCardProps = {
+  trip: Trip;
+  redirect?: boolean;
+};
+
+const TripCard = ({ trip, redirect = true }: TripCardProps) => {
   const [open, setOpen] = useState(false);
+
   if (!trip) return null;
   return (
     <div className="flex flex-col h-full p-5">
@@ -64,7 +86,7 @@ const TripCard = ({ trip, redirect = true }) => {
                     <div className="w-4/5 lg:font-medium whitespace-nowrap overflow-hidden text-ellipsis">
                       {trip.batches.length
                         ? trip.batches
-                            .map((batch) =>
+                            .map((batch: Batch) =>
                               moment.utc(batch.startdate).format("D MMM"),
                             )
                             .join(", ")
