@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { CalendarCheck, Ticket, Users, Map, Home } from "lucide-react";
 type Feature = {
@@ -16,34 +15,14 @@ type SecretSauceProps = {
 };
 const buildRows = (data: Feature[], layout: number[]) => {
   const rows: Feature[][] = [];
-  let index = 0;
 
-  for (let count of layout) {
+  layout.reduce((index, count) => {
     rows.push(data.slice(index, index + count));
-    index += count;
-  }
+    return index + count;
+  }, 0);
 
   return rows;
 };
-/* ---------- ICON ---------- */
-const IconWrapper = ({ src, alt }: { src: string; alt: string }) => (
-  <div
-    className="
-      flex items-center justify-center
-      w-[75px] h-[70px]            /* mobile + tablet */
-      lg:w-[62px] lg:h-[56px]
-      xl:w-[77px] xl:h-[70px]
-    "
-  >
-    <Image
-      src={src}
-      alt={alt}
-      width={77}
-      height={70}
-      className="object-contain"
-    />
-  </div>
-);
 
 const defaultFeatures: Feature[] = [
   {
