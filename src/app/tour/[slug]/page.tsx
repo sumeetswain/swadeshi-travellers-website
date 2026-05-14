@@ -13,6 +13,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { API_ENDPOINT, API_KEY } from "@/api/api";
+import Reviews from "@/components/Reviews";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import FAQs from "@/components/FAQs";
 
 export default function TrekPage() {
   const [open, setOpen] = useState<number | null>(null);
@@ -250,6 +253,9 @@ export default function TrekPage() {
           </div>
         </div>
       </div>
+      <Reviews />
+      <WhyChooseUs />
+      <FAQs />
     </div>
   );
 }
