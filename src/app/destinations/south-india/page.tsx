@@ -92,7 +92,7 @@ export default function BhutanPage() {
       subtitle:
         "🚌 From Bangalore  ₹3,999 · 1 package 🚂 From Hyderabad  ₹6,499 · 1 package",
       features: [
-        "Mullayanagiri — Karnataka's highest peak (1,930m) ",
+        "Mullayanagiri — Karnataka&#39;s highest peak (1,930m) ",
         "Hebbe Waterfalls jeep ride",
         "Kemmangundi ",
         "Z Point ridge trek",
@@ -163,7 +163,7 @@ export default function BhutanPage() {
         "Pichavaram Mangrove boating",
         "Shore Temple",
         "Pancha Rathas",
-        "Krishna's Butter Ball",
+        "Krishna&#39;s Butter Ball",
       ],
       image: "/southindia/ooty.png",
       href: "/destinations/south-india/ooty/from-hyderabad",
@@ -248,7 +248,7 @@ export default function BhutanPage() {
         "🚌 Bangalore  Coming Soon 🚂 From Hyderabad  ₹6,999 · 1 package",
       features: [
         "Vanjangi Hill sunrise (sea of clouds)",
-        "Lambasingi (AP's Shimla)",
+        "Lambasingi (AP&#39;s Shimla)",
         "Borra Caves",
         "Araku coffee valley",
         "Vizag beach circuit",
@@ -289,7 +289,7 @@ export default function BhutanPage() {
     {
       question: "Do STC South India packages include train tickets?",
       answer:
-        "Yes — all STC train-based packages include sleeper class non-AC train tickets both ways in the package price. You do not book separately. Bus-based packages (Coorg 2D, Chikmagalur 2D, Wayanad 2D, Ooty 2D, Gokarna 2D, Kochi+Alleppey 2D, Kerala 4D from Bangalore) include the bus transport instead. The specific transport type and pickup station is stated clearly on each destination's package page.",
+        "Yes — all STC train-based packages include sleeper class non-AC train tickets both ways in the package price. You do not book separately. Bus-based packages (Coorg 2D, Chikmagalur 2D, Wayanad 2D, Ooty 2D, Gokarna 2D, Kochi+Alleppey 2D, Kerala 4D from Bangalore) include the bus transport instead. The specific transport type and pickup station is stated clearly on each destination&#39;s package page.",
     },
     {
       question:
@@ -312,7 +312,7 @@ export default function BhutanPage() {
         title="South India Tour Packages"
         content="Karnataka. Tamil Nadu. Kerala. Andhra Pradesh. 40+ Group Tours. Every Weekend. From ₹3,999.
 
-South India contains more variety within a 10-hour bus or train radius than any other region on the subcontinent. Coffee estates at 1,600 metres in the Nilgiris. French colonial lanes in Pondicherry's white town. 900 kilometres of backwater canals in Kerala. The laterite cliffs at Varkala rising directly from the Arabian Sea. The Virupaksha Temple at Hampi, active since the 7th century, the archaeological heart of the Vijayanagara Empire. The Murudeshwar Shiva statue visible from the Arabian Sea. The 14-kilometre Girivalam path around the sacred mountain at Arunachalam. Swadeshi Traveller Community runs group tour packages to all of these — every Thursday and Friday, from Bangalore and Hyderabad, at prices that start from ₹3,999. 40+ departures. Every destination confirmed. Every itinerary tested.
+South India contains more variety within a 10-hour bus or train radius than any other region on the subcontinent. Coffee estates at 1,600 metres in the Nilgiris. French colonial lanes in Pondicherry&#39;s white town. 900 kilometres of backwater canals in Kerala. The laterite cliffs at Varkala rising directly from the Arabian Sea. The Virupaksha Temple at Hampi, active since the 7th century, the archaeological heart of the Vijayanagara Empire. The Murudeshwar Shiva statue visible from the Arabian Sea. The 14-kilometre Girivalam path around the sacred mountain at Arunachalam. Swadeshi Traveller Community runs group tour packages to all of these — every Thursday and Friday, from Bangalore and Hyderabad, at prices that start from ₹3,999. 40+ departures. Every destination confirmed. Every itinerary tested.
 
 "
       />
@@ -328,17 +328,17 @@ South India contains more variety within a 10-hour bus or train radius than any 
       <PackageCarousel
         items={tamilnadu}
         title="Tamil Nadu — Pondicherry, Arunachalam & Mahabalipuram"
-        description="Tamil Nadu's STC packages cover the coastal and spiritual belt of the state. Pondicherry — the former French colony with its white-town grid, seafront promenades, and Auroville on its northern edge — is accessible from both Bangalore and Hyderabad in 3-day packages from ₹4,599. Arunachalam is the sacred mountain town where the 14-kilometre Girivalam path circles the Arunachaleswarar Temple — one of the five Pancha Bhuta Stalas of Shiva — on full moon evenings. Mahabalipuram, where the Shore Temple and the Pancha Rathas stand at the edge of the Bay of Bengal, is on the Day 3 return circuit for multiple STC packages."
+        description="Tamil Nadu&#39;s STC packages cover the coastal and spiritual belt of the state. Pondicherry — the former French colony with its white-town grid, seafront promenades, and Auroville on its northern edge — is accessible from both Bangalore and Hyderabad in 3-day packages from ₹4,599. Arunachalam is the sacred mountain town where the 14-kilometre Girivalam path circles the Arunachaleswarar Temple — one of the five Pancha Bhuta Stalas of Shiva — on full moon evenings. Mahabalipuram, where the Shore Temple and the Pancha Rathas stand at the edge of the Bay of Bengal, is on the Day 3 return circuit for multiple STC packages."
       />
       <PackageCarousel
         items={kerala}
         title="Kerala — Wayanad, Kochi, Alleppey, Munnar & Varkala"
-        description="Kerala's STC packages cover the full topographic range of the state. Wayanad in the north: Banasura Sagar Dam (110,000 searches/month), Chembra Peak heart-shaped lake, Edakkal Caves. Kochi in the centre: Fort Kochi's colonial quarter — the Dutch cemetery, the Chinese fishing nets, Jew Town, the café lanes. Alleppey on the coast: the Vembanad Lake backwater network and the Shikara ride through the canal system. Munnar in the Nilgiri foothills: tea estates at 1,600 metres, Mattupetty Dam, Echo Point. Varkala on the southern coast: the laterite cliff above the Arabian Sea, Papanasam Beach, Black Sand Beach. STC's 4-day Kerala circuit from Bangalore covers Munnar, Alleppey, and Varkala in one departure."
+        description="Kerala&#39;s STC packages cover the full topographic range of the state. Wayanad in the north: Banasura Sagar Dam (110,000 searches/month), Chembra Peak heart-shaped lake, Edakkal Caves. Kochi in the centre: Fort Kochi&#39;s colonial quarter — the Dutch cemetery, the Chinese fishing nets, Jew Town, the café lanes. Alleppey on the coast: the Vembanad Lake backwater network and the Shikara ride through the canal system. Munnar in the Nilgiri foothills: tea estates at 1,600 metres, Mattupetty Dam, Echo Point. Varkala on the southern coast: the laterite cliff above the Arabian Sea, Papanasam Beach, Black Sand Beach. STC&#39;s 4-day Kerala circuit from Bangalore covers Munnar, Alleppey, and Varkala in one departure."
       />
       <PackageCarousel
         items={andhrapradesh}
         title="Andhra Pradesh — Araku Valley & Vizag"
-        description="The Andhra Pradesh circuit in STC's portfolio runs north from Hyderabad to Visakhapatnam (Vizag) and into the Eastern Ghats. Araku Valley — the coffee-growing high-altitude bowl in the Ananthagiri Hills — is the centrepiece: paddy terraces, waterfalls, tribal culture, and Borra Caves. The Nilgiri-equivalent of the East Coast. Vanjangi Hill is the Araku circuit's sunrise viewpoint where a sea of clouds forms in the valley at dawn. Lambasingi — the only place in Andhra Pradesh where temperatures drop below 10°C in winter — is part of the same circuit. Currently available from Hyderabad only."
+        description="The Andhra Pradesh circuit in STC&#39;s portfolio runs north from Hyderabad to Visakhapatnam (Vizag) and into the Eastern Ghats. Araku Valley — the coffee-growing high-altitude bowl in the Ananthagiri Hills — is the centrepiece: paddy terraces, waterfalls, tribal culture, and Borra Caves. The Nilgiri-equivalent of the East Coast. Vanjangi Hill is the Araku circuit&#39;s sunrise viewpoint where a sea of clouds forms in the valley at dawn. Lambasingi — the only place in Andhra Pradesh where temperatures drop below 10°C in winter — is part of the same circuit. Currently available from Hyderabad only."
       />
       <WhyChooseUs />
       <Reviews />
@@ -352,12 +352,12 @@ South India contains more variety within a 10-hour bus or train radius than any 
 
           {/* Description */}
           <p className="text-sm md:text-base text-black leading-relaxed max-w-4xl">
-            Karnataka's coffee estates. Tamil Nadu's coast. Kerala's mountains
-            and backwaters. Andhra Pradesh's Eastern Ghats. STC runs group tours
-            to all of them — every Thursday and Friday, from Bangalore and
-            Hyderabad, with train tickets included, trip captains throughout,
-            and 40+ years of combined destination knowledge behind every
-            itinerary.
+            Karnataka&#39;s coffee estates. Tamil Nadu&#39;s coast. Kerala&#39;s
+            mountains and backwaters. Andhra Pradesh&#39;s Eastern Ghats. STC
+            runs group tours to all of them — every Thursday and Friday, from
+            Bangalore and Hyderabad, with train tickets included, trip captains
+            throughout, and 40+ years of combined destination knowledge behind
+            every itinerary.
           </p>
 
           {/* Divider */}
