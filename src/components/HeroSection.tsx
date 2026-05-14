@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import RatingsDesktop from "./RatingsDesktop";
 
 const images = ["/home/1.png", "/home/2.png", "/home/3.png", "/home/4.png"];
 
@@ -81,43 +82,13 @@ export default function HeroSection() {
         </h1>
       </div>
 
-      <div className="absolute z-10 bottom-6 left-1/2 transform -translate-x-1/2 flex flex-wrap justify-center items-center gap-24 text-white text-sm sm:text-base">
-        <div className="flex flex-col items-center space-y-2">
-          <Image
-            src="/insta-logo.png"
-            alt="Instagram Logo"
-            width={28}
-            height={28}
-            className="opacity-90"
-          />
-          <span className="font-semibold">97k+</span>
-          <span className="opacity-80">Followers</span>
-        </div>
-
-        <div className="flex flex-col items-center space-y-2">
-          <Image
-            src="/google.png"
-            alt="Google Logo"
-            width={28}
-            height={28}
-            className="opacity-90"
-          />
-          <span className="font-semibold">4500+</span>
-          <span className="opacity-80">Reviews</span>
-        </div>
-
-        <div className="flex flex-col items-center space-y-2">
-          <Image
-            src="/icons/travel.svg"
-            alt="Trips Logo"
-            width={28}
-            height={28}
-            className="opacity-90"
-          />
-          <span className="font-semibold">800+</span>
-          <span className="opacity-80">Trips</span>
+      <div className="absolute z-10 bottom-6 left-1/2 transform -translate-x-1/2 w-full px-4 pb-12 flex justify-center text-white text-sm sm:text-base">
+        <div className="px-4 py-2 rounded-full text-center">
+          📞 +91 8886051052 &nbsp; | &nbsp; Every Thursday & Friday &nbsp; |
+          &nbsp; Pickup from your city
         </div>
       </div>
+      <RatingsDesktop stickToBottom />
     </section>
   );
 }
