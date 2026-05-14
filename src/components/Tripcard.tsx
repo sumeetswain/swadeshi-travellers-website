@@ -52,9 +52,7 @@ const TripCard = ({ trip, redirect = true }) => {
                         icon={faLocationDot}
                         className="h-5 text-brand"
                       />
-                      <div className="lg:font-medium">
-                        {trip.event_location}
-                      </div>
+                      <div className="lg:font-medium">{trip.startpoint}</div>
                     </div>
                   </div>
 
