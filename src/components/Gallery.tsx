@@ -5,11 +5,17 @@ import Image from "next/image";
 import { useCallback } from "react";
 
 const images = [
-  { src: "/ultimate/1.png", label: "Himachal" },
-  { src: "/ultimate/2.png", label: "Spiti" },
-  { src: "/ultimate/3.png", label: "Thailand" },
-  { src: "/ultimate/4.png", label: "Vietnam" },
-  { src: "/ultimate/5.png", label: "Ladakh" },
+  { src: "/gallery/1.webp" },
+  { src: "/gallery/2.webp" },
+  { src: "/gallery/3.webp" },
+  { src: "/gallery/4.webp" },
+  { src: "/gallery/5.webp" },
+  { src: "/gallery/6.webp" },
+  { src: "/gallery/7.webp" },
+  { src: "/gallery/8.webp" },
+  { src: "/gallery/9.webp" },
+  { src: "/gallery/10.webp" },
+  { src: "/gallery/11.webp" },
 ];
 
 export default function Gallery() {
@@ -65,15 +71,15 @@ export default function Gallery() {
               <div className="rounded-xl overflow-hidden">
                 <Image
                   src={item.src}
-                  alt={item.label}
+                  alt={item.src}
                   width={500}
                   height={420}
                   className="w-full h-[520px] object-cover"
                 />
 
-                <div className="absolute bottom-4 left-4 bg-black/60 text-white text-sm px-3 py-1 rounded-full">
-                  {item.label}
-                </div>
+                {/* <div className="absolute bottom-4 left-4 bg-black/60 text-white text-sm px-3 py-1 rounded-full">
+                  {item?.label}
+                </div> */}
               </div>
             </div>
           ))}
