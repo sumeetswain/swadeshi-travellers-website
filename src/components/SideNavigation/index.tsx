@@ -71,7 +71,7 @@ export default function SideNavigation() {
 
         {/* WhatsApp Button */}
         <a
-          href="https://wa.me/919876543210"
+          href="https://wa.me/919705051052"
           target="_blank"
           rel="noopener noreferrer"
           className="p-1 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-lg transition-all duration-300 flex items-center justify-center"
