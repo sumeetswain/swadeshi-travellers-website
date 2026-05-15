@@ -20,11 +20,12 @@ import {
   Train,
 } from "lucide-react";
 import Link from "next/link";
-export default function BhutanPage() {
+import FinalCTA from "@/components/FinalCTA";
+export default function DestinationPage() {
   const trips = [
     {
       name: "coorg",
-      link: "/destinations/south-india/coorg",
+      link: "/destinations/south-india/coorg/from-bangalore",
       image: "/southindia/coorg.png",
     },
     {
@@ -34,7 +35,7 @@ export default function BhutanPage() {
     },
     {
       name: "kerala",
-      link: "/destinations/south-india/kerala",
+      link: "/destinations/south-india/kerala/from-bangalore",
       image: "/southindia/kerala.png",
     },
     {
@@ -343,82 +344,15 @@ South India contains more variety within a 10-hour bus or train radius than any 
       <WhyChooseUs />
       <Reviews />
       <FAQ faqs={faqs} />
-      <section className="w-full bg-brand/20 text-white py-16 flex flex-col items-center">
-        <div className="w-full max-w-6xl px-6">
-          {/* Title */}
-          <h2 className="text-xl md:text-2xl font-semibold text-brand mb-4">
-            Every South India Destination. Every Weekend. From ₹3,999.
-          </h2>
-
-          {/* Description */}
-          <p className="text-sm md:text-base text-black leading-relaxed max-w-4xl">
-            Karnataka&#39;s coffee estates. Tamil Nadu&#39;s coast. Kerala&#39;s
-            mountains and backwaters. Andhra Pradesh&#39;s Eastern Ghats. STC
-            runs group tours to all of them — every Thursday and Friday, from
-            Bangalore and Hyderabad, with train tickets included, trip captains
-            throughout, and 40+ years of combined destination knowledge behind
-            every itinerary.
-          </p>
-
-          {/* Divider */}
-          <div className="w-full border-t border-gray-700 my-12" />
-
-          {/* Buttons */}
-          <div className="flex flex-col md:flex-row gap-6">
-            <Link
-              href="/destinations/bangalore"
-              className="w-full md:w-1/2 text-center bg-brand text-black font-medium py-3 px-6 hover:opacity-90 transition"
-            >
-              🚌 View All Bangalore Packages →
-            </Link>
-
-            <Link
-              href="/destinations/hyderabad"
-              className="w-full md:w-1/2 text-center bg-brand text-black font-medium py-3 px-6 hover:opacity-90 transition"
-            >
-              🚂 View All Hyderabad Packages →
-            </Link>
-          </div>
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-black mt-5">
-            {/* Phone */}
-            <a
-              href="tel:+918886051052"
-              className="flex items-center gap-2 hover:underline"
-            >
-              <Phone size={16} />
-              +91 8886051052
-            </a>
-
-            <span className="hidden md:block text-gray-500">|</span>
-
-            {/* Instagram */}
-            <a
-              href="https://instagram.com/swadeshi_traveller"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:underline"
-            >
-              <Camera size={16} />
-              @swadeshi_traveller
-            </a>
-
-            <span className="hidden md:block text-gray-500">|</span>
-
-            {/* Website */}
-            <a
-              href="https://www.swadeshitraveller.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:underline"
-            >
-              <Globe size={16} />
-              www.swadeshitraveller.com
-            </a>
-          </div>
-        </div>
-      </section>
       <ContactForm />
-      <FinalCta />
+      <FinalCTA
+        title="Every South India Destination. Every Weekend. From ₹3,999."
+        description="Experience the diverse landscapes of South India with our carefully curated packages. From the coastal charm of Tamil Nadu to the spiritual heritage of Kerala and the vibrant culture of Andhra Pradesh, we have something for every traveler."
+        primaryLink="/destinations/bangalore"
+        primaryLabel="View All Bangalore Packages →"
+        secondaryLink="/destinations/hyderabad"
+        secondaryLabel="View All Hyderabad Packages →"
+      />
     </div>
   );
 }
