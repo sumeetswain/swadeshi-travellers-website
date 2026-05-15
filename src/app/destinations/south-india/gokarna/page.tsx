@@ -1,4 +1,9 @@
+import ContactForm from "@/components/ContactForm";
+import CuratedCategories from "@/components/CuratedCategories";
+import FAQ from "@/components/FAQs";
+import PackageCarousel from "@/components/PackageCarousel";
 import { PackageLoader } from "@/components/PackageLoader/PackageLoader";
+import Reviews from "@/components/Reviews";
 import Image from "next/image";
 
 import React from "react";
@@ -6,6 +11,19 @@ import React from "react";
 export const metadata = {
   title: "Hyderabad Tour Packages",
 };
+const trips = [
+  {
+    name: "From Bangalore",
+    link: "/destinations/south-india/gokarna/from-bangalore",
+    image: "/starting/blr.png",
+  },
+  {
+    name: "From Hyderabad",
+    link: "/destinations/south-india/gokarna/from-hyderabad",
+    image: "/packages/gokarnajog.png",
+  },
+];
+
 export default function DestinationPage() {
   return (
     <>
@@ -25,14 +43,10 @@ export default function DestinationPage() {
         <h1 className="text-center text-3xl md:text-4xl font-semibold mt-10 mb-8 text-brand">
           Gokarna Tour Packages
         </h1>
-        <PackageLoader
-          title="Backpacking Trips"
-          category="weekend-trips-hyderabad"
-        />
-        <PackageLoader
-          title="Weekend Trips"
-          category="backpacking-trips-hyderabad"
-        />
+        <CuratedCategories data={trips} />
+        <Reviews />
+        <FAQ />
+        <ContactForm />
         {/* Packages Section */}
       </div>
     </>
