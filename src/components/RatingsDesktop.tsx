@@ -27,7 +27,7 @@ export default function RatingsDesktop({
         ${
           isGlass
             ? "backdrop-blur-md bg-white/10 border border-white/20"
-            : "bg-[#4CCA51]"
+            : "bg-brand"
         }
       `}
     >
@@ -109,7 +109,7 @@ function Item({
   return (
     <div
       className={`flex items-center justify-center px-6 lg:px-10
-                  min-w-[220px] lg:min-w-[260px] ${className}`}
+                  min-w-55 lg:min-w-65 ${className}`}
     >
       {children}
     </div>

@@ -1,111 +1,90 @@
-"use client";
+import Link from "next/link";
+import { Phone, Camera, Globe } from "lucide-react";
 
-import { useState } from "react";
-import Image from "next/image";
-import CallbackPopup from "./CallbackPopup";
-
-export default function FinalCta() {
-  const [open, setOpen] = useState(false);
-
+const FinalCTA = ({
+  title,
+  description,
+  primaryLink,
+  primaryLabel,
+  secondaryLink,
+  secondaryLabel,
+  phone = "+91 8886051052",
+  instagram = "@swadeshi_traveller",
+  website = "https://www.swadeshitraveller.com",
+}) => {
   return (
-    <>
-      <section className="w-full flex justify-center py-12">
-        {/* Main Container */}
-        <div
-          className="
-            relative
-            w-[360px]
-            h-[565px]
-            md:w-full
-            md:max-w-[clamp(880px,86vw,1760px)]
-            md:aspect-[1240/540]
-            md:h-auto
-            rounded-3xl
-            overflow-hidden
-            bg-purple-50
-          "
-        >
-          {/* Mobile Image */}
-          <Image
-            src="/planning/plan2.png"
-            alt="Travel banner mobile"
-            fill
-            className="object-cover md:hidden"
-            priority
-          />
+    <section className="w-full bg-brand/20 text-white py-16 flex flex-col items-center">
+      <div className="w-full max-w-6xl px-6">
+        {/* Title */}
+        <h2 className="text-xl md:text-2xl font-semibold text-brand mb-4">
+          {title}
+        </h2>
 
-          {/* Desktop Image */}
-          <Image
-            src="/planning/8.png"
-            alt="Travel banner"
-            fill
-            className="object-cover hidden md:block"
-            priority
-          />
+        {/* Description */}
+        <p className="text-sm md:text-base text-black leading-relaxed max-w-4xl">
+          {description}
+        </p>
 
-          {/* Overlay Content */}
-          <div
-            className="
-              relative
-              h-full
-              flex
-              flex-col
-              items-center
-              justify-start
-              pt-9
-              text-center
+        {/* Divider */}
+        <div className="w-full border-t border-gray-700 my-12" />
 
-              md:flex-row
-              md:items-center
-              md:justify-start
-              md:pt-0
-              md:text-left
-              md:pl-[clamp(70px,7vw,142px)]
-            "
+        {/* Buttons */}
+        <div className="flex flex-col md:flex-row gap-6">
+          <Link
+            href={primaryLink}
+            className="w-full md:w-1/2 text-center bg-brand text-black font-medium py-3 px-6 hover:opacity-90 transition"
           >
-            {/* Text Container */}
-            <div
-              className="
-                max-w-[320px]
-                md:max-w-[clamp(384px,38vw,767px)]
-              "
-            >
-              {/* Heading */}
-              <p
-                className="
-                  text-[clamp(28px,6vw,40px)]
-                  md:text-[clamp(40px,4vw,80px)]
-                  font-semibold
-                  leading-tight
-                  text-brand
-                "
-              >
-                You pick the mood.
-                <br />
-                We map the route.
-              </p>
+            {primaryLabel}
+          </Link>
 
-              {/* Button */}
-              <div className="mt-6 md:mt-[clamp(28px,3vw,56px)]">
-                <button
-                  onClick={() => setOpen(true)}
-                  className="
-                    w-full
-                    sm:w-1/2
-                    bg-brand text-white font-semibold py-2 rounded-lg
-                    hover:opacity-90 transition
-                  "
-                >
-                  Request Callback
-                </button>
-              </div>
-            </div>
-          </div>
+          <Link
+            href={secondaryLink}
+            className="w-full md:w-1/2 text-center bg-brand text-black font-medium py-3 px-6 hover:opacity-90 transition"
+          >
+            {secondaryLabel}
+          </Link>
         </div>
-      </section>
 
-      {/* ✅ Use existing popup */}
-      {open && <CallbackPopup onClose={() => setOpen(false)} />}
-    </>
+        {/* Contact Row */}
+        <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-black mt-5">
+          {/* Phone */}
+          <a
+            href={`tel:${phone}`}
+            className="flex items-center gap-2 hover:underline"
+          >
+            <Phone size={16} />
+            {phone}
+          </a>
+
+          <span className="hidden md:block text-gray-500">|</span>
+
+          {/* Instagram */}
+          <a
+            href="https://instagram.com/swadeshi_traveller"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 hover:underline"
+          >
+            <Camera size={16} />
+            {instagram}
+          </a>
+
+          <span className="hidden md:block text-gray-500">|</span>
+
+          {/* Website */}
+          <a
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 hover:underline"
+          >
+            <Globe size={16} />
+            {website.replace("https://", "")}
+          </a>
+        </div>
+      </div>
+    </section>
   );
-}
+};
+
+export default FinalCTA;
