@@ -1,7 +1,19 @@
 import Link from "next/link";
 import { Phone, Camera, Globe } from "lucide-react";
 
-const FinalCTA = ({
+interface FinalCTAProps {
+  title: string;
+  description: string;
+  primaryLink: string;
+  primaryLabel: string;
+  secondaryLink: string;
+  secondaryLabel: string;
+  phone?: string;
+  instagram?: string;
+  website?: string;
+}
+
+const FinalCTA: React.FC<FinalCTAProps> = ({
   title,
   description,
   primaryLink,
