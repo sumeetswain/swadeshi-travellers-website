@@ -9,15 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        brand: "#22c55e",
+        brand: "#00B355",
       },
       keyframes: {
         borderDraw: {
           "0%": { borderColor: "transparent" },
-          "25%": { borderTopColor: "#22c55e" }, // green-500
-          "50%": { borderRightColor: "#22c55e" },
-          "75%": { borderBottomColor: "#22c55e" },
-          "100%": { borderLeftColor: "#22c55e" },
+          "25%": { borderTopColor: "#00B355" }, // brand
+          "50%": { borderRightColor: "#00B355" },
+          "75%": { borderBottomColor: "#00B355" },
+          "100%": { borderLeftColor: "#00B355" },
         },
       },
       animation: {
