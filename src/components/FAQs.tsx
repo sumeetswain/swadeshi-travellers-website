@@ -65,7 +65,7 @@ export default function FAQ({ faqs = [], title }: FAQProps) {
   };
 
   return (
-    <section className="font-inter w-full px-4 md:px-8 lg:px-16 py-16 bg-[#F9F9F9]">
+    <section className="font-inter w-full px-4 md:px-8 lg:px-16 py-16 bg-[#F9F9F9] my-5">
       <div className="max-w-4xl mx-auto">
         {/* HEADER */}
         <div className="mb-12">
