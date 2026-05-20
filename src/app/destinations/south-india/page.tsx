@@ -45,12 +45,12 @@ export default function DestinationPage() {
     },
     {
       name: "pondicherry",
-      link: "/destinations/south-india/pondicherry",
+      link: "/destinations/south-india/pondicherry/from-bangalore",
       image: "/southindia/pondicherry.png",
     },
     {
       name: "wayanad",
-      link: "/destinations/south-india/wayanad",
+      link: "/destinations/south-india/wayanad/from-bangalore",
       image: "/southindia/wayanad.png",
     },
   ];
