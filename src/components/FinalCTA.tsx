@@ -4,10 +4,17 @@ import { Phone, Camera, Globe } from "lucide-react";
 interface FinalCTAProps {
   title: string;
   description: string;
+
   primaryLink: string;
   primaryLabel: string;
+
   secondaryLink: string;
   secondaryLabel: string;
+
+  // Optional third package
+  thirdLink?: string;
+  thirdLabel?: string;
+
   phone?: string;
   instagram?: string;
   website?: string;
@@ -16,10 +23,16 @@ interface FinalCTAProps {
 const FinalCTA: React.FC<FinalCTAProps> = ({
   title,
   description,
+
   primaryLink,
   primaryLabel,
+
   secondaryLink,
   secondaryLabel,
+
+  thirdLink,
+  thirdLabel,
+
   phone = "+91 8886051052",
   instagram = "@swadeshi_traveller",
   website = "https://www.swadeshitraveller.com",
@@ -41,20 +54,38 @@ const FinalCTA: React.FC<FinalCTAProps> = ({
         <div className="w-full border-t border-gray-700 my-12" />
 
         {/* Buttons */}
-        <div className="flex flex-col md:flex-row gap-6">
+        <div
+          className={`grid gap-6 ${
+            thirdLink && thirdLabel
+              ? "grid-cols-1 md:grid-cols-3"
+              : "grid-cols-1 md:grid-cols-2"
+          }`}
+        >
+          {/* Primary */}
           <Link
             href={primaryLink}
-            className="w-full md:w-1/2 text-center bg-brand text-black font-medium py-3 px-6 hover:opacity-90 transition"
+            className="w-full text-center bg-brand text-black font-medium py-3 px-6 hover:opacity-90 transition"
           >
             {primaryLabel}
           </Link>
 
+          {/* Secondary */}
           <Link
             href={secondaryLink}
-            className="w-full md:w-1/2 text-center bg-brand text-black font-medium py-3 px-6 hover:opacity-90 transition"
+            className="w-full text-center bg-brand text-black font-medium py-3 px-6 hover:opacity-90 transition"
           >
             {secondaryLabel}
           </Link>
+
+          {/* Optional Third */}
+          {thirdLink && thirdLabel && (
+            <Link
+              href={thirdLink}
+              className="w-full text-center bg-brand text-black font-medium py-3 px-6 hover:opacity-90 transition"
+            >
+              {thirdLabel}
+            </Link>
+          )}
         </div>
 
         {/* Contact Row */}
