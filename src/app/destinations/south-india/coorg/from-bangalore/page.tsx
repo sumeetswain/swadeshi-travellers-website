@@ -576,6 +576,7 @@ export default function DestinationPage() {
             </div>
           </div>
         </div>
+        
       </div>
     </>
   );
