@@ -89,16 +89,11 @@ const Navbar = () => {
               </div>
             </div>
           ))} */}
-          <Link href="/destinations/pune" className=" text-white">
-            Pune
-          </Link>
-          <Link href="/destinations/chennai" className=" text-white">
-            Chennai
-          </Link>
-          <Link href="/destinations/hyderabad" className=" text-white">
+
+          <Link href="/destinations/from-hyderabad" className=" text-white">
             Hyderabad
           </Link>
-          <Link href="/destinations/bangalore" className=" text-white">
+          <Link href="/destinations/from-bangalore" className=" text-white">
             Bangalore
           </Link>
         </div>
