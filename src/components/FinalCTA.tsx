@@ -8,8 +8,9 @@ interface FinalCTAProps {
   primaryLink: string;
   primaryLabel: string;
 
-  secondaryLink: string;
-  secondaryLabel: string;
+  // Optional second package
+  secondaryLink?: string;
+  secondaryLabel?: string;
 
   // Optional third package
   thirdLink?: string;
@@ -37,6 +38,13 @@ const FinalCTA: React.FC<FinalCTAProps> = ({
   instagram = "@swadeshi_traveller",
   website = "https://www.swadeshitraveller.com",
 }) => {
+  // Count how many buttons exist
+  const buttonCount = [
+    true,
+    secondaryLink && secondaryLabel,
+    thirdLink && thirdLabel,
+  ].filter(Boolean).length;
+
   return (
     <section className="w-full bg-brand/20 text-white py-16 flex flex-col items-center">
       <div className="w-full max-w-6xl px-6">
@@ -56,9 +64,11 @@ const FinalCTA: React.FC<FinalCTAProps> = ({
         {/* Buttons */}
         <div
           className={`grid gap-6 ${
-            thirdLink && thirdLabel
+            buttonCount === 3
               ? "grid-cols-1 md:grid-cols-3"
-              : "grid-cols-1 md:grid-cols-2"
+              : buttonCount === 2
+                ? "grid-cols-1 md:grid-cols-2"
+                : "grid-cols-1"
           }`}
         >
           {/* Primary */}
@@ -69,13 +79,15 @@ const FinalCTA: React.FC<FinalCTAProps> = ({
             {primaryLabel}
           </Link>
 
-          {/* Secondary */}
-          <Link
-            href={secondaryLink}
-            className="w-full text-center bg-brand text-black font-medium py-3 px-6 hover:opacity-90 transition"
-          >
-            {secondaryLabel}
-          </Link>
+          {/* Optional Secondary */}
+          {secondaryLink && secondaryLabel && (
+            <Link
+              href={secondaryLink}
+              className="w-full text-center bg-brand text-black font-medium py-3 px-6 hover:opacity-90 transition"
+            >
+              {secondaryLabel}
+            </Link>
+          )}
 
           {/* Optional Third */}
           {thirdLink && thirdLabel && (
