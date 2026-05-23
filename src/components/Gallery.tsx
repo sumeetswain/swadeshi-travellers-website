@@ -66,7 +66,14 @@ export default function Gallery() {
           {images.map((item, index) => (
             <div
               key={index}
-              className="flex-[0_0_70%] md:flex-[0_0_30%] px-2.5 relative"
+              className="
+    flex-[0_0_88%]
+    sm:flex-[0_0_75%]
+    md:flex-[0_0_55%]
+    lg:flex-[0_0_38%]
+    xl:flex-[0_0_30%]
+    px-2.5 relative
+  "
             >
               <div className="rounded-xl overflow-hidden">
                 <Image
@@ -74,7 +81,7 @@ export default function Gallery() {
                   alt={item.src}
                   width={500}
                   height={420}
-                  className="w-full h-[520px] object-cover"
+                  className="w-full aspect-1/1 object-cover"
                 />
 
                 {/* <div className="absolute bottom-4 left-4 bg-black/60 text-white text-sm px-3 py-1 rounded-full">
