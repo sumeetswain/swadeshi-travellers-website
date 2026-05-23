@@ -38,61 +38,120 @@ export default function RatingsDesktop({
   );
 }
 function MarqueeContent({ isGlass = false }) {
+  const textColor = isGlass ? "text-white" : "text-white";
+
+  const mobileItems = [
+    {
+      icon: (
+        <div className="rounded-full bg-white p-1 flex">
+          <Image src="/google.png" width={14} height={14} alt="google" />
+        </div>
+      ),
+      text: (
+        <div className="flex items-center">
+          <span className="text-lg font-bold">5</span>
+          <FontAwesomeIcon icon={faStar} className="text-white h-4 px-1" />
+          <span>Rated</span>
+        </div>
+      ),
+    },
+    {
+      icon: (
+        <div className="rounded-full bg-white p-1 flex">
+          <FontAwesomeIcon icon={faRocket} className="text-brand h-4 w-4" />
+        </div>
+      ),
+      text: <span>StartupIndia Recognised</span>,
+    },
+    {
+      icon: <FontAwesomeIcon icon={faCheckCircle} className="text-white h-4" />,
+      text: <span>200+ Happy Travellers</span>,
+    },
+    {
+      icon: <FontAwesomeIcon icon={faMedal} className="text-white h-4" />,
+      text: <span>MSME Certified</span>,
+    },
+    {
+      icon: <FontAwesomeIcon icon={faBullseye} className="text-white h-4" />,
+      text: <span>ATOAI Certified</span>,
+    },
+  ];
+
   return (
-    <div
-      className={`
-        flex flex-wrap justify-center items-center gap-6 lg:gap-10
-        ${isGlass ? "text-white" : "text-white"}
-      `}
-    >
-      {/* Google */}
-      <Item>
-        <div className="flex items-center gap-2">
-          <div className="rounded-full bg-white p-1 flex">
-            <Image src="/google.png" width={14} height={14} alt="google" />
+    <>
+      {/* Mobile Marquee */}
+      <div className="flex lg:hidden overflow-hidden w-full">
+        <div className="flex animate-marqueeFast whitespace-nowrap">
+          {[...mobileItems, ...mobileItems].map((item, idx) => (
+            <div
+              key={idx}
+              className={`flex items-center gap-2 px-6 min-w-max ${textColor}`}
+            >
+              {item.icon}
+              {item.text}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Desktop Layout */}
+      <div
+        className={`
+          hidden lg:flex flex-wrap justify-center items-center
+          gap-6 xl:gap-8 2xl:gap-10
+          ${textColor}
+        `}
+      >
+        {/* Google */}
+        <Item>
+          <div className="flex items-center gap-2">
+            <div className="rounded-full bg-white p-1 flex">
+              <Image src="/google.png" width={14} height={14} alt="google" />
+            </div>
+
+            <div className="flex items-center">
+              <span className="text-lg font-bold">5</span>
+              <FontAwesomeIcon icon={faStar} className="text-white h-4 px-1" />
+              <span>Rated</span>
+            </div>
           </div>
-          <div className="flex items-center">
-            <span className="text-lg font-bold">5</span>
-            <FontAwesomeIcon icon={faStar} className="text-white h-4 px-1" />
-            <span>Rated</span>
+        </Item>
+
+        {/* Startup India */}
+        <Item className="hidden lg:flex">
+          <div className="flex items-center gap-2">
+            <div className="rounded-full bg-white p-1 flex">
+              <FontAwesomeIcon icon={faRocket} className="text-brand h-4 w-4" />
+            </div>
+            <span>StartupIndia Recognised</span>
           </div>
-        </div>
-      </Item>
+        </Item>
 
-      {/* Instagram */}
-      <Item className="hidden lg:flex">
-        <div className="flex items-center gap-2">
-          <div className="rounded-full bg-white p-1 flex">
-            <FontAwesomeIcon icon={faRocket} className="text-brand h-4 w-4" />
+        {/* Happy Travellers */}
+        <Item className="hidden xl:flex">
+          <div className="flex items-center gap-2">
+            <FontAwesomeIcon icon={faCheckCircle} className="text-white h-4" />
+            <span>200+ Happy Travellers</span>
           </div>
-          <span>StartupIndia Recognised</span>
-        </div>
-      </Item>
+        </Item>
 
-      {/* Happy Customers */}
-      <Item className="hidden lg:flex">
-        <div className="flex items-center gap-2">
-          <FontAwesomeIcon icon={faCheckCircle} className="text-white h-4" />
-          <span>200+ Happy Travellers</span>
-        </div>
-      </Item>
+        {/* MSME */}
+        <Item className="hidden 2xl:flex">
+          <div className="flex items-center gap-2">
+            <FontAwesomeIcon icon={faMedal} className="text-white h-4" />
+            <span>MSME Certified</span>
+          </div>
+        </Item>
 
-      {/* Pay Later */}
-      <Item className="hidden lg:flex">
-        <div className="flex items-center gap-2">
-          <FontAwesomeIcon icon={faMedal} className="text-white h-4" />
-          <span>MSME Certified</span>
-        </div>
-      </Item>
-
-      {/* Support */}
-      <Item>
-        <div className="flex items-center gap-2">
-          <FontAwesomeIcon icon={faBullseye} className="text-white h-4" />
-          <span>ATOAI Certified</span>
-        </div>
-      </Item>
-    </div>
+        {/* ATOAI */}
+        <Item>
+          <div className="flex items-center gap-2">
+            <FontAwesomeIcon icon={faBullseye} className="text-white h-4" />
+            <span>ATOAI Certified</span>
+          </div>
+        </Item>
+      </div>
+    </>
   );
 }
 
