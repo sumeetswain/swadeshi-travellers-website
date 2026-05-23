@@ -117,8 +117,7 @@ export default function Footer() {
           <p className="text-[#444] leading-relaxed">
             Swadeshi Travellers (A unit of Swadeshi Travellers Pvt. Ltd.)
             <br />
-            #4036, H.no 12, 2-252, Mallikarjuna Nagar Rd, opp. GSI TRAINING
-            INSTITUTE
+            H.no 12-2-252, Mallikarjuna Nagar Rd, opp. GSI TRAINING INSTITUTE
             <br />
             Bandlaguda, Nagole
             <br />
