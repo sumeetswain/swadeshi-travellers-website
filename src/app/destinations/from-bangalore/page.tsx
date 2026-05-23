@@ -449,13 +449,13 @@ export default function DestinationPage() {
           </h2>
 
           {/* Steps */}
-          <div className="grid grid-cols-1 md:grid-cols-3 border border-neutral-300 overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-3 border border-neutral-300 overflow-hidden">
             {/* Step 1 */}
             <div className="bg-[#dfe8d6] px-6 py-5 border-r border-neutral-300 text-center">
               <div className="flex items-center justify-center gap-3 mb-3">
                 <span className="text-[#1f4d7f] font-bold text-[30px]">1️⃣</span>
 
-                <h3 className="text-[#1f4d7f] font-bold text-[20px] md:text-[22px]">
+                <h3 className="text-[#1f4d7f] font-bold text-[20px] md:text-[18px] sm:text-[20px] md:text-[22px]">
                   Choose Your Destination
                 </h3>
               </div>
@@ -471,7 +471,7 @@ export default function DestinationPage() {
               <div className="flex items-center justify-center gap-3 mb-3">
                 <span className="text-[#1f4d7f] font-bold text-[30px]">2️⃣</span>
 
-                <h3 className="text-[#1f4d7f] font-bold text-[20px] md:text-[22px]">
+                <h3 className="text-[#1f4d7f] font-bold text-[20px] md:text-[18px] sm:text-[20px] md:text-[22px]">
                   Book Your Seat
                 </h3>
               </div>
@@ -487,7 +487,7 @@ export default function DestinationPage() {
               <div className="flex items-center justify-center gap-3 mb-3">
                 <span className="text-[#1f4d7f] font-bold text-[30px]">3️⃣</span>
 
-                <h3 className="text-[#1f4d7f] font-bold text-[20px] md:text-[22px]">
+                <h3 className="text-[#1f4d7f] font-bold text-[20px] md:text-[18px] sm:text-[20px] md:text-[22px]">
                   Show Up & Go
                 </h3>
               </div>
@@ -504,11 +504,11 @@ export default function DestinationPage() {
           <div className="max-w-350 mx-auto">
             {/* Heading */}
             <div className="mb-10">
-              <h2 className="text-[#2d67a3] text-[42px] font-bold leading-tight">
+              <h2 className="text-[#2d67a3] text-[30px] sm:text-[36px] md:text-[42px] font-bold leading-tight">
                 South India Tour Packages from Bangalore
               </h2>
 
-              <p className="text-[22px] text-black leading-[1.2] mt-3 max-w-[1350px]">
+              <p className="text-[18px] sm:text-[20px] md:text-[22px] text-black leading-[1.2] mt-3 max-w-[1350px]">
                 13+ weekly departures covering Karnataka, Tamil Nadu, Kerala,
                 and Goa. Bus packages from Marathahalli / Silk Board / Majestic
                 every Friday night. Train packages from KSR Bengaluru every
@@ -537,7 +537,7 @@ export default function DestinationPage() {
                       <span className="text-[24px]">{pkg.emoji}</span>
 
                       <div>
-                        <h3 className="text-[#1f4d7f] text-[22px] md:text-[26px] font-bold leading-tight">
+                        <h3 className="text-[#1f4d7f] text-[18px] sm:text-[20px] md:text-[22px] md:text-[26px] font-bold leading-tight">
                           {pkg.title}
                         </h3>
 
@@ -552,7 +552,7 @@ export default function DestinationPage() {
                       className={`grid grid-cols-2 md:grid-cols-5 gap-y-5 mt-6 border-b ${pkg.border} pb-6`}
                     >
                       <div>
-                        <div className="text-[#d40000] font-bold text-[22px]">
+                        <div className="text-[#d40000] font-bold text-[18px] sm:text-[20px] md:text-[22px]">
                           {pkg.price}
                         </div>
 
@@ -611,7 +611,7 @@ export default function DestinationPage() {
                     <div className="mt-8">
                       <Link
                         href={pkg.link}
-                        className={`inline-flex items-center justify-center ${pkg.buttonBg} transition-colors text-white font-bold text-[22px] px-16 py-3 min-w-90`}
+                        className={`inline-flex items-center justify-center ${pkg.buttonBg} transition-colors text-white font-bold text-[18px] sm:text-[20px] md:text-[22px] px-16 py-3 sm:w-auto sm:min-w-65 md:min-w-90`}
                       >
                         {pkg.button}
                       </Link>
@@ -628,16 +628,16 @@ export default function DestinationPage() {
           <div className="max-w-350 mx-auto">
             {/* Heading */}
             <div className="mb-10">
-              <h2 className="text-[#2d67a3] text-[42px] font-bold leading-tight">
+              <h2 className="text-[#2d67a3] text-[30px] sm:text-[36px] md:text-[42px] font-bold leading-tight">
                 West India — Coming Soon from Bangalore
               </h2>
 
-              <p className="text-[22px] text-black leading-[1.2] mt-3 max-w-[1350px]">
+              <p className="text-[18px] sm:text-[20px] md:text-[22px] text-black leading-[1.2] mt-3 max-w-[1350px]">
                 Maharashtra, Goa, and Rajasthan packages from Bangalore are in
                 development. Weekly train departures planned.
               </p>
 
-              <p className="text-[22px] text-black leading-[1.2]">
+              <p className="text-[18px] sm:text-[20px] md:text-[22px] text-black leading-[1.2]">
                 Leave your details to be notified when West India packages go
                 live.
               </p>
@@ -669,7 +669,7 @@ export default function DestinationPage() {
 
                     {/* Button */}
                     <div className="mt-8">
-                      <button className="bg-[#b8b8b8] hover:bg-[#9f9f9f] transition-colors text-white font-bold text-[22px] px-16 py-3 min-w-90">
+                      <button className="bg-[#b8b8b8] hover:bg-[#9f9f9f] transition-colors text-white font-bold text-[18px] sm:text-[20px] md:text-[22px] px-16 py-3 sm:w-auto sm:min-w-65 md:min-w-90">
                         {pkg.button}
                       </button>
                     </div>
@@ -684,11 +684,11 @@ export default function DestinationPage() {
           <div className="max-w-350 mx-auto">
             {/* Heading */}
             <div className="mb-10">
-              <h2 className="text-[#2d67a3] text-[42px] font-bold leading-tight">
+              <h2 className="text-[#2d67a3] text-[30px] sm:text-[36px] md:text-[42px] font-bold leading-tight">
                 East India — Coming Soon from Bangalore
               </h2>
 
-              <p className="text-[22px] text-black leading-[1.2] mt-3 max-w-337.5">
+              <p className="text-[18px] sm:text-[20px] md:text-[22px] text-black leading-[1.2] mt-3 max-w-337.5">
                 Andaman Islands, Odisha, and West Bengal circuits from Bangalore
                 are planned. Andaman in particular has very high search volume
                 from Bangalore
@@ -721,7 +721,7 @@ export default function DestinationPage() {
 
                     {/* Button */}
                     <div className="mt-8">
-                      <button className="bg-[#b8b8b8] hover:bg-[#9f9f9f] transition-colors text-white font-bold text-[22px] px-16 py-3 min-w-90">
+                      <button className="bg-[#b8b8b8] hover:bg-[#9f9f9f] transition-colors text-white font-bold text-[18px] sm:text-[20px] md:text-[22px] px-16 py-3 sm:w-auto sm:min-w-65 md:min-w-90">
                         {pkg.button}
                       </button>
                     </div>
@@ -736,11 +736,11 @@ export default function DestinationPage() {
           <div className="max-w-350 mx-auto">
             {/* Heading */}
             <div className="mb-10">
-              <h2 className="text-[#2d67a3] text-[42px] font-bold leading-tight">
+              <h2 className="text-[#2d67a3] text-[30px] sm:text-[36px] md:text-[42px] font-bold leading-tight">
                 North India — Coming Soon from Bangalore
               </h2>
 
-              <p className="text-[22px] text-black leading-[1.2] mt-3 max-w-337.5">
+              <p className="text-[18px] sm:text-[20px] md:text-[22px] text-black leading-[1.2] mt-3 max-w-337.5">
                 Rishikesh, Manali, Rajasthan, and Kashmir packages from
                 Bangalore are in development. All will follow the same weekly
                 Thu/Fri departure format with train tickets included
@@ -773,7 +773,7 @@ export default function DestinationPage() {
 
                     {/* Button */}
                     <div className="mt-8">
-                      <button className="bg-[#b8b8b8] hover:bg-[#9f9f9f] transition-colors text-white font-bold text-[22px] px-16 py-3 min-w-90">
+                      <button className="bg-[#b8b8b8] hover:bg-[#9f9f9f] transition-colors text-white font-bold text-[18px] sm:text-[20px] md:text-[22px] px-16 py-3 sm:w-auto sm:min-w-65 md:min-w-90">
                         {pkg.button}
                       </button>
                     </div>
@@ -785,13 +785,13 @@ export default function DestinationPage() {
         </section>
         {/* North East India Packages */}
         <section className="w-full bg-[#efefef] py-10 px-2 md:px-4">
-          <div className="space-y-6">
+          <div className="max-w-350 mx-auto">
             <div className="mb-10">
-              <h2 className="text-[#2d67a3] text-[42px] font-bold leading-tight">
+              <h2 className="text-[#2d67a3] text-[30px] sm:text-[36px] md:text-[42px] font-bold leading-tight">
                 North East India — Meghalaya & Beyond
               </h2>
 
-              <p className="text-[22px] text-black leading-[1.2] mt-3 max-w-337.5">
+              <p className="text-[18px] sm:text-[20px] md:text-[22px] text-black leading-[1.2] mt-3 max-w-337.5">
                 STC’s Meghalaya package from Bangalore is confirmed and in
                 development. Additional Northeast circuits (Assam, Sikkim,
                 Arunachal Pradesh) are planned
@@ -832,7 +832,7 @@ export default function DestinationPage() {
                       {/* Button */}
                       <div className="mt-8">
                         <button
-                          className={`${pkg.buttonBg} transition-colors text-white font-bold text-[22px] px-12 py-3 min-w-[360px]`}
+                          className={`${pkg.buttonBg} transition-colors text-white font-bold text-[18px] sm:text-[20px] md:text-[22px] px-8 sm:px-12 md:px-16 py-3 w-full sm:w-auto sm:min-w-65 md:min-w-90`}
                         >
                           {pkg.button}
                         </button>
