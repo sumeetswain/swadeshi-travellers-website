@@ -495,98 +495,105 @@ export default function DestinationPage() {
           content="Every package on this page departs from Hyderabad by train or bus on Thursday or Friday evening — and returns you to Hyderabad by Sunday night. Tickets, vehicle, accommodation, and a trip captain are all included in the price. You choose the destination. We handle everything else."
         />
       </div>
-      <section className="w-full overflow-x-auto bg-[#efefef] p-4 md:p-6">
-        <div className="min-w-[1050px]">
-          <h2 className="text-3xl font-bold text-[#2d6bb0] mb-5">
-            All 13 Packages from Hyderabad — Quick View
-          </h2>
+      <section className="w-full bg-[#efefef] p-3 md:p-6">
+        <h2 className="text-2xl md:text-3xl font-bold text-[#2d6bb0] mb-5">
+          All 13 Packages from Hyderabad — Quick View
+        </h2>
+        {/* Mobile Scroll Wrapper */}
+        <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-[#1f4d7d] scrollbar-track-[#d9d9d9] rounded-lg">
+          <div className="min-w-262">
+            <table className="w-full border-collapse border border-[#bfbfbf] bg-white">
+              <thead>
+                <tr className="bg-[#1f4d7d] text-white">
+                  <th className="border border-[#bfbfbf] px-3 md:px-4 py-3 text-left text-[15px] md:text-[18px] font-bold whitespace-nowrap">
+                    Package
+                  </th>
 
-          <table className="w-full border-collapse border border-[#bfbfbf] bg-white">
-            <thead>
-              <tr className="bg-[#1f4d7d] text-white">
-                <th className="border border-[#bfbfbf] px-4 py-3 text-left text-[18px] font-bold">
-                  Package
-                </th>
-                <th className="border border-[#bfbfbf] px-4 py-3 text-left text-[18px] font-bold">
-                  Price
-                </th>
-                <th className="border border-[#bfbfbf] px-4 py-3 text-left text-[18px] font-bold">
-                  Nights
-                </th>
-                <th className="border border-[#bfbfbf] px-4 py-3 text-left text-[18px] font-bold">
-                  Departure Station
-                </th>
-                <th className="border border-[#bfbfbf] px-4 py-3 text-left text-[18px] font-bold">
-                  Time · Mode
-                </th>
-                <th className="border border-[#bfbfbf] px-4 py-3 text-left text-[18px] font-bold">
-                  Days Available
-                </th>
-              </tr>
-            </thead>
+                  <th className="border border-[#bfbfbf] px-3 md:px-4 py-3 text-left text-[15px] md:text-[18px] font-bold whitespace-nowrap">
+                    Price
+                  </th>
 
-            <tbody>
-              {packages.map((section, index) => (
-                <React.Fragment key={index}>
-                  <tr>
-                    <td
-                      colSpan={6}
-                      className={`${section.color} text-white font-semibold px-4 py-2 text-lg border border-[#bfbfbf]`}
-                    >
-                      {section.region}
-                    </td>
-                  </tr>
+                  <th className="border border-[#bfbfbf] px-3 md:px-4 py-3 text-left text-[15px] md:text-[18px] font-bold whitespace-nowrap">
+                    Nights
+                  </th>
 
-                  {section.rows.map((item, idx) => (
-                    <tr
-                      key={idx}
-                      className="bg-[#f5f5f5] hover:bg-[#eeeeee] transition-colors"
-                    >
-                      <td className="border border-[#bfbfbf] px-4 py-3 text-[17px] font-medium">
-                        {item.package}
-                      </td>
+                  <th className="border border-[#bfbfbf] px-3 md:px-4 py-3 text-left text-[15px] md:text-[18px] font-bold whitespace-nowrap">
+                    Departure Station
+                  </th>
 
-                      <td className="border border-[#bfbfbf] px-4 py-3 text-[17px] font-bold text-red-600">
-                        {item.price}
-                      </td>
+                  <th className="border border-[#bfbfbf] px-3 md:px-4 py-3 text-left text-[15px] md:text-[18px] font-bold whitespace-nowrap">
+                    Time · Mode
+                  </th>
 
-                      <td className="border border-[#bfbfbf] px-4 py-3 text-[17px]">
-                        {item.nights}
-                      </td>
+                  <th className="border border-[#bfbfbf] px-3 md:px-4 py-3 text-left text-[15px] md:text-[18px] font-bold whitespace-nowrap">
+                    Days Available
+                  </th>
+                </tr>
+              </thead>
 
+              <tbody>
+                {packages.map((section, index) => (
+                  <React.Fragment key={index}>
+                    <tr>
                       <td
-                        className={`border border-[#bfbfbf] px-4 py-3 text-[17px] ${
-                          item.highlight
-                            ? "bg-red-100 text-red-700 font-semibold"
-                            : ""
-                        }`}
+                        colSpan={6}
+                        className={`${section.color} text-white font-semibold px-4 py-2 text-base md:text-lg border border-[#bfbfbf]`}
                       >
-                        {item.station}
-                      </td>
-
-                      <td
-                        className={`border border-[#bfbfbf] px-4 py-3 text-[17px] ${
-                          item.highlight ? "bg-red-100 text-red-700" : ""
-                        }`}
-                      >
-                        {item.time}
-                      </td>
-
-                      <td
-                        className={`border border-[#bfbfbf] px-4 py-3 text-[17px] ${
-                          item.highlightDays
-                            ? "bg-red-100 text-red-700 font-bold"
-                            : ""
-                        }`}
-                      >
-                        {item.days}
+                        {section.region}
                       </td>
                     </tr>
-                  ))}
-                </React.Fragment>
-              ))}
-            </tbody>
-          </table>
+
+                    {section.rows.map((item, idx) => (
+                      <tr
+                        key={idx}
+                        className="bg-[#f5f5f5] hover:bg-[#eeeeee] transition-colors"
+                      >
+                        <td className="border border-[#bfbfbf] px-3 md:px-4 py-3 text-[14px] md:text-[17px] font-medium whitespace-nowrap">
+                          {item.package}
+                        </td>
+
+                        <td className="border border-[#bfbfbf] px-3 md:px-4 py-3 text-[14px] md:text-[17px] font-bold text-red-600 whitespace-nowrap">
+                          {item.price}
+                        </td>
+
+                        <td className="border border-[#bfbfbf] px-3 md:px-4 py-3 text-[14px] md:text-[17px] whitespace-nowrap">
+                          {item.nights}
+                        </td>
+
+                        <td
+                          className={`border border-[#bfbfbf] px-3 md:px-4 py-3 text-[14px] md:text-[17px] whitespace-nowrap ${
+                            item.highlight
+                              ? "bg-red-100 text-red-700 font-semibold"
+                              : ""
+                          }`}
+                        >
+                          {item.station}
+                        </td>
+
+                        <td
+                          className={`border border-[#bfbfbf] px-3 md:px-4 py-3 text-[14px] md:text-[17px] whitespace-nowrap ${
+                            item.highlight ? "bg-red-100 text-red-700" : ""
+                          }`}
+                        >
+                          {item.time}
+                        </td>
+
+                        <td
+                          className={`border border-[#bfbfbf] px-3 md:px-4 py-3 text-[14px] md:text-[17px] whitespace-nowrap ${
+                            item.highlightDays
+                              ? "bg-red-100 text-red-700 font-bold"
+                              : ""
+                          }`}
+                        >
+                          {item.days}
+                        </td>
+                      </tr>
+                    ))}
+                  </React.Fragment>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
       <section className="w-full bg-[#efefef] py-10 px-4">
@@ -665,35 +672,35 @@ export default function DestinationPage() {
           ))}
         </div>
       </section>
-      <div className="w-[90%] md:w-[85%] mx-auto my-12">
+      <div className="w-[92%] md:w-[85%] mx-auto my-10 md:my-12">
         {/* Heading */}
-        <div className="mb-12">
-          <h2 className="text-[34px] font-bold text-[#2d67a3] leading-tight">
+        <div className="mb-8 md:mb-12">
+          <h2 className="text-[28px] md:text-[34px] font-bold text-[#2d67a3] leading-tight">
             Which Station Do You Depart From?
           </h2>
 
-          <p className="text-[22px] text-black mt-2 leading-relaxed max-w-[1200px]">
+          <p className="text-[17px] md:text-[22px] text-black mt-3 leading-relaxed max-w-300">
             STC packages from Hyderabad depart from two different stations, at
             three different times. Always confirm your exact station and time
             when you book.
           </p>
         </div>
 
-        {/* Table */}
-        <div className="grid grid-cols-1 md:grid-cols-3 border border-neutral-300 overflow-hidden items-stretch">
+        {/* Responsive Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-3  overflow-hidden rounded-xl">
           {/* Column 1 */}
-          <div className="border-r border-neutral-300 flex flex-col h-full">
+          <div className="border-b md:border-b-0 md:border-r border-neutral-300 flex flex-col">
             {/* Header */}
-            <div className="bg-[#c70000] text-white px-5 py-4 font-bold text-[22px]">
-              Nampally Railway Station &nbsp; · &nbsp; 3:30 PM
+            <div className="bg-[#c70000] text-white px-4 md:px-5 py-4 font-bold text-[18px] md:text-[22px] leading-snug">
+              Nampally Railway Station · 3:30 PM
             </div>
 
             {/* Body */}
-            <div className="bg-[#f4d6d6] p-5 text-[22px] leading-[1.5] flex-1">
+            <div className="bg-[#f4d6d6] p-4 md:p-5 text-[16px] md:text-[22px] leading-[1.6]">
               <p>Pkg 1 — Gokarna + Jog Falls (Bus)</p>
               <p>Pkg 2 — Gokarna + Dandeli (Bus)</p>
 
-              <div className="mt-8">
+              <div className="mt-5 md:mt-8">
                 <p className="font-semibold">Also:</p>
                 <p>Pkg 13 — Lonavala (Train) · 7:00 PM</p>
               </div>
@@ -701,14 +708,14 @@ export default function DestinationPage() {
           </div>
 
           {/* Column 2 */}
-          <div className="border-r border-neutral-300 flex flex-col h-full">
+          <div className="border-b md:border-b-0 md:border-r border-neutral-300 flex flex-col">
             {/* Header */}
-            <div className="bg-[#1f4f7e] text-white px-5 py-4 font-bold text-[22px] leading-snug">
-              Kacheguda Railway Station &nbsp; · &nbsp; 7:00 PM / 7:05 PM
+            <div className="bg-[#1f4f7e] text-white px-4 md:px-5 py-4 font-bold text-[18px] md:text-[22px] leading-snug">
+              Kacheguda Railway Station · 7:00 PM / 7:05 PM
             </div>
 
             {/* Body */}
-            <div className="bg-[#e6ebf1] p-5 text-[22px] leading-[1.5] flex-1">
+            <div className="bg-[#e6ebf1] p-4 md:p-5 text-[16px] md:text-[22px] leading-[1.6]">
               <p>Pkg 3 — Gokarna + Udupi (Train) 7PM</p>
               <p>Pkg 4 — Gokarna + Hampi (Train) 7PM</p>
               <p>Pkg 7 — Ooty & Coonoor (Train) 7PM</p>
@@ -724,27 +731,27 @@ export default function DestinationPage() {
           </div>
 
           {/* Column 3 */}
-          <div className="flex flex-col h-full">
+          <div className="flex flex-col">
             {/* Header */}
-            <div className="bg-[#8c8c8c] text-white px-5 py-4 font-bold text-[22px]">
-              TBC Station &nbsp; · &nbsp; 5:00 PM / 5:30 PM
+            <div className="bg-[#8c8c8c] text-white px-4 md:px-5 py-4 font-bold text-[18px] md:text-[22px] leading-snug">
+              TBC Station · 5:00 PM / 5:30 PM
             </div>
 
             {/* Body */}
-            <div className="bg-[#f3f3f3] p-5 text-[22px] leading-[1.5] flex-1">
+            <div className="bg-[#f3f3f3] p-4 md:p-5 text-[16px] md:text-[22px] leading-[1.6]">
               <p className="text-[#d40000]">
-                Pkg 5 — Pondicherry + Mahabalipuram (Train) 5PM &nbsp; [CONFIRM]
+                Pkg 5 — Pondicherry + Mahabalipuram (Train) 5PM [CONFIRM]
               </p>
 
               <p className="text-[#d40000] mt-2">
-                Pkg 6 — Arunachalam + Pondicherry (Train) 5PM &nbsp; [CONFIRM]
+                Pkg 6 — Arunachalam + Pondicherry (Train) 5PM [CONFIRM]
               </p>
 
               <p className="text-[#d40000] mt-2">
-                Pkg 11 — Araku 4-in-1 (Train) 5:30PM &nbsp; [CONFIRM]
+                Pkg 11 — Araku 4-in-1 (Train) 5:30PM [CONFIRM]
               </p>
 
-              <p className="text-[#8c8c8c] italic mt-10 leading-relaxed">
+              <p className="text-[#8c8c8c] italic mt-6 md:mt-10 leading-relaxed">
                 These 3 stations pending confirmation. Our team will confirm at
                 booking.
               </p>
@@ -752,22 +759,22 @@ export default function DestinationPage() {
           </div>
         </div>
       </div>
-      <div className="w-[80%] mx-auto my-10">
+      <div className="w-[92%] md:w-[80%] mx-auto my-10">
         {/* Heading */}
-        <h2 className="text-[#2d67a3] text-[42px] font-bold mb-10 leading-tight">
+        <h2 className="text-[#2d67a3] text-[28px] md:text-[42px] font-bold mb-8 md:mb-10 leading-tight">
           What Is Included in Every Package from Hyderabad
         </h2>
 
-        {/* Table */}
-        <div className="grid grid-cols-1 md:grid-cols-2 border border-neutral-300 overflow-hidden">
+        {/* Responsive Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 border border-neutral-300 overflow-hidden rounded-xl">
           {/* Included */}
-          <div className="bg-[#dde8d5] p-8 border-r border-neutral-300">
-            <div className="flex items-center gap-4 text-[#1f4d7f] font-bold text-[22px] mb-8">
-              <span className="text-[30px]">✅</span>
+          <div className="bg-[#dde8d5] p-5 md:p-8 border-b md:border-b-0 md:border-r border-neutral-300">
+            <div className="flex items-center gap-3 md:gap-4 text-[#1f4d7f] font-bold text-[18px] md:text-[22px] mb-6 md:mb-8">
+              <span className="text-[24px] md:text-[30px]">✅</span>
               <h3>Always Included</h3>
             </div>
 
-            <ul className="list-disc pl-10 space-y-3 text-[22px] leading-[1.15] text-black">
+            <ul className="list-disc pl-5 md:pl-10 space-y-3 text-[16px] md:text-[22px] leading-[1.5] text-black">
               <li>
                 Train or bus tickets — Hyderabad to destination and return
               </li>
@@ -785,13 +792,13 @@ export default function DestinationPage() {
           </div>
 
           {/* Not Included */}
-          <div className="bg-[#f3f3f3] p-8">
-            <div className="flex items-center gap-4 text-neutral-500 font-bold text-[22px] mb-8">
-              <span className="text-[30px]">❌</span>
+          <div className="bg-[#f3f3f3] p-5 md:p-8">
+            <div className="flex items-center gap-3 md:gap-4 text-neutral-500 font-bold text-[18px] md:text-[22px] mb-6 md:mb-8">
+              <span className="text-[24px] md:text-[30px]">❌</span>
               <h3>Not Included</h3>
             </div>
 
-            <ul className="list-disc pl-10 space-y-3 text-[22px] leading-[1.15] text-neutral-500">
+            <ul className="list-disc pl-5 md:pl-10 space-y-3 text-[16px] md:text-[22px] leading-[1.5] text-neutral-500">
               <li>Food and meals</li>
 
               <li>Entry tickets to monuments and attractions</li>
