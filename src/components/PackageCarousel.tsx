@@ -44,7 +44,10 @@ export default function HorizontalImageCarousel({
       )}
 
       {/* Carousel */}
-      <div className="overflow-x-auto" style={{ width: containerWidth }}>
+      <div
+        className="overflow-x-auto custom-scrollbar"
+        style={{ width: containerWidth }}
+      >
         <div className="flex min-w-max pb-4" style={{ gap: `${gap}px` }}>
           {items.map((item, index) => (
             <a
