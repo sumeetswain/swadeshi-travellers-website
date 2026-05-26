@@ -66,34 +66,40 @@ export default function HorizontalImageCarousel({
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-80 group-hover:opacity-100 transition duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/40 to-transparent opacity-80 group-hover:opacity-100 transition duration-300" />
 
-                <div className="absolute inset-0 flex flex-col justify-end p-4 text-white translate-y-6 group-hover:translate-y-0 transition duration-300">
-                  <h3 className="text-lg font-semibold">{item.title}</h3>
+                <div className="absolute inset-0 p-4 text-white">
+                  {/* DEFAULT CONTENT */}
+                  <div className="absolute bottom-4 left-4 right-4 transition-all duration-300 group-hover:opacity-0 group-hover:translate-y-2">
+                    <h3 className="text-lg font-semibold">{item.title}</h3>
 
-                  {item.price && (
-                    <p className="text-pink-300 font-bold text-xl mt-1">
-                      {item.price}
-                    </p>
-                  )}
+                    {item.price && (
+                      <p className="text-pink-300 font-bold text-xl mt-1">
+                        {item.price}
+                      </p>
+                    )}
 
-                  {item.subtitle && (
-                    <p className="text-sm text-gray-200 mt-1">
-                      {item.subtitle}
-                    </p>
-                  )}
+                    {item.subtitle && (
+                      <p className="text-sm text-gray-200 mt-1">
+                        {item.subtitle}
+                      </p>
+                    )}
+                  </div>
 
-                  {item.features && (
-                    <ul className="mt-2 space-y-1 text-xs text-gray-200 opacity-0 group-hover:opacity-100 transition duration-300">
-                      {item.features.map((f, i) => (
-                        <li key={i}>✦ {f}</li>
-                      ))}
-                    </ul>
-                  )}
+                  {/* HOVER CONTENT */}
+                  <div className="absolute inset-x-4 bottom-4 opacity-0 translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                    {item.features && (
+                      <ul className="space-y-1 text-xs text-gray-200">
+                        {item.features.map((f, i) => (
+                          <li key={i}>✦ {f}</li>
+                        ))}
+                      </ul>
+                    )}
 
-                  <button className="mt-3 bg-green-400 text-black text-sm font-medium py-2 rounded-md opacity-0 group-hover:opacity-100 transition duration-300">
-                    View Packages →
-                  </button>
+                    <button className="mt-3 bg-green-400 text-black text-sm font-medium py-2 px-4 rounded-md">
+                      View Packages →
+                    </button>
+                  </div>
                 </div>
               </div>
             </a>
