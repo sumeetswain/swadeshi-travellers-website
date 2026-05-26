@@ -409,7 +409,12 @@ const stcFeatures = [
   },
 ];
 export const metadata = {
-  title: "Swadeshi",
+  title:
+    "Group Tour Packages from Bangalore & Hyderabad | STC — ₹3,999 Onwards | Ooty, Coorg, Wayanad, Kerala & More",
+  description:
+    "Book group tour packages from Bangalore & Hyderabad from ₹3,999. Weekly departures every Thu & Fri. Ooty, Coorg, Wayanad, Kerala, Gokarna, Pondicherry, Hampi, Araku & Lonavala. Train tickets included. MSME & ATOAI Certified. 4.8 Google Rating.",
+  keywords:
+    "group tour packages from bangalore — brand-level homepage KW covering both city portfolios travel packages from bangalore · group tours from hyderabad · weekend tour packages from bangalore · ooty tour package from bangalore (4,400/mo) · coorg tour package from bangalore (1,600/mo) · kerala packages from bangalore (1,900/mo) · wayanad packages from bangalore for 3 days · gokarna tour package from hyderabad",
 };
 
 export default function HomePage() {
