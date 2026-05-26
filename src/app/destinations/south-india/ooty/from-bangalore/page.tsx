@@ -97,7 +97,7 @@ export default function DestinationPage() {
           title="3 Packages. UNESCO Nilgiri Toy Train. Tea Gardens, Misty Hills & Isha Foundation. From ₹5,399."
           content="There is no hill station in South India that does to a Bangalore weekend what Ooty does. The mist arrives before the bus does. The tea gardens still hold the morning light when the town is waking up. The Nilgiri Mountain Railway toy train — 16 tunnels, 31 bridges, 46 kilometres of Western Ghats mountain rail — is one of the great short train journeys on the subcontinent. STC runs three group tour packages from Bangalore every Thursday and Friday: a 2-day bus weekend from ₹5,399 with pickup at Marathahalli, Silk Board, and Majestic; a 3-day nature and heritage train tour via Bundipuri Forest, the confirmed toy train, and Mysore Palace; and a 3-day spiritual circuit starting with the Adiyogi Shiva statue and Evening Aarti at Isha Foundation."
         />
-        <div className="w-[30%] mx-auto my-5">
+        <div className="w-[90%] lg:w-[30%] mx-auto my-5">
           <Link
             href="tel:+918886051052"
             className="flex items-center gap-2 hover:underline bg-brand px-5 py-3 w-full text-white text-center justify-center rounded-2xl"
@@ -107,19 +107,19 @@ export default function DestinationPage() {
           </Link>
         </div>
         {/* Package 1 */}
-        <div className="w-full max-w-6xl border border-[#5e6b5f] bg-[#dfe8d7] mx-auto grid grid-cols-1 md:grid-cols-[1fr_390px] overflow-hidden">
+        <div className="w-full max-w-6xl border border-[#5e6b5f] bg-[#dfe8d7] mx-auto grid grid-cols-1 md:grid-cols-[1fr_390px] overflow-hidden my-10 md:my-20">
           {/* LEFT SIDE */}
-          <div className="border-b md:border-b-0 md:border-r border-[#5e6b5f] p-5 md:p-7 bg-[#dce8d1]">
-            <h2 className="text-[#234f82] text-[18px] font-bold mb-2">
+          <div className="border-b md:border-b-0 md:border-r border-[#5e6b5f] p-4 sm:p-5 md:p-7 bg-[#dce8d1]">
+            <h2 className="text-[#234f82] text-[20px] md:text-[18px] font-bold mb-2 leading-snug">
               🚌 2-Day Ooty Coonoor Weekend Bus Tour
             </h2>
 
-            <p className="text-[#5d5d5d] italic leading-[1.6] mb-5 text-[15px]">
+            <p className="text-[#5d5d5d] italic leading-[1.6] mb-5 text-[14px] md:text-[15px]">
               Dolphin&apos;s Nose, Toy Train, Ooty Lake, Tea Factory, Chocolate
               Factory, Pykara Waterfalls. Bus from Bangalore.
             </p>
 
-            <ul className="space-y-2 text-[15px] leading-[1.6] text-[#1d1d1d] list-disc pl-6">
+            <ul className="space-y-2 text-[14px] md:text-[15px] leading-[1.7] text-[#1d1d1d] list-disc pl-5 md:pl-6">
               <li>
                 Dolphin&apos;s Nose Viewpoint — Coonoor&apos;s dramatic valley
                 panorama
@@ -139,66 +139,69 @@ export default function DestinationPage() {
               </li>
             </ul>
 
-            <div className="mt-6 font-semibold text-[#d44a4a] leading-[1.6] text-[15px]">
+            <div className="mt-5 md:mt-6 font-semibold text-[#d44a4a] leading-[1.6] text-[14px] md:text-[15px]">
               ✦ Unique: 3 bus pickup points across Bangalore. Toy train +
               Chocolate Factory. No KSR needed.
             </div>
 
-            <div className="mt-5 text-[14px] text-[#555] leading-[1.5]">
+            <div className="mt-5 text-[13px] md:text-[14px] text-[#555] leading-[1.6]">
               🚌 Marathahalli (9PM) · Silk Board (10PM) · Majestic (11PM) ·
               Friday nights
             </div>
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="bg-[#dce8d1] p-6 md:p-8 text-center flex flex-col items-center justify-center">
-            <div className="text-[#d44a4a] text-[52px] font-bold leading-none">
+          <div className="bg-[#dce8d1] p-5 sm:p-6 md:p-8 text-center flex flex-col items-center justify-center">
+            <div className="text-[#d44a4a] text-[38px] sm:text-[46px] md:text-[52px] font-bold leading-none">
               ₹5,399
             </div>
 
-            <div className="text-[#8f98a3] text-[16px] mt-3">
+            <div className="text-[#8f98a3] text-[14px] md:text-[16px] mt-3">
               per person · 1N/2D
             </div>
 
-            <div className="text-[#8f98a3] text-[16px] mt-1">Friday nights</div>
+            <div className="text-[#8f98a3] text-[14px] md:text-[16px] mt-1">
+              Friday nights
+            </div>
 
             <button
               className="
         w-full
-        mt-10
+        mt-8 md:mt-10
         bg-[#a9c493]
         hover:bg-[#98b481]
         transition-colors
         duration-300
         text-black
         font-bold
-        text-[20px]
-        py-4
+        text-[16px] md:text-[20px]
+        py-3.5 md:py-4
+        rounded-md
       "
             >
               Book 2-Day Ooty →
             </button>
 
-            <div className="mt-8 text-[#4aa3ff] text-[20px]">
+            <div className="mt-6 md:mt-8 text-[#4aa3ff] text-[16px] md:text-[20px] font-medium">
               📞 +91 8886051052
             </div>
           </div>
         </div>
-        {/* Package 2 */}
 
-        <div className="w-full max-w-6xl border border-[#5e6b5f] bg-[#dfe8d7] mx-auto grid grid-cols-1 md:grid-cols-[1fr_390px] overflow-hidden">
+        {/* Package 2 */}
+        <div className="w-full max-w-6xl border border-[#5e6b5f] bg-[#dfe8d7] mx-auto grid grid-cols-1 md:grid-cols-[1fr_390px] overflow-hidden my-10 md:my-20">
           {/* LEFT SIDE */}
-          <div className="border-b md:border-b-0 md:border-r border-[#5e6b5f] p-5 md:p-7 bg-[#dfe3ea]">
-            <h2 className="text-[#234f82] text-[18px] font-bold mb-2">
+          <div className="border-b md:border-b-0 md:border-r border-[#5e6b5f] p-4 sm:p-5 md:p-7 bg-[#dfe3ea]">
+            <h2 className="text-[#234f82] text-[20px] md:text-[18px] font-bold mb-2 leading-snug">
               🚂 3-Day Ooty & Coonoor — Full Nilgiri Experience
             </h2>
 
-            <p className="text-[#5d5d5d] italic leading-[1.6] mb-5 text-[15px]">
+            <p className="text-[#5d5d5d] italic leading-[1.6] mb-5 text-[14px] md:text-[15px]">
               Bundipuri Forest, Pykara Waterfalls, UNESCO Toy Train, Ooty Lake,
               Mysore Palace. Train from KSR.
             </p>
 
-            <ul className="space-y-2 text-[15px] leading-[1.6] text-[#1d1d1d] list-disc pl-6">
+            <ul className="space-y-2 text-[14px] md:text-[15px] leading-[1.7] text-[#1d1d1d] list-disc pl-5 md:pl-6">
               <li>
                 Day 1: Bundipuri Forest · Needle Rock · Pykara Waterfalls ·
                 Shooting Point
@@ -224,56 +227,56 @@ export default function DestinationPage() {
               </li>
             </ul>
 
-            <div className="mt-6 font-semibold text-[#d44a4a] leading-[1.6] text-[15px]">
+            <div className="mt-5 md:mt-6 font-semibold text-[#d44a4a] leading-[1.6] text-[14px] md:text-[15px]">
               ✦ Unique: Bundipuri Forest Day 1 + Mysore Palace Day 3. The
               complete nature and heritage Ooty circuit.
             </div>
 
-            <div className="mt-5 text-[14px] text-[#555] leading-[1.5]">
+            <div className="mt-5 text-[13px] md:text-[14px] text-[#555] leading-[1.6]">
               🚂 KSR Bengaluru Railway Station · Thursday & Friday
             </div>
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="bg-[#dfe3ea] p-6 md:p-8 text-center flex flex-col items-center justify-center">
-            <div className="text-[#d44a4a] text-[52px] font-bold leading-none">
+          <div className="bg-[#dfe3ea] p-5 sm:p-6 md:p-8 text-center flex flex-col items-center justify-center">
+            <div className="text-[#d44a4a] text-[38px] sm:text-[46px] md:text-[52px] font-bold leading-none">
               ₹6,999
             </div>
 
-            <div className="text-[#8f98a3] text-[16px] mt-3">
+            <div className="text-[#8f98a3] text-[14px] md:text-[16px] mt-3">
               per person · 2N/3D
             </div>
 
-            <div className="text-[#8f98a3] text-[16px] mt-1">
+            <div className="text-[#8f98a3] text-[14px] md:text-[16px] mt-1">
               Thu & Fri weekly
             </div>
 
             <button
               className="
         w-full
-        mt-10
+        mt-8 md:mt-10
         bg-[#8fb4d9]
         hover:bg-[#7ca5cf]
         transition-colors
         duration-300
         text-black
         font-bold
-        text-[20px]
-        py-4
+        text-[16px] md:text-[20px]
+        py-3.5 md:py-4
+        rounded-md
       "
             >
               Book 3-Day Ooty + Nature →
             </button>
 
-            <div className="mt-8 text-[#4aa3ff] text-[20px]">
+            <div className="mt-6 md:mt-8 text-[#4aa3ff] text-[16px] md:text-[20px] font-medium">
               📞 +91 8886051052
             </div>
           </div>
         </div>
 
         {/* Package 3 */}
-
-        <div className="w-full max-w-6xl border border-[#5e6b5f] bg-[#eadcf2] mx-auto grid grid-cols-1 md:grid-cols-[1fr_390px] overflow-hidden">
+        <div className="w-full max-w-6xl border border-[#5e6b5f] bg-[#eadcf2] mx-auto grid grid-cols-1 md:grid-cols-[1fr_390px] overflow-hidden my-10 md:my-20">
           {/* LEFT SIDE */}
           <div className="border-b md:border-b-0 md:border-r border-[#5e6b5f] p-5 md:p-7 bg-[#eadcf2]">
             <h2 className="text-[#234f82] text-[18px] font-bold mb-2">
