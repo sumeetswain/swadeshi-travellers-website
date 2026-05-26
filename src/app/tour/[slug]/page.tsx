@@ -60,7 +60,7 @@ export default function TrekPage() {
   // ================= UI =================
   return (
     <div className="w-full min-h-screen bg-gray-50">
-      <BookingWidget eventSlug={slug} />
+      <BookingWidget eventSlug={slug as string} />
 
       {/* Hero Section */}
       <div className="w-full h-[45vh] relative overflow-hidden">
