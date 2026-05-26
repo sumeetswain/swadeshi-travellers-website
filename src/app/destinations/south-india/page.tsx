@@ -21,6 +21,14 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import FinalCTA from "@/components/FinalCTA";
+export const metadata = {
+  title:
+    "South India Tour Packages 2026 — Ooty, Coorg, Wayanad, Kerala, Gokarna, Pondicherry & More | STC",
+  description:
+    "Group tour packages to South India — Karnataka (Ooty, Coorg, Chikmagalur, Gokarna, Hampi), Tamil Nadu (Pondicherry, Arunachalam), Kerala (Wayanad, Kochi, Alleppey, Munnar), Andhra Pradesh (Araku, Vizag). From ₹3,999. Weekly Thu &amp; Fri departures from Bangalore and Hyderabad.",
+  keywords:
+    "south india tour packages — city-neutral national intent — NEVER include from-bangalore or from-hyderabad variants places to visit in south india · south india trip packages · south india tourism packages · ooty tour packages · wayanad tour packages · coorg tour packages · gokarna tour packages · kerala tour packages · karnataka tour packages · best places to visit in south india ",
+};
 export default function DestinationPage() {
   const trips = [
     {
@@ -309,13 +317,12 @@ export default function DestinationPage() {
           className="w-full h-full object-cover bg-center"
         />
       </div>
+      <h1 className="text-center text-3xl md:text-4xl font-semibold mt-10 mb-8 text-brand">
+        South India Tour Packages
+      </h1>
       <DescriptionBox
         title="South India Tour Packages"
-        content="Karnataka. Tamil Nadu. Kerala. Andhra Pradesh. 40+ Group Tours. Every Weekend. From ₹3,999.
-
-South India contains more variety within a 10-hour bus or train radius than any other region on the subcontinent. Coffee estates at 1,600 metres in the Nilgiris. French colonial lanes in Pondicherry&#39;s white town. 900 kilometres of backwater canals in Kerala. The laterite cliffs at Varkala rising directly from the Arabian Sea. The Virupaksha Temple at Hampi, active since the 7th century, the archaeological heart of the Vijayanagara Empire. The Murudeshwar Shiva statue visible from the Arabian Sea. The 14-kilometre Girivalam path around the sacred mountain at Arunachalam. Swadeshi Traveller Community runs group tour packages to all of these — every Thursday and Friday, from Bangalore and Hyderabad, at prices that start from ₹3,999. 40+ departures. Every destination confirmed. Every itinerary tested.
-
-"
+        content="Karnataka. Tamil Nadu. Kerala. Andhra Pradesh. 40+ Group Tours. Every Weekend. From ₹3,999. South India contains more variety within a 10-hour bus or train radius than any other region on the subcontinent. Coffee estates at 1,600 metres in the Nilgiris. French colonial lanes in Pondicherry&#39;s white town. 900 kilometres of backwater canals in Kerala. The laterite cliffs at Varkala rising directly from the Arabian Sea. The Virupaksha Temple at Hampi, active since the 7th century, the archaeological heart of the Vijayanagara Empire. The Murudeshwar Shiva statue visible from the Arabian Sea. The 14-kilometre Girivalam path around the sacred mountain at Arunachalam. Swadeshi Traveller Community runs group tour packages to all of these — every Thursday and Friday, from Bangalore and Hyderabad, at prices that start from ₹3,999. 40+ departures. Every destination confirmed. Every itinerary tested."
       />
       {/* Title */}
       <CuratedCategories data={trips} />
