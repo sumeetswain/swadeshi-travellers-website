@@ -13,7 +13,12 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata = {
-  title: "Gokarna Tour Packages",
+  title:
+    "Gokarna Trip from Bangalore 2026 — ₹5,199 Onwards | Mirjan Fort, Om Beach, Murudeshwar & Dandeli | STC",
+  description:
+    "Book Gokarna group tour packages from Bangalore from ₹5,199. 2-day bus tour — pickup at Marathahalli, Silk Board & Majestic. Mirjan Fort, Om Beach, Kudle Beach, Jatayu Teertha, Murudeshwar Temple. 3-day train tour — Dandeli water sports (kayaking, zorbing, boating, river swimming) ALL INCLUDED + Vibhooti Falls + Nirvana Beach. From KSR every Thu & Fri",
+  keywords:
+    "gokarna trip from bangalore — 720/mo GKP BLR (Low, 21). Note: 'trip' wins 4:1 over 'tour package' (170/mo). Opposite of Coorg. gokarna packages from bangalore (320/mo) · gokarna trip package from bangalore (140/mo) · gokarna tour package from bangalore (170/mo) · gokarna murudeshwar package tour from bangalore (90/mo) · 2 days gokarna trip package from bangalore (90/mo) · gokarna dandeli package from bangalore (10/mo)",
 };
 const gokarna = [
   {
@@ -130,7 +135,7 @@ export default function DestinationPage() {
           title="Sacred Shores and Wild Rivers. Mirjan Fort. Om Beach. Murudeshwar at Sunset. And Three Days of Dandeli’s Water Sports. From ₹5,199."
           content="There is a place on the Karnataka coast where the Western Ghats reach the Arabian Sea and the land stops belonging entirely to either. Gokarna sits in this meeting — a small temple town with a 4th-century Mahabaleshwar temple on one end and a sequence of five beaches on the other, the most famous being Om Beach, whose shoreline is shaped like the Hindu symbol ‘Om’ when seen from the hills above. STC runs two Gokarna group tours from Bangalore: a 2-day bus weekend from ₹5,199 with Mirjan Fort on Day 1, then Om Beach, Kudle Beach, and Jatayu Teertha, and on Day 2, Vibhooti Waterfalls, Honnavar Mangrove Forest, the boat ride through Sharavathi Backwaters, and Murudeshwar Temple with its 20-storey Gopuram at sunset — and a 3-day train tour from ₹5,999 that opens with a full day of Dandeli’s water sports before arriving at Gokarna’s coast."
         />
-        <div className="w-[30%] mx-auto mt-5">
+        <div className="w-[90%] lg:w-[30%] mx-auto mt-5">
           <Link
             href="tel:+918886051052"
             className="flex items-center gap-2 hover:underline bg-brand px-5 py-3 w-full text-white text-center justify-center rounded-2xl"
@@ -140,19 +145,19 @@ export default function DestinationPage() {
           </Link>
         </div>
         <PackageCarousel items={gokarna} title="Choose Your Gokarna Journey" />
-        <div className="w-full max-w-4xl border border-[#bdbdbd] bg-[#dfe3ea] mx-auto grid grid-cols-1 md:grid-cols-[1fr_390px] overflow-hidden">
+        <div className="w-[90%] lg:w-full max-w-4xl border border-[#bdbdbd] bg-[#dfe3ea] mx-auto grid grid-cols-1 md:grid-cols-[1fr_390px] overflow-hidden">
           {/* LEFT SIDE */}
-          <div className="border-b md:border-b-0 md:border-r border-[#bdbdbd] p-4 md:p-5">
-            <h2 className="text-[#234f82] text-[16px] font-bold mb-1">
+          <div className="border-b md:border-b-0 md:border-r border-[#bdbdbd] p-4 sm:p-5 md:p-5">
+            <h2 className="text-[#234f82] text-[18px] md:text-[16px] font-bold mb-2 leading-snug">
               🚌 2-Day Gokarna Weekend Bus Tour
             </h2>
 
-            <p className="text-[#666] italic leading-[1.5] mb-6">
+            <p className="text-[#666] italic leading-[1.6] mb-5 text-[14px] md:text-[15px]">
               Mirjan Fort, Om Beach, Kudle Beach, Jatayu Teertha, Vibhooti
               Waterfalls, Murudeshwar Temple. Bus from Bangalore.
             </p>
 
-            <div className="space-y-1 text-[14px] leading-[1.5] text-[#222]">
+            <div className="space-y-2 text-[14px] md:text-[14px] leading-[1.6] text-[#222]">
               <p>
                 Day 1: Mirjan Fort — 14th-century coastal fort on the
                 Aghanashini river estuary
@@ -198,52 +203,56 @@ export default function DestinationPage() {
               </p>
             </div>
 
-            <div className="mt-6 font-bold text-[#234f82] leading-[1.5] text-[15px]">
+            <div className="mt-5 font-bold text-[#234f82] leading-[1.6] text-[14px] md:text-[15px]">
               ♦ Unique: Jatayu Teertha + Gopuram Climbing + 2 Breakfasts
               included — none in the 3-day package.
             </div>
 
-            <div className="mt-7 text-[14px] text-[#666] leading-[1.5]">
+            <div className="mt-6 text-[13px] md:text-[14px] text-[#666] leading-[1.6]">
               🚌 Marathahalli (9PM) · Silk Board (10PM) · Majestic (11PM) ·
               Friday nights only
             </div>
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="p-6 text-center flex flex-col items-center">
-            <div className="text-[#d00000] text-[42px] font-bold leading-none">
+          <div className="p-5 sm:p-6 text-center flex flex-col items-center justify-center">
+            <div className="text-[#d00000] text-[36px] sm:text-[40px] md:text-[42px] font-bold leading-none">
               ₹5,199
             </div>
 
-            <div className="text-[#777] text-[14px] mt-2">
+            <div className="text-[#777] text-[13px] md:text-[14px] mt-2">
               per person · 2D/1N
             </div>
 
-            <div className="mt-8 text-[24px] text-[#111]">Friday nights</div>
+            <div className="mt-6 md:mt-8 text-[22px] md:text-[24px] text-[#111] font-medium">
+              Friday nights
+            </div>
 
             <button
               className="
-            w-full
-            mt-10
-            bg-[#d40000]
-            hover:bg-[#b60000]
-            transition-colors
-            duration-300
-            text-white
-            font-bold
-            text-[18px]
-            py-4
-          "
+        w-full
+        mt-8 md:mt-10
+        bg-[#d40000]
+        hover:bg-[#b60000]
+        transition-colors
+        duration-300
+        text-white
+        font-bold
+        text-[16px] md:text-[18px]
+        py-3.5 md:py-4
+        rounded-md
+      "
             >
               Book 2-Day Gokarna →
             </button>
 
-            <div className="mt-7 text-[#2870c7] text-[18px]">
+            <div className="mt-6 text-[#2870c7] text-[16px] md:text-[18px] font-medium">
               📞 +91 8886051052
             </div>
           </div>
         </div>
-        <div className="w-full max-w-4xl border border-[#bdbdbd] bg-[#dfe3ea] mx-auto grid grid-cols-1 md:grid-cols-[1fr_390px] overflow-hidden">
+
+        <div className="w-[90%] lg:w-full max-w-4xl border border-[#bdbdbd] bg-[#dfe3ea] mx-auto grid grid-cols-1 md:grid-cols-[1fr_390px] overflow-hidden mt-10 md:mt-20">
           {/* LEFT SIDE */}
           <div className="border-b md:border-b-0 md:border-r border-[#bdbdbd] p-4 md:p-5">
             <h2 className="text-[#234f82] text-[16px] font-bold mb-1">
@@ -517,7 +526,7 @@ export default function DestinationPage() {
             </tbody>
           </table>
         </div>
-        <div className="w-[70%] mx-auto my-10 overflow-x-auto">
+        <div className="w-[80%] mx-auto my-10 overflow-x-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 border border-neutral-200 rounded-b-xl overflow-hidden">
             {/* Included */}
             <div className="bg-green-50 p-6 border-r border-neutral-200">
