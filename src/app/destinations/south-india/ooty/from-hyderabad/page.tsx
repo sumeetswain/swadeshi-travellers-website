@@ -90,18 +90,19 @@ export default function DestinationPage() {
           description="Both packages depart from Kacheguda Railway Station at 7:00 PM every Thursday and Friday. Both include the UNESCO Nilgiri Mountain Railway toy train from Coonoor to Ooty. The difference is what happens on Day 1 — and it changes the entire character of the trip"
         />
 
-        <div className="w-full max-w-6xl mx-auto border border-[#b7b7b7] grid grid-cols-1 md:grid-cols-[1fr_360px] overflow-hidden bg-[#eef0f2]">
+        {/* Package Cards */}
+        <div className="w-full max-w-6xl mx-auto border border-[#b7b7b7] grid grid-cols-1 md:grid-cols-[1fr_360px] overflow-hidden bg-[#eef0f2] my-10 md:my-16">
           {/* LEFT SIDE */}
-          <div className="bg-[#eef0f2] p-5 md:p-6 border-b md:border-b-0 md:border-r border-[#b7b7b7]">
-            <h2 className="text-[#234f82] text-[20px] font-bold leading-tight mb-1">
+          <div className="bg-[#dfe8d7] p-4 sm:p-5 md:p-6 border-b md:border-b-0 md:border-r border-[#b7b7b7]">
+            <h2 className="text-[#234f82] text-[22px] md:text-[20px] font-bold leading-tight mb-2">
               □ Ooty & Coonoor Tour
             </h2>
 
-            <p className="italic text-[#555] text-[15px] mb-3">
+            <p className="italic text-[#555] text-[14px] md:text-[15px] leading-[1.6] mb-4">
               Wildlife + Tea Gardens + UNESCO Toy Train
             </p>
 
-            <ul className="list-disc pl-5 text-[15px] leading-[1.35] text-[#111] space-y-[2px]">
+            <ul className="list-disc pl-5 text-[14px] md:text-[15px] leading-[1.7] text-[#111] space-y-2">
               <li>
                 Bandipur Forest & Mudumalai Tiger Reserve — elephant herds at
                 dawn
@@ -118,26 +119,30 @@ export default function DestinationPage() {
               <li>Tea Factory visit + Ooty Boat House + Pine Park</li>
             </ul>
 
-            <div className="mt-4 text-[#8a8a8a] text-[14px]">
+            <div className="mt-5 text-[#8a8a8a] text-[13px] md:text-[14px] leading-[1.6]">
               • Mysore Palace on return &nbsp;|&nbsp; Kacheguda 7PM, Thu & Fri
             </div>
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="bg-[#dfe8d7] flex flex-col items-center justify-center text-center px-6 py-5">
-            <div className="text-[#c40000] text-[54px] font-bold leading-none">
+          <div className="bg-[#dfe8d7] flex flex-col items-center justify-center text-center px-5 md:px-6 py-5 md:py-6">
+            <div className="text-[#c40000] text-[40px] sm:text-[48px] md:text-[54px] font-bold leading-none">
               ₹7,199
             </div>
 
-            <div className="text-[#7b7b7b] text-[16px] mt-1">per person</div>
+            <div className="text-[#7b7b7b] text-[14px] md:text-[16px] mt-2">
+              per person
+            </div>
 
-            <div className="mt-2 text-black font-bold text-[18px] leading-tight">
+            <div className="mt-2 text-black font-bold text-[16px] md:text-[18px] leading-tight">
               2 Nights / 3 Days
             </div>
 
-            <div className="text-[#666] text-[15px]">Thu & Fri weekly</div>
+            <div className="text-[#666] text-[14px] md:text-[15px] mt-1">
+              Thu & Fri weekly
+            </div>
 
-            <div className="text-[#222] text-[15px] leading-[1.4] mt-2">
+            <div className="text-[#222] text-[14px] md:text-[15px] leading-[1.5] mt-3">
               Train · Sleeper Class
               <br />
               Kacheguda · 7:00 PM
@@ -145,18 +150,18 @@ export default function DestinationPage() {
 
             <button
               className="
-        mt-8
+        mt-7 md:mt-8
+        w-full
         bg-[#1f4f84]
         hover:bg-[#18426e]
         transition-colors
         duration-300
         text-white
         font-bold
-        text-[20px]
+        text-[16px] md:text-[20px]
         leading-tight
-        px-10
-        py-4
-        min-w-55
+        py-3.5 md:py-4
+        rounded-md
       "
             >
               Book This
@@ -164,23 +169,25 @@ export default function DestinationPage() {
               Package →
             </button>
 
-            <div className="mt-6 text-[#2b73b8] text-[15px]">
+            <div className="mt-5 md:mt-6 text-[#2b73b8] text-[14px] md:text-[15px] font-medium">
               □ +91 9705051052
             </div>
           </div>
         </div>
-        <div className="w-full max-w-6xl mx-auto border border-[#c9c9c9] grid grid-cols-1 md:grid-cols-[1fr_360px] overflow-hidden bg-[#f1f3f7]">
+
+        {/* Package 2 */}
+        <div className="w-full max-w-6xl mx-auto border border-[#c9c9c9] grid grid-cols-1 md:grid-cols-[1fr_360px] overflow-hidden bg-[#f1f3f7] my-10 md:my-16">
           {/* LEFT SIDE */}
-          <div className="bg-[#f1f3f7] p-5 md:p-6 border-b md:border-b-0 md:border-r border-[#c9c9c9]">
-            <h2 className="text-[#234f82] text-[20px] font-bold leading-tight mb-1">
+          <div className="bg-[#f1f3f7] p-4 sm:p-5 md:p-6 border-b md:border-b-0 md:border-r border-[#c9c9c9]">
+            <h2 className="text-[#234f82] text-[22px] md:text-[20px] font-bold leading-tight mb-2">
               ✦ Isha Foundation + Ooty Tour
             </h2>
 
-            <p className="italic text-[#5f5f5f] text-[15px] mb-3">
+            <p className="italic text-[#5f5f5f] text-[14px] md:text-[15px] leading-[1.6] mb-4">
               Spiritual Experience + Tea Gardens + UNESCO Toy Train
             </p>
 
-            <ul className="list-disc pl-5 text-[15px] leading-[1.35] text-[#111] space-y-[2px]">
+            <ul className="list-disc pl-5 text-[14px] md:text-[15px] leading-[1.7] text-[#111] space-y-2">
               <li>
                 Isha Foundation, Coimbatore — Adiyogi Shiva statue (world&apos;s
                 largest bust)
@@ -199,26 +206,30 @@ export default function DestinationPage() {
               <li>Tea + Chocolate Factory + Ooty Boat House + Needle Rock</li>
             </ul>
 
-            <div className="mt-4 text-[#8a8a8a] text-[14px]">
+            <div className="mt-5 text-[#8a8a8a] text-[13px] md:text-[14px] leading-[1.6]">
               • Bandipur Forest on return &nbsp;|&nbsp; Kacheguda 7PM, Thu & Fri
             </div>
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="bg-[#eef1f8] flex flex-col items-center justify-center text-center px-6 py-5">
-            <div className="text-[#cc0000] text-[54px] font-bold leading-none">
+          <div className="bg-[#eef1f8] flex flex-col items-center justify-center text-center px-5 md:px-6 py-5 md:py-6">
+            <div className="text-[#cc0000] text-[40px] sm:text-[48px] md:text-[54px] font-bold leading-none">
               ₹7,499
             </div>
 
-            <div className="text-[#8b8b8b] text-[16px] mt-1">per person</div>
+            <div className="text-[#8b8b8b] text-[14px] md:text-[16px] mt-2">
+              per person
+            </div>
 
-            <div className="mt-2 text-black font-bold text-[18px] leading-tight">
+            <div className="mt-2 text-black font-bold text-[16px] md:text-[18px] leading-tight">
               2 Nights / 3 Days
             </div>
 
-            <div className="text-[#777] text-[15px]">Thu & Fri weekly</div>
+            <div className="text-[#777] text-[14px] md:text-[15px] mt-1">
+              Thu & Fri weekly
+            </div>
 
-            <div className="text-[#222] text-[15px] leading-[1.4] mt-2">
+            <div className="text-[#222] text-[14px] md:text-[15px] leading-[1.5] mt-3">
               Train · Sleeper Class
               <br />
               Kacheguda · 7:00 PM
@@ -226,30 +237,32 @@ export default function DestinationPage() {
 
             <button
               className="
-        mt-8
+        mt-7 md:mt-8
+        w-full
         bg-[#d10000]
         hover:bg-[#b60000]
         transition-colors
         duration-300
         text-white
         font-bold
-        text-[20px]
+        text-[16px] md:text-[20px]
         leading-tight
-        px-10
-        py-4
-        min-w-55
+        py-3.5 md:py-4
+        rounded-md
       "
             >
               Book This
               <br />
-              Package→
+              Package →
             </button>
 
-            <div className="mt-6 text-[#2b73b8] text-[15px]">
+            <div className="mt-5 md:mt-6 text-[#2b73b8] text-[14px] md:text-[15px] font-medium">
               □ +91 9705051052
             </div>
           </div>
         </div>
+
+        {/* Comparison Table */}
         <div className="w-full max-w-6xl mx-auto my-10 overflow-x-auto">
           {/* Heading */}
           <div className="mb-5">
@@ -419,7 +432,7 @@ export default function DestinationPage() {
               leading-tight
               px-10
               py-4
-              min-w-[220px]
+              min-w-55
             "
                   >
                     Book Ooty &amp;
@@ -441,7 +454,7 @@ export default function DestinationPage() {
               leading-tight
               px-10
               py-4
-              min-w-[220px]
+              min-w-55
             "
                   >
                     Book Isha +
@@ -453,17 +466,19 @@ export default function DestinationPage() {
             </tbody>
           </table>
         </div>
-        <div className="w-[98%] max-w-237 mx-auto my-8 border border-[#cfcfcf] overflow-hidden">
+
+        {/* Included / Excluded */}
+        <div className="w-full max-w-237 mx-auto my-8 border border-[#cfcfcf] overflow-hidden">
           {/* Heading */}
-          <div className="px-3 py-2">
-            <h2 className="text-[20px] md:text-[22px] font-bold text-[#2c6bb0]">
+          <div className="px-4 py-3">
+            <h2 className="text-[20px] md:text-[22px] font-bold text-[#2c6bb0] leading-snug">
               Everything Both Ooty Packages Include
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2">
             {/* Included Section */}
-            <div className="bg-[#dde7d4] px-5 py-4 border-r border-[#cfcfcf]">
+            <div className="bg-[#dde7d4] px-4 md:px-5 py-4 border-b md:border-b-0 md:border-r border-[#cfcfcf]">
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-[#1f4d7f] text-[20px]">☑</span>
 
@@ -472,7 +487,7 @@ export default function DestinationPage() {
                 </h3>
               </div>
 
-              <ul className="list-disc pl-5 text-[16px] leading-[1.25] text-black space-y-1">
+              <ul className="list-disc pl-5 text-[14px] md:text-[16px] leading-[1.7] text-black space-y-2">
                 <li>Sleeper class train — Kacheguda to Mysore & return</li>
 
                 <li>UNESCO Nilgiri Toy Train — Coonoor to Ooty</li>
@@ -492,7 +507,7 @@ export default function DestinationPage() {
             </div>
 
             {/* Not Included Section */}
-            <div className="bg-[#efefef] px-5 py-4">
+            <div className="bg-[#efefef] px-4 md:px-5 py-4">
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-neutral-500 text-[20px]">✖</span>
 
@@ -501,7 +516,7 @@ export default function DestinationPage() {
                 </h3>
               </div>
 
-              <ul className="list-disc pl-5 text-[16px] leading-[1.25] text-[#7b7b7b] space-y-1">
+              <ul className="list-disc pl-5 text-[14px] md:text-[16px] leading-[1.7] text-[#555] space-y-2">
                 <li>Food & meals</li>
 
                 <li>Entry tickets to attractions</li>
