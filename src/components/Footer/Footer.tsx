@@ -28,81 +28,101 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* COMPANY LINKS */}
+        {/* DESTINATIONS */}
         <div>
           <h3 className="text-base font-semibold mb-4 relative">
-            Company
+            Destinations
             <span className="block w-10 h-[2px] bg-green-500 mt-1"></span>
           </h3>
           <ul className="space-y-2 text-[#444]">
             <li>
-              <Link href="/tours" className="hover:underline">
-                Tours
+              <Link
+                href="/destinations/south-india"
+                className="hover:underline"
+              >
+                South India
               </Link>
             </li>
             <li>
-              <Link href="/careers" className="hover:underline">
-                Careers
+              <Link
+                href="/destinations/south-india/coorg/from-bangalore"
+                className="hover:underline"
+              >
+                Coorg
               </Link>
             </li>
             <li>
-              <Link href="/blog" className="hover:underline">
-                Blogs
+              <Link
+                href="/destinations/south-india/gokarna"
+                className="hover:underline"
+              >
+                Gokarna
               </Link>
             </li>
             <li>
-              <Link href="/teams" className="hover:underline">
-                Teams
+              <Link
+                href="/destinations/south-india/kerala/from-bangalore"
+                className="hover:underline"
+              >
+                Kerala
               </Link>
             </li>
             <li>
-              <Link href="/request-callback" className="hover:underline">
-                Inquiry Form
+              <Link
+                href="/destinations/south-india/ooty"
+                className="hover:underline"
+              >
+                Ooty
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/destinations/south-india/pondicherry/from-bangalore"
+                className="hover:underline"
+              >
+                Pondicherry
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/destinations/south-india/wayanad/from-bangalore"
+                className="hover:underline"
+              >
+                Wayanad
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/destinations/north-india"
+                className="hover:underline"
+              >
+                North India
               </Link>
             </li>
           </ul>
         </div>
 
-        {/* QUICK LINKS */}
+        {/* DEPARTURES */}
         <div>
           <h3 className="text-base font-semibold mb-4 relative">
-            Quick Links
+            Departures
             <span className="block w-10 h-[2px] bg-green-500 mt-1"></span>
           </h3>
           <ul className="space-y-2 text-[#444]">
             <li>
-              <Link href="/privacy-policy" className="hover:underline">
-                Privacy Policy
+              <Link
+                href="/destinations/from-hyderabad"
+                className="hover:underline"
+              >
+                From Hyderabad
               </Link>
             </li>
             <li>
-              <Link href="/cancellation-policy" className="hover:underline">
-                Cancellation Policy
-              </Link>
-            </li>
-            <li>
-              <Link href="/terms-and-conditions" className="hover:underline">
-                Terms & Conditions
-              </Link>
-            </li>
-            <li>
-              <Link href="/about-us" className="hover:underline">
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="hover:underline">
-                Contact Us
-              </Link>
-            </li>
-            <li>
-              <Link href="/disclaimer" className="hover:underline">
-                Disclaimer
-              </Link>
-            </li>
-            <li>
-              <Link href="/copyright" className="hover:underline">
-                Copyright
+              <Link
+                href="/destinations/from-bangalore"
+                className="hover:underline"
+              >
+                From Bangalore
               </Link>
             </li>
           </ul>
