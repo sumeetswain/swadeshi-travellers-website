@@ -24,7 +24,12 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import FinalCTA from "@/components/FinalCTA";
 
 export const metadata = {
-  title: "Hyderabad Tour Packages",
+  title:
+    "Kerala Packages from Bangalore 2026 — ₹6,399 Onwards | Kochi, Alleppey, Munnar & Varkala | STC",
+  description:
+    "Book Kerala group tour packages from Bangalore from ₹6,399. 2-day Kochi + Alleppey tour — Jew Town, Fort Kochi, Marine Drive, Alleppey Shikara ride. 4-day Kerala circuit — Munnar tea gardens, Alleppey backwaters, Varkala cliff beach. 4 breakfasts included in 4-day package.",
+  keywords:
+    "kerala packages from bangalore — 1,900/mo GKP Bangalore + 2,900/mo GKP India — NEW: plain 'packages' plural wins by 9:1 over 'tour package'. kerala trip from bangalore (880/mo GKP BLR) · kerala holiday packages from bangalore (1,900/mo) · munnar alleppey package from bangalore (70/mo GKP BLR) · alleppey package from bangalore (50/mo) · 3 day kerala trip from bangalore (110/mo GKP BLR)",
 };
 export default function DestinationPage() {
   const kerala = [
@@ -140,7 +145,7 @@ export default function DestinationPage() {
           title="Fort Kochi&#39;s Colours. Alleppey&#39;s Backwaters. Munnar&#39;s Tea Gardens. Varkala&#39;s Cliff Beach. Two Ways Into God&#39;s Own Country. From ₹6,399."
           content="Kerala does not begin at the airport. It begins the moment the road narrows and the coconut trees close in overhead and the air carries a specific combination of backwater salt and spice and rain-on-red-earth that is particular to this coast. STC runs two Kerala group tour packages from Bangalore: a 2-day Kochi and Alleppey tour from ₹6,399 — Fort Kochi&#39;s Jew Town and café lanes, Marari Beach, and the Alleppey backwaters — and a 4-day Kerala full circuit from ₹17,499 in an AC Tempo Traveller that covers Munnar&#39;s high-altitude tea estates, the Alleppey backwaters at sunrise, and three different Varkala beach experiences. 4 breakfasts included in the 4-day package."
         />
-        <div className="w-[30%] mx-auto mt-5">
+        <div className="w-[90%] lg:w-[30%] mx-auto mt-5">
           <Link
             href="tel:+918886051052"
             className="flex items-center gap-2 hover:underline bg-brand px-5 py-3 w-full text-white text-center justify-center rounded-2xl"
