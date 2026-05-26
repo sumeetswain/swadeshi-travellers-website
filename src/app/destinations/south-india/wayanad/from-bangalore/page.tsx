@@ -143,7 +143,7 @@ export default function DestinationPage() {
           title="Mist-wrapped tea hills, thundering waterfalls, and the 900 Kandi Glass Bridge. Two weekends. Two ways in. From ₹5,999."
           content="Wayanad doesn't ease you in. The Western Ghats announce themselves the moment the road leaves the Deccan plains and starts climbing — the air changes, the vegetation changes, and before the bus has finished the ascent you're already inside something that feels genuinely wild. Banasura Sagar Dam — one of India's largest earthen dams — sits in the morning mist with the Brahmagiri Hills behind it. The zipline runs across the dam's water spread. The 900 Kandi Glass Bridge hangs over a valley canopy with nothing but the Nilgiri hills below your feet. Chembra Peak, at 2,100 metres, is Wayanad's highest point — the trek to the heart-shaped lake halfway up is one of South India's best day hikes. STC runs two group tour packages from Bangalore every week: a 2-day bus weekend from ₹5,999 with meals included — the only STC Bangalore package that feeds you — and a 3-day train tour from ₹7,499 with two nights in Wayanad homestay and Mysore Palace on the return journey."
         />
-        <div className="w-[30%] mx-auto mt-5">
+        <div className="w-[90%] lg:w-[30%] mx-auto mt-5">
           <Link
             href="tel:+918886051052"
             className="flex items-center gap-2 hover:underline bg-brand px-5 py-3 w-full text-white text-center justify-center rounded-2xl"
@@ -220,7 +220,7 @@ export default function DestinationPage() {
             Package 1 of 2
           </h2>
 
-          <div className="w-full border border-[#b7b7b7] bg-[#dde8d5] grid grid-cols-1 md:grid-cols-[1fr_465px] overflow-hidden">
+          <div className="w-full border border-[#b7b7b7] bg-[#dde8d5] grid grid-cols-1 lg:grid-cols-[1fr_465px] overflow-hidden">
             {/* LEFT */}
             <div className="border-b md:border-b-0 md:border-r border-[#b7b7b7] p-6 bg-[#dde8d5]">
               <h3 className="text-[#214b78] text-[22px] font-bold mb-2">
@@ -324,7 +324,7 @@ export default function DestinationPage() {
             Package 2 of 2
           </h2>
 
-          <div className="w-full border border-[#b7b7b7] bg-[#e5ebf3] grid grid-cols-1 md:grid-cols-[1fr_465px] overflow-hidden">
+          <div className="w-full border border-[#b7b7b7] bg-[#e5ebf3] grid grid-cols-1 lg:grid-cols-[1fr_465px] overflow-hidden">
             {/* LEFT */}
             <div className="border-b md:border-b-0 md:border-r border-[#b7b7b7] p-6 bg-[#e5ebf3]">
               <h3 className="text-[#214b78] text-[22px] font-bold mb-2">
