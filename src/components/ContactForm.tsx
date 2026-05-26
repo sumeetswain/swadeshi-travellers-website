@@ -33,7 +33,18 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
-const ContactForm = () => {
+type ContactFormProps = {
+  className?: string;
+  title?: string;
+  compact?: boolean;
+};
+
+const ContactForm = ({
+  className = "",
+  title = "Contact Us",
+  compact = false,
+}: ContactFormProps) => {
+  const fieldGrid = compact ? "grid-cols-1" : "grid-cols-2";
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
@@ -82,15 +93,17 @@ const ContactForm = () => {
     "w-full px-4 py-3 bg-green-50 border border-brand/60 rounded-lg outline-none focus:border-brand focus:ring-2 focus:ring-brand/20 transition";
 
   return (
-    <div className="w-full max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] my-12">
+    <div
+      className={`w-full max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] my-12 ${className}`}
+    >
       <h1 className="text-2xl font-bold text-[#22aa22] mb-2 text-center">
-        Contact Us
+        {title}
       </h1>
 
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
           {/* Name + Phone */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className={`grid ${fieldGrid} gap-4`}>
             <FormField
               control={form.control}
               name="fullname"
@@ -137,7 +150,7 @@ const ContactForm = () => {
           </div>
 
           {/* Date + Travellers */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className={`grid ${fieldGrid} gap-4`}>
             <FormField
               control={form.control}
               name="date"
@@ -183,7 +196,7 @@ const ContactForm = () => {
           </div>
 
           {/* Departing From + Destination */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className={`grid ${fieldGrid} gap-4`}>
             <FormField
               control={form.control}
               name="departing_from"
