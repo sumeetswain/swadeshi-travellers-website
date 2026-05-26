@@ -1,7 +1,40 @@
 import Script from "next/script";
 import { useEffect } from "react";
+declare global {
+  interface Window {
+    logout?: {
+      widget?: {
+        setConfig: (config: {
+          eventSlug: string;
+          placement: string;
 
-export default function BookingWidget({ eventSlug }) {
+          customClass?: string;
+          btnId?: string;
+          downloadBtnId?: string;
+          enquiryBtnId?: string;
+
+          showEverything?: boolean;
+          onlyButton?: boolean;
+          showItineraryButton?: boolean;
+          showEnquiryButton?: boolean;
+          showDownloadButton?: boolean;
+
+          bookNowButtonColor?: string;
+          itineraryButtonColor?: string;
+
+          booknowButtonName?: string;
+          buttonName?: string;
+          itineraryButtonName?: string;
+          enquiryButtonName?: string;
+        }) => void;
+
+        init: () => void;
+      };
+    };
+  }
+}
+
+export default function BookingWidget({ eventSlug }: { eventSlug: string }) {
   useEffect(() => {
     const initializeWidget = () => {
       if (window.logout && window.logout.widget) {
