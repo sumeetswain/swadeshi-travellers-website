@@ -16,6 +16,8 @@ import { API_ENDPOINT, API_KEY } from "@/api/api";
 import Reviews from "@/components/Reviews";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import FAQs from "@/components/FAQs";
+import BookingWidget from "@/components/BookingWidget";
+import ContactForm from "@/components/ContactForm";
 
 type TrekDay = {
   id: number;
@@ -41,18 +43,6 @@ export default function TrekPage() {
   const [open, setOpen] = useState<number | null>(null);
   const [activeTab, setActiveTab] = useState("inclusions");
 
-  const items = [
-    {
-      id: 1,
-      title: "Day 1: Arrival & Trek Briefing",
-      content: "Begin your journey with...",
-    },
-    {
-      id: 2,
-      title: "Day 2: Trek & Exploration",
-      content: "Begin the trek early...",
-    },
-  ];
   const { slug } = useParams();
   //   console.log("Slug:", slug);
   const [data, setData] = React.useState<TrekEvent[]>([]);
@@ -70,6 +60,8 @@ export default function TrekPage() {
   // ================= UI =================
   return (
     <div className="w-full min-h-screen bg-gray-50">
+      <BookingWidget eventSlug={slug} />
+
       {/* Hero Section */}
       <div className="w-full h-[45vh] relative overflow-hidden">
         <img
@@ -243,33 +235,11 @@ export default function TrekPage() {
               </button>
             </div>
 
-            {/* Callback Form */}
-            <div className="bg-white p-6 rounded-2xl shadow space-y-4">
-              <h3 className="font-bold text-xl">Request a Callback</h3>
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full p-3 border rounded-xl"
-              />
-              <input
-                type="text"
-                placeholder="10-digit Mobile Number"
-                className="w-full p-3 border rounded-xl"
-              />
-              <input
-                type="number"
-                placeholder="Number of People"
-                className="w-full p-3 border rounded-xl"
-              />
-              <textarea
-                placeholder="Your Message (Optional)"
-                className="w-full p-3 border rounded-xl"
-                rows={3}
-              ></textarea>
-              <button className="w-full bg-green-600 text-white py-3 rounded-xl font-semibold hover:bg-green-700 transition">
-                Submit Inquiry
-              </button>
-            </div>
+            <ContactForm
+              title="Request a Callback"
+              compact
+              className="max-w-none mx-0 my-0 p-6 rounded-2xl shadow"
+            />
           </div>
         </div>
       </div>
