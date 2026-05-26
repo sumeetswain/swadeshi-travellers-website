@@ -314,6 +314,14 @@ const faqs = [
   },
 ];
 
+export const metadata = {
+  title:
+    "North India Tour Packages — Rishikesh, Manali, Rajasthan &amp; Kashmir | Coming Soon | STC",
+  description:
+    "North India group tour packages from Bangalore &amp; Hyderabad — coming soon. Rishikesh, Manali, Rajasthan, Kashmir, Varanasi, Kedarnath &amp; more. Register your interest to be notified when packages launch. ⭐ 4.8 Google Rating · MSME Certified.",
+  keywords:
+    "north india tour packages — city-neutral, national intent, informational/navigational. SAFE to target now. No commercial package KWs until packages are live. places to visit in north india · north india tourism · best places in north india · rishikesh tourist places · manali tourist places · jaipur tourist places · kashmir tour packages (informational only)",
+};
 export default function BhutanPage() {
   const trips = [
     {
@@ -368,6 +376,9 @@ export default function BhutanPage() {
           className="w-full h-full object-cover bg-center"
         />
       </div>
+      <h1 className="text-center text-3xl md:text-4xl font-semibold mt-10 mb-8 text-brand">
+        North India Tour Packages
+      </h1>
       <DescriptionBox
         title="North India Tour Packages"
         content="The Himalayas. The Desert Forts. The Sacred Rivers. The Floating Gardens of Dal Lake. Coming Soon from Bangalore & Hyderabad.
