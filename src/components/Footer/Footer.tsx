@@ -156,7 +156,7 @@ export default function Footer() {
             rel="noopener noreferrer"
           >
             <Image
-              src="/footerig.webp"
+              src="/insta-logo.png"
               alt="Instagram"
               width={30}
               height={30}
@@ -169,7 +169,7 @@ export default function Footer() {
             rel="noopener noreferrer"
           >
             <Image
-              src="/footerfb.webp"
+              src="/social.png"
               alt="Facebook"
               width={30}
               height={30}
@@ -182,14 +182,14 @@ export default function Footer() {
             rel="noopener noreferrer"
           >
             <Image
-              src="/footeryt.webp"
+              src="/video.png"
               alt="YouTube"
               width={30}
               height={30}
               className="hover:opacity-70"
             />
           </a>
-          <a
+          {/* <a
             href="https://in.pinterest.com/trippertrails/"
             target="_blank"
             rel="noopener noreferrer"
@@ -201,14 +201,14 @@ export default function Footer() {
               height={30}
               className="hover:opacity-70"
             />
-          </a>
+          </a> */}
         </div>
 
         {/* Payment icons */}
 
         {/* Copyright */}
         <p className="text-xs text-center text-gray-600">
-          © Copyright {new Date().getFullYear()} TripperTrails.in. All rights
+          © Copyright {new Date().getFullYear()} Swadeshi Travellers. All rights
           reserved.
         </p>
       </div>
