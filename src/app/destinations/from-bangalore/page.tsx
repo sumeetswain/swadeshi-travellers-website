@@ -2,6 +2,7 @@ import DescriptionBox from "@/components/DescriptionBox";
 import FinalCTA from "@/components/FinalCTA";
 import Reviews from "@/components/Reviews";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import NotifyButton from "@/components/NotifyButton";
 import {
   Award,
   MapPinned,
@@ -47,7 +48,7 @@ const south = [
     ],
 
     button: "Book Ooty →",
-    link: "/ooty-coonoor",
+    link: "/tour/ooty-coonoor-weekend-getaway",
 
     // CUSTOM COLORS
     bg: "bg-[#dde8d5]",
@@ -79,7 +80,7 @@ const south = [
     ],
 
     button: "Book Coorg →",
-    link: "/coorg",
+    link: "/tour/coorg-the-scotland-of-india-z64n",
 
     bg: "bg-[#dde8d5]",
     border: "border-[#c7d3be]",
@@ -110,7 +111,7 @@ const south = [
     ],
 
     button: "Book Chikmagalur →",
-    link: "/chikmagalur",
+    link: "/tour/coorg-chikmagalur-ex-blr",
 
     bg: "bg-[#dde8d5]",
     border: "border-[#c7d3be]",
@@ -140,7 +141,7 @@ const south = [
     ],
 
     button: "Book Gokarna →",
-    link: "/gokarna",
+    link: "/tour/gokarna-weekend-gateaway",
 
     bg: "bg-[#dde8d5]",
     border: "border-[#c7d3be]",
@@ -170,7 +171,7 @@ const south = [
     departure: "Fri nights or Thu/Fri",
 
     button: "Book Pondicherry →",
-    link: "/pondicherry-mahabalipuram",
+    link: "/tour/pondicherry-mahabalipuram",
 
     bg: "bg-[#dfe5f1]",
     border: "border-[#c3cad8]",
@@ -201,7 +202,7 @@ const south = [
     departure: "Fri nights or Thu/Fri",
 
     button: "Book Wayanad →",
-    link: "/wayanad",
+    link: "/tour/wayanad-weekend-gateway",
 
     bg: "bg-[#f1dddd]",
     border: "border-[#dbc1c1]",
@@ -228,7 +229,7 @@ const south = [
     departure: "Friday nights",
 
     button: "Book Kochi + Alleppey →",
-    link: "/kochi-alleppey",
+    link: "/tour/kochi-alleppey",
 
     bg: "bg-[#f1dddd]",
     border: "border-[#dbc1c1]",
@@ -255,7 +256,7 @@ const south = [
     departure: "Wednesday evenings",
 
     button: "Book Kerala Full Circuit →",
-    link: "/kerala-full-circuit",
+    link: "/tour/kerala-3days4nights",
 
     bg: "bg-[#f1dddd]",
     border: "border-[#dbc1c1]",
@@ -669,9 +670,10 @@ export default function DestinationPage() {
 
                     {/* Button */}
                     <div className="mt-8">
-                      <button className="bg-[#b8b8b8] hover:bg-[#9f9f9f] transition-colors text-white font-bold text-[18px] sm:text-[20px] md:text-[22px] px-16 py-3 sm:w-auto sm:min-w-65 md:min-w-90">
-                        {pkg.button}
-                      </button>
+                      <NotifyButton
+                        label={pkg.button}
+                        className="bg-[#b8b8b8] hover:bg-[#9f9f9f] transition-colors text-white font-bold text-[18px] sm:text-[20px] md:text-[22px] px-16 py-3 sm:w-auto sm:min-w-65 md:min-w-90"
+                      />
                     </div>
                   </div>
                 </div>
@@ -721,9 +723,10 @@ export default function DestinationPage() {
 
                     {/* Button */}
                     <div className="mt-8">
-                      <button className="bg-[#b8b8b8] hover:bg-[#9f9f9f] transition-colors text-white font-bold text-[18px] sm:text-[20px] md:text-[22px] px-16 py-3 sm:w-auto sm:min-w-65 md:min-w-90">
-                        {pkg.button}
-                      </button>
+                      <NotifyButton
+                        label={pkg.button}
+                        className="bg-[#b8b8b8] hover:bg-[#9f9f9f] transition-colors text-white font-bold text-[18px] sm:text-[20px] md:text-[22px] px-16 py-3 sm:w-auto sm:min-w-65 md:min-w-90"
+                      />
                     </div>
                   </div>
                 </div>
@@ -773,9 +776,10 @@ export default function DestinationPage() {
 
                     {/* Button */}
                     <div className="mt-8">
-                      <button className="bg-[#b8b8b8] hover:bg-[#9f9f9f] transition-colors text-white font-bold text-[18px] sm:text-[20px] md:text-[22px] px-16 py-3 sm:w-auto sm:min-w-65 md:min-w-90">
-                        {pkg.button}
-                      </button>
+                      <NotifyButton
+                        label={pkg.button}
+                        className="bg-[#b8b8b8] hover:bg-[#9f9f9f] transition-colors text-white font-bold text-[18px] sm:text-[20px] md:text-[22px] px-16 py-3 sm:w-auto sm:min-w-65 md:min-w-90"
+                      />
                     </div>
                   </div>
                 </div>
@@ -831,11 +835,10 @@ export default function DestinationPage() {
 
                       {/* Button */}
                       <div className="mt-8">
-                        <button
-                          className={`${pkg.buttonBg} transition-colors text-white font-bold text-[18px] sm:text-[20px] md:text-[22px] px-8 sm:px-12 md:px-16 py-3 w-full sm:w-auto sm:min-w-65 md:min-w-90`}
-                        >
-                          {pkg.button}
-                        </button>
+                        <NotifyButton
+                          label={pkg.button}
+                          className="bg-[#b8b8b8] hover:bg-[#9f9f9f] transition-colors text-white font-bold text-[18px] sm:text-[20px] md:text-[22px] px-16 py-3 sm:w-auto sm:min-w-65 md:min-w-90"
+                        />
                       </div>
                     </div>
                   </div>
@@ -853,7 +856,7 @@ export default function DestinationPage() {
         <FinalCTA
           title="Your Weekend Starts This Friday Night."
           description="13+ destinations. Weekly Friday night bus departures and Thursday/Friday train departures. Marathahalli, Silk Board, Majestic, or KSR Bengaluru. Every package confirmed. Every itinerary tested. From ₹3,999"
-          primaryLink="/destinations/north-india"
+          primaryLink="/destinations/south-india"
           primaryLabel="Browse All Packages from Bangalore → "
         />
       </div>
