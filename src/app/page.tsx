@@ -84,7 +84,7 @@ const frombglr = [
       "AC vehicle  •  3 nights 3 cities",
       "Kalaripayattu live show — Day 1",
     ],
-    href: "/tour/ooty-coonoor-mysore-mpes", // ! need link for this
+    href: "/tour/kerala-3days4nights", // ! need link for this
     badge: "Group Trip",
   },
 ];
@@ -100,7 +100,7 @@ const fromhyd = [
       "All Dandeli meals included (B+L+D)",
       "Camping + Om Beach + Murudeshwar",
     ],
-    href: "/tour/gokarna-dandeli-2n3d-ex-blr-r5i3",
+    href: "/tour/gokarna-dandeli-murudeshwar-honnavar",
     badge: "Group Trip",
   },
   {
@@ -114,7 +114,7 @@ const fromhyd = [
       "Mysore Palace on return",
       "Train from Kacheguda every Thu/Fri",
     ],
-    href: "/tour/coorg-chikmagalur-le2e",
+    href: "/tour/ooty-coonoor-mysore-mpes",
     badge: "Group Trip",
   },
   {
@@ -128,7 +128,7 @@ const fromhyd = [
       "Mysore Palace on return",
       "Premium Hyderabad package",
     ],
-    href: "/tour/ooty-coonoor-mysore-mpes",
+    href: "/tour/wayanad-getaway",
     badge: "Group Trip",
   },
 ];
@@ -184,20 +184,20 @@ const bglrTrips = [
   {
     title: "✦ More →",
     price: "See all Bangalore destinations",
-    image: "/hyd/1.png",
-    href: "/destinations/bangalore",
+    image: "/starting/blr.png",
+    href: "/destinations/from-bangalore",
     badge: "Group Trip",
   },
 ];
 const hydTrips = [
-  {
-    title: "Gokarna",
-    price: "From ₹4,999",
-    subtitle: "4 packages",
-    image: "/southindia/gokarna.png",
-    href: "/destinations/south-india/gokarna/from-hyderabad",
-    badge: "Group Trip",
-  },
+  // {
+  //   title: "Gokarna",
+  //   price: "From ₹4,999",
+  //   subtitle: "4 packages",
+  //   image: "/southindia/gokarna.png",
+  //   href: "/destinations/south-india/gokarna/from-hyderabad",
+  //   badge: "Group Trip",
+  // },
   {
     title: "Ooty",
     price: "From ₹7,199",
@@ -206,30 +206,30 @@ const hydTrips = [
     href: "/destinations/south-india/ooty/from-hyderabad",
     badge: "Group Trip",
   },
-  {
-    title: "Pondicherry",
-    price: "From ₹7,199",
-    subtitle: "2 packages",
-    image: "/southindia/pondicherry.png",
-    href: "/destinations/south-india/pondicherry/from-hyderabad",
-    badge: "Group Trip",
-  },
-  {
-    title: "Coorg",
-    price: "From ₹6,499",
-    subtitle: "1 package",
-    image: "/southindia/coorg.png",
-    href: "/destinations/south-india/coorg/from-hyderabad",
-    badge: "Group Trip",
-  },
-  {
-    title: "Wayanad",
-    price: "From ₹7,999",
-    subtitle: "1 package",
-    image: "/southindia/wayanad.png",
-    href: "/destinations/south-india/wayanad/from-hyderabad",
-    badge: "Group Trip",
-  },
+  // {
+  //   title: "Pondicherry",
+  //   price: "From ₹7,199",
+  //   subtitle: "2 packages",
+  //   image: "/southindia/pondicherry.png",
+  //   href: "/destinations/south-india/pondicherry/from-hyderabad",
+  //   badge: "Group Trip",
+  // },
+  // {
+  //   title: "Coorg",
+  //   price: "From ₹6,499",
+  //   subtitle: "1 package",
+  //   image: "/southindia/coorg.png",
+  //   href: "/destinations/south-india/coorg/from-hyderabad",
+  //   badge: "Group Trip",
+  // },
+  // {
+  //   title: "Wayanad",
+  //   price: "From ₹7,999",
+  //   subtitle: "1 package",
+  //   image: "/southindia/wayanad.png",
+  //   href: "/destinations/south-india/wayanad/from-hyderabad",
+  //   badge: "Group Trip",
+  // },
 ];
 const incredibleIndia = [
   {
@@ -491,14 +491,14 @@ The STC portfolio covers South India (Ooty, Coorg, Wayanad, Kerala, Gokarna, Pon
           {/* Buttons */}
           <div className="flex flex-col md:flex-row gap-6">
             <Link
-              href="/destinations/bangalore"
+              href="/destinations/from-bangalore"
               className="w-full md:w-1/2 text-center bg-brand text-black font-medium py-3 px-6 hover:opacity-90 transition"
             >
               🚌 View All Bangalore Packages →
             </Link>
 
             <Link
-              href="/destinations/hyderabad"
+              href="/destinations/from-hyderabad"
               className="w-full md:w-1/2 text-center bg-brand text-black font-medium py-3 px-6 hover:opacity-90 transition"
             >
               🚂 View All Hyderabad Packages →
