@@ -21,7 +21,7 @@ const himalayas = [
   {
     title: "Rishikesh",
     price: "Uttarakhand — Ganges",
-    subtitle: "India&apos;s adventure capital",
+    subtitle: "India's adventure capital",
     features: [
       "White water rafting",
       "Bungee jump",
@@ -29,8 +29,8 @@ const himalayas = [
       "Beatles Ashram",
       "Triveni Ghat aarti",
     ],
-    image: "/southindia/gokarna.png",
-    href: "/destinations/south-india/gokarna/from-hyderabad",
+    image: "/northindia/rishikesh.png",
+
     badge: "Group Trip",
   },
   {
@@ -44,8 +44,8 @@ const himalayas = [
       "Hadimba Temple",
       "Beas River camping",
     ],
-    image: "/southindia/ooty.png",
-    href: "/destinations/south-india/ooty/from-hyderabad",
+    image: "/northindia/manali.png",
+
     badge: "Group Trip",
   },
   {
@@ -59,8 +59,8 @@ const himalayas = [
       "Khardung La",
       "Hemis Monastery",
     ],
-    image: "/southindia/ooty.png",
-    href: "/destinations/south-india/ooty/from-hyderabad",
+    image: "/northindia/ladakh.png",
+
     badge: "Group Trip",
   },
   {
@@ -74,8 +74,8 @@ const himalayas = [
       "Pin Valley",
       "Kibber village",
     ],
-    image: "/southindia/ooty.png",
-    href: "/destinations/south-india/ooty/from-hyderabad",
+    image: "/northindia/spiti.png",
+
     badge: "Group Trip",
   },
 ];
@@ -91,8 +91,8 @@ const rajasthan = [
       "Jantar Mantar",
       "Nahargarh Fort",
     ],
-    image: "/southindia/ooty.png",
-    href: "/destinations/south-india/ooty/from-hyderabad",
+    image: "/westindia/rajasthan.png",
+
     badge: "Group Trip",
   },
   {
@@ -105,8 +105,8 @@ const rajasthan = [
       "Jaswant Thada",
       "Clock Tower Market",
     ],
-    image: "/southindia/ooty.png",
-    href: "/destinations/south-india/ooty/from-hyderabad",
+    image: "/inc/6.png",
+
     badge: "Group Trip",
   },
   {
@@ -120,8 +120,8 @@ const rajasthan = [
       "Sajjangarh",
       "Fateh Sagar Lake",
     ],
-    image: "/southindia/ooty.png",
-    href: "/destinations/south-india/ooty/from-hyderabad",
+    image: "/westindia/rajasthan.png",
+
     badge: "Group Trip",
   },
   {
@@ -134,8 +134,8 @@ const rajasthan = [
       "Camel safari",
       "Patwon Ki Haveli",
     ],
-    image: "/southindia/ooty.png",
-    href: "/destinations/south-india/ooty/from-hyderabad",
+    image: "/inc/6.png",
+
     badge: "Group Trip",
   },
 ];
@@ -151,7 +151,7 @@ const northindia = [
       "Sarnath",
     ],
     image: "/southindia/ooty.png",
-    href: "/destinations/south-india/ooty/from-hyderabad",
+
     badge: "Group Trip",
   },
   {
@@ -166,7 +166,7 @@ const northindia = [
       "Helicopter option",
     ],
     image: "/southindia/ooty.png",
-    href: "/destinations/south-india/ooty/from-hyderabad",
+
     badge: "Group Trip",
   },
   {
@@ -179,7 +179,7 @@ const northindia = [
       "Jallianwala Bagh",
     ],
     image: "/southindia/ooty.png",
-    href: "/destinations/south-india/ooty/from-hyderabad",
+
     badge: "Group Trip",
   },
   {
@@ -194,7 +194,7 @@ const northindia = [
       "Nageshwarnath",
     ],
     image: "/southindia/ooty.png",
-    href: "/destinations/south-india/ooty/from-hyderabad",
+
     badge: "Group Trip",
   },
 ];
@@ -211,7 +211,7 @@ const kashmir = [
       "Fatehpur Sikri",
     ],
     image: "/southindia/ooty.png",
-    href: "/destinations/south-india/ooty/from-hyderabad",
+
     badge: "Group Trip",
   },
   {
@@ -226,7 +226,7 @@ const kashmir = [
       "Mughal Gardens",
     ],
     image: "/southindia/ooty.png",
-    href: "/destinations/south-india/ooty/from-hyderabad",
+
     badge: "Group Trip",
   },
   {
@@ -240,7 +240,7 @@ const kashmir = [
       "Kasauli brewery walk",
     ],
     image: "/southindia/ooty.png",
-    href: "/destinations/south-india/ooty/from-hyderabad",
+
     badge: "Group Trip",
   },
   {
@@ -249,7 +249,7 @@ const kashmir = [
     subtitle: "The Queen of Hill Stations",
     features: ["Kempty Falls", "Gun Hill", "Lal Tibba", "Dehradun Clock Tower"],
     image: "/southindia/ooty.png",
-    href: "/destinations/south-india/ooty/from-hyderabad",
+
     badge: "Group Trip",
   },
 ];
@@ -326,44 +326,44 @@ export default function BhutanPage() {
   const trips = [
     {
       name: "manali",
-      link: "/destinations/north-india/manali",
+      link: "/tour/kasol-kheerganga-manali-solang",
       image: "/northindia/manali.png",
     },
     {
       name: "shimla",
-      link: "/destinations/north-india/shimla",
+      link: "/tour/shimla-manali-escapade",
       image: "/northindia/shimla.png",
     },
     {
       name: "kashmir",
-      link: "/destinations/north-india/kashmir",
+      link: "/tour/kashmir-backpacking-trip-j05q",
       image: "/northindia/kashmir.png",
     },
     {
       name: "agra",
-      link: "/destinations/north-india/agra",
+      link: "/tour/agra-manali-escapade",
       image: "/northindia/agra.png",
     },
-    {
-      name: "spiti",
-      link: "/destinations/north-india/spiti",
-      image: "/northindia/spiti.png",
-    },
-    {
-      name: "haridwar",
-      link: "/destinations/north-india/haridwar",
-      image: "/northindia/haridwar.png",
-    },
-    {
-      name: "ladakh",
-      link: "/destinations/north-india/ladakh",
-      image: "/northindia/ladakh.png",
-    },
-    {
-      name: "rishikesh",
-      link: "/destinations/north-india/rishikesh",
-      image: "/northindia/rishikesh.png",
-    },
+    // {
+    //   name: "spiti",
+    //   link: "/destinations/north-india/spiti",
+    //   image: "/northindia/spiti.png",
+    // },
+    // {
+    //   name: "haridwar",
+    //   link: "/destinations/north-india/haridwar",
+    //   image: "/northindia/haridwar.png",
+    // },
+    // {
+    //   name: "ladakh",
+    //   link: "/destinations/north-india/ladakh",
+    //   image: "/northindia/ladakh.png",
+    // },
+    // {
+    //   name: "rishikesh",
+    //   link: "/destinations/north-india/rishikesh",
+    //   image: "/northindia/rishikesh.png",
+    // },
   ];
 
   return (

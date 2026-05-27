@@ -5,6 +5,7 @@ import PackageCarousel from "@/components/PackageCarousel";
 import Reviews from "@/components/Reviews";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Image from "next/image";
+import Link from "next/link";
 
 import React from "react";
 
@@ -51,7 +52,7 @@ const ooty = [
     subtitle:
       "Mudumalai Tiger Reserve · Pykara Waterfalls · Toy Train · Tea Factory · Boat Ride",
     image: "/hyd/3.png",
-    href: "/destinations/south-india/ooty/from-hyderabad",
+    href: "/tour/ooty-coonoor-mysore-mpes",
     badge: "Group Trip",
   },
   {
@@ -61,7 +62,7 @@ const ooty = [
       "Adiyogi Laser Show · Evening Aarti · Toy Train · Chocolate Factory · Boat Ride ",
 
     image: "/hyd/5.png",
-    href: "/destinations/south-india/ooty/from-hyderabad",
+    href: "/tour/isha-ooty-coonoor-mysore-c8ua",
     badge: "Group Trip",
   },
 ];
@@ -148,7 +149,8 @@ export default function DestinationPage() {
               Kacheguda · 7:00 PM
             </div>
 
-            <button
+            <Link
+              href="/tour/ooty-coonoor-mysore-mpes"
               className="
         mt-7 md:mt-8
         w-full
@@ -167,10 +169,10 @@ export default function DestinationPage() {
               Book This
               <br />
               Package →
-            </button>
+            </Link>
 
             <div className="mt-5 md:mt-6 text-[#2b73b8] text-[14px] md:text-[15px] font-medium">
-              □ +91 9705051052
+              <Link href="tel:+918886051052">📞 +91 8886051052</Link>
             </div>
           </div>
         </div>
@@ -235,7 +237,8 @@ export default function DestinationPage() {
               Kacheguda · 7:00 PM
             </div>
 
-            <button
+            <Link
+              href="/tour/isha-ooty-coonoor-mysore-c8ua"
               className="
         mt-7 md:mt-8
         w-full
@@ -254,10 +257,10 @@ export default function DestinationPage() {
               Book This
               <br />
               Package →
-            </button>
+            </Link>
 
             <div className="mt-5 md:mt-6 text-[#2b73b8] text-[14px] md:text-[15px] font-medium">
-              □ +91 9705051052
+              <Link href="tel:+918886051052">📞 +91 8886051052</Link>
             </div>
           </div>
         </div>
@@ -420,7 +423,8 @@ export default function DestinationPage() {
                 <td className="border border-[#c9c9c9] bg-[#f7f7f7] p-3"></td>
 
                 <td className="border border-[#c9c9c9] bg-[#dfe8d7] p-3 text-center">
-                  <button
+                  <Link
+                    href="/tour/ooty-coonoor-mysore-mpes"
                     className="
               bg-[#1f4f84]
               hover:bg-[#183d66]
@@ -431,18 +435,17 @@ export default function DestinationPage() {
               text-[20px]
               leading-tight
               px-10
-              py-4
+              py-3
               min-w-55
             "
                   >
-                    Book Ooty &amp;
-                    <br />
-                    Coonoor →
-                  </button>
+                    Book Ooty &amp; Coonoor →
+                  </Link>
                 </td>
 
                 <td className="border border-[#c9c9c9] bg-[#eef1f8] p-3 text-center">
-                  <button
+                  <Link
+                    href="/tour/isha-ooty-coonoor-mysore-c8ua"
                     className="
               bg-[#d10000]
               hover:bg-[#b30000]
@@ -453,14 +456,12 @@ export default function DestinationPage() {
               text-[20px]
               leading-tight
               px-10
-              py-4
+              py-3
               min-w-55
             "
                   >
-                    Book Isha +
-                    <br />
-                    Ooty →
-                  </button>
+                    Book Isha + Ooty →
+                  </Link>
                 </td>
               </tr>
             </tbody>

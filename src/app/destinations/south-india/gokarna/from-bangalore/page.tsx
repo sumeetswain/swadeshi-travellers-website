@@ -35,7 +35,7 @@ const gokarna = [
       "Best for: beach + temples + culture · bus pickup · Friday night departure",
     ],
     image: "/packages/gokarna.png",
-    href: "/destinations/south-india/gokarna/from-bangalore",
+    href: "/tour/gokarna-weekend-getaway",
     badge: "Group Trip",
   },
   {
@@ -51,8 +51,8 @@ const gokarna = [
       "All Dandeli Day 1 meals included (Breakfast + Lunch + Dinner)",
       "Train tickets both ways included",
     ],
-    image: "/packages/gokarna.png",
-    href: "/destinations/south-india/gokarna/from-hyderabad",
+    image: "/hyd/1.png",
+    href: "/tour/gokarna-dandeli-ex-blr",
     badge: "Group Trip",
   },
 ];
@@ -228,7 +228,8 @@ export default function DestinationPage() {
               Friday nights
             </div>
 
-            <button
+            <Link
+              href="/tour/gokarna-weekend-getaway"
               className="
         w-full
         mt-8 md:mt-10
@@ -244,10 +245,10 @@ export default function DestinationPage() {
       "
             >
               Book 2-Day Gokarna →
-            </button>
+            </Link>
 
             <div className="mt-6 text-[#2870c7] text-[16px] md:text-[18px] font-medium">
-              📞 +91 8886051052
+              <Link href="tel:+918886051052">📞 +91 8886051052</Link>
             </div>
           </div>
         </div>
@@ -314,7 +315,8 @@ export default function DestinationPage() {
 
             <div className="mt-8 text-[24px] text-[#111]">Thu & Fri weekly</div>
 
-            <button
+            <Link
+              href="/tour/gokarna-dandeli-ex-blr"
               className="
             w-full
             mt-10
@@ -329,10 +331,10 @@ export default function DestinationPage() {
           "
             >
               Book 3-Day Gokarna + Dandeli →
-            </button>
+            </Link>
 
             <div className="mt-7 text-[#2870c7] text-[18px]">
-              📞 +91 8886051052
+              <Link href="tel:+918886051052">📞 +91 8886051052</Link>
             </div>
           </div>
         </div>
@@ -593,9 +595,9 @@ export default function DestinationPage() {
         <FinalCTA
           title="Mirjan Fort. Om Beach. Murudeshwar at Sunset. Or Dandeli’s River Sports First. Two Ways into Karnataka’s Coast."
           description="The bus leaves Friday night from Marathahalli at 9PM for the 2-day Gokarna weekend — Mirjan Fort and Om Beach on Day 1, Vibhooti Falls and Murudeshwar Temple on Day 2. The train leaves from KSR Thursday or Friday for the 3-day Gokarna + Dandeli circuit — all four water sports on a Dandeli river on Day 1 with meals included, Murudeshwar at sunset on Day 2, then the coast from Day 3. From ₹5,199"
-          primaryLink="/destinations/north-india"
+          primaryLink="/tour/gokarna-weekend-getaway"
           primaryLabel="2-Day Gokarna ₹5,199 →"
-          secondaryLink="/destinations/south-india"
+          secondaryLink="/tour/gokarna-dandeli-ex-blr"
           secondaryLabel="3-Day Gokarna + Dandeli ₹5,999 →"
         />
         {/* Packages Section */}

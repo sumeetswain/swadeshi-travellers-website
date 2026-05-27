@@ -45,8 +45,8 @@ export default function DestinationPage() {
         "4 pickup points: Majestic · Domlur · Marathahalli · Silk Board",
         "Best for: Kochi explorer · backwaters intro · quick Kerala weekend",
       ],
-      image: "/southindia/ooty.png",
-      href: "/destinations/south-india/ooty/from-hyderabad",
+      image: "/packages/kochiallepey.png",
+      href: "/tour/kochi-alleppey",
       badge: "Group Trip",
     },
     {
@@ -61,8 +61,8 @@ export default function DestinationPage() {
         "4 Breakfasts included · AC vehicle · 3 destinations",
         "Best for: complete Kerala · mountain + water + beach · premium",
       ],
-      image: "/southindia/ooty.png",
-      href: "/destinations/south-india/ooty/from-hyderabad",
+      image: "/packages/kerala.png",
+      href: "/tour/kerala-3days4nights",
       badge: "Group Trip",
     },
   ];
@@ -354,18 +354,24 @@ export default function DestinationPage() {
                   <p className="text-sm mb-3">
                     Fort Kochi + Alleppey is your priority. Budget trip.
                   </p>
-                  <button className="bg-brand text-white px-4 py-2 rounded-xl font-medium hover:opacity-90 transition">
+                  <Link
+                    href="/tour/kochi-alleppey"
+                    className="bg-brand text-white px-4 py-2 rounded-xl font-medium hover:opacity-90 transition"
+                  >
                     Book 2-Day →
-                  </button>
+                  </Link>
                 </td>
 
                 <td className="p-4 bg-brand/10 rounded-br-2xl">
                   <p className="text-sm mb-3">
                     Full Kerala experience with AC comfort & meals.
                   </p>
-                  <button className="bg-brand text-white px-4 py-2 rounded-xl font-medium hover:opacity-90 transition">
+                  <Link
+                    href="/tour/kerala-3days4nights"
+                    className="bg-brand text-white px-4 py-2 rounded-xl font-medium hover:opacity-90 transition"
+                  >
                     Book 4-Day →
-                  </button>
+                  </Link>
                 </td>
               </tr>
             </tbody>
@@ -377,9 +383,9 @@ export default function DestinationPage() {
         <FinalCTA
           title="Two Keralas From Bangalore. One Friday Night. One Wednesday Evening."
           description="The 2-day package covers Fort Kochi's Jew Town and the Alleppey backwaters — two days, one overnight, back by Sunday night. The 4-day package covers the full Kerala arc from the tea hills at 1,600 metres down through the backwaters to the cliff beach at Varkala — with 4 breakfasts, an AC vehicle, and a live Kalaripayattu performance in between. From ₹6,399. Both depart every week."
-          primaryLink="/destinations/north-india"
+          primaryLink="/tour/kochi-alleppey"
           primaryLabel="2-Day Kochi + Alleppey ₹6,399 →"
-          secondaryLink="/destinations/south-india"
+          secondaryLink="/tour/kerala-3days4nights"
           secondaryLabel="4-Day Kerala Full Circuit ₹17,499 →"
         />
         {/* Packages Section */}

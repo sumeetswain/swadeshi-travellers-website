@@ -19,7 +19,7 @@ const trips = [
   },
   {
     name: "From Hyderabad",
-    link: "/destinations/south-india/gokarna/from-hyderabad",
+    link: "/tour/gokarna-jogfalls",
     image: "/packages/gokarnajog.png",
   },
 ];

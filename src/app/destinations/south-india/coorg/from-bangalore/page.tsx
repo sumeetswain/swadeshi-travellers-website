@@ -36,6 +36,7 @@ const packages = [
     ],
     footer: "Best for: quick weekend · bus pickup · adventure + nature",
     buttonText: "View 2-Day Coorg Weekend →",
+    slug: "coorg-the-scotland-of-india-z64n",
   },
   {
     title: "3-Day Coorg + Chikmagalur",
@@ -54,6 +55,7 @@ const packages = [
     ],
     footer: "Best for: two destinations · train travel · heritage + peaks",
     buttonText: "View 3-Day Coorg + Chikmagalur →",
+    slug: "ooty-coonoor-ex-blr",
   },
 ];
 const faqs = [
@@ -183,11 +185,12 @@ export default function DestinationPage() {
                     {pkg.footer}
                   </p>
 
-                  <button
-                    className={`w-full py-3 rounded-xl text-white font-medium transition ${pkg.button}`}
+                  <Link
+                    href={`/tour/${pkg.slug}`}
+                    className={`w-full py-3 rounded-xl text-white font-medium transition ${pkg.button} px-5`}
                   >
                     {pkg.buttonText}
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -268,7 +271,8 @@ export default function DestinationPage() {
               Friday nights
             </div>
 
-            <button
+            <Link
+              href="/tour/coorg-the-scotland-of-india-z64n"
               className="
         w-full
         mt-8 md:mt-10
@@ -284,10 +288,10 @@ export default function DestinationPage() {
       "
             >
               Book 2-Day Coorg →
-            </button>
+            </Link>
 
             <div className="mt-6 text-[#2870c7] text-[15px] md:text-[16px] font-medium">
-              📞 +91 8886051052
+              <Link href="tel:+918886051052">📞 +91 8886051052</Link>
             </div>
           </div>
         </div>
@@ -356,26 +360,29 @@ export default function DestinationPage() {
               Thu & Fri weekly
             </div>
 
-            <button
+            <Link
+              href="/tour/ooty-coonoor-ex-blr"
               className="
-        w-full
-        mt-8 md:mt-10
-        bg-[#234f7d]
-        hover:bg-[#1b3d62]
-        transition-colors
-        duration-300
-        text-white
-        font-bold
-        text-[15px] md:text-[16px]
-        py-3.5 md:py-4
-        rounded-md
-      "
+    w-full
+    mt-8 md:mt-10
+    bg-[#234f7d]
+    hover:bg-[#1b3d62]
+    transition-colors
+    duration-300
+    text-white
+    font-bold
+    text-[15px] md:text-[16px]
+    py-3.5 md:py-4
+    rounded-md
+    text-center
+    block
+  "
             >
               Book 3-Day Coorg + Chikmagalur →
-            </button>
+            </Link>
 
             <div className="mt-6 text-[#2870c7] text-[15px] md:text-[16px] font-medium">
-              📞 +91 8886051052
+              <Link href="tel:+918886051052">📞 +91 8886051052</Link>
             </div>
           </div>
         </div>
@@ -585,15 +592,21 @@ export default function DestinationPage() {
                 <td></td>
 
                 <td className="p-2">
-                  <button className="w-full bg-[#355d1d] text-white font-semibold py-2">
+                  <Link
+                    href="/tour/ooty-coonoor-weekend-getaway"
+                    className="block w-full bg-[#355d1d] text-white font-semibold py-2 text-center"
+                  >
                     Book 2-Day Coorg →
-                  </button>
+                  </Link>
                 </td>
 
                 <td className="p-2">
-                  <button className="w-full bg-[#234f7d] text-white font-semibold py-2">
+                  <Link
+                    href="/tour/ooty-coonoor-ex-blr"
+                    className="block w-full bg-[#234f7d] text-white font-semibold py-2 text-center"
+                  >
                     Book 3-Day Coorg + Chikmagalur →
-                  </button>
+                  </Link>
                 </td>
               </tr>
             </tbody>
@@ -659,9 +672,9 @@ export default function DestinationPage() {
         <FinalCTA
           title="Abbey Falls. Mandalpatti. Raja Seat. Mullayanagiri. Belur Temple. Two Ways into the Western Ghats."
           description="The bus leaves Friday night from Marathahalli at 9PM for the 2-day Coorg weekend. The train leaves from KSR Thursday or Friday for the 3-day Coorg + Chikmagalur circuit. Both go into the same coffee-scented Western Ghats. One stays in Coorg and covers the zipline and the glass bridge and Raja Seat at sunset. The other stays two nights in two different districts and comes back via Belur Temple's 12th-century stonework. From ₹3,999"
-          primaryLink="/destinations/north-india"
+          primaryLink="/tour/coorg-the-scotland-of-india-z64n"
           primaryLabel="2-Day Coorg  ₹3,999 →"
-          secondaryLink="/destinations/south-india"
+          secondaryLink="/tour/ooty-coonoor-ex-blr"
           secondaryLabel="3-Day Coorg + Chikmagalur ₹5,999 →"
         />
       </div>

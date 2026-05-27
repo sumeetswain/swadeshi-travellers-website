@@ -75,8 +75,8 @@ export default function DestinationPage() {
         "Mysore Palace on return",
         "Toy train confirmed",
       ],
-      image: "/southindia/ooty.png",
-      href: "/destinations/south-india/ooty/from-hyderabad",
+      image: "/hyd/3.png",
+      href: "/tour/ooty-coonoor-weekend-getaway",
       badge: "Group Trip",
     },
     {
@@ -91,8 +91,8 @@ export default function DestinationPage() {
         "Namdroling Golden Temple",
         "Nisargadhama bamboo island",
       ],
-      image: "/southindia/ooty.png",
-      href: "/destinations/south-india/ooty/from-hyderabad",
+      image: "/packages/coorg.png",
+      href: "/tour/coorg-the-scotland-of-india-z64n",
       badge: "Group Trip",
     },
     {
@@ -107,8 +107,9 @@ export default function DestinationPage() {
         "Z Point ridge trek",
         "Belur Temple",
       ],
-      image: "/southindia/ooty.png",
-      href: "/destinations/south-india/ooty/from-hyderabad",
+      image: "/packages/chikmagalur.png",
+
+      href: "/tour/coorg-chikmagalur-le2e",
       badge: "Group Trip",
     },
     {
@@ -124,8 +125,8 @@ export default function DestinationPage() {
         "Murudeshwar Shiva statue",
         "Nirvana Beach",
       ],
-      image: "/southindia/ooty.png",
-      href: "/destinations/south-india/ooty/from-hyderabad",
+      image: "/packages/gokarna.png",
+      href: "/tour/gokarna-weekend-gateaway",
       badge: "Group Trip",
     },
     {
@@ -140,8 +141,8 @@ export default function DestinationPage() {
         "Hampi Bazaar",
         "Anjanadri Hill sunrise",
       ],
-      image: "/southindia/ooty.png",
-      href: "/destinations/south-india/ooty/from-hyderabad",
+      image: "/packages/hampi.png",
+      href: "/tour/hampi-weekend-gateaway",
       badge: "Group Trip",
     },
     {
@@ -154,8 +155,8 @@ export default function DestinationPage() {
         "Camping Night 1",
         "Full Dandeli meals included ",
       ],
-      image: "/southindia/ooty.png",
-      href: "/destinations/south-india/ooty/from-hyderabad",
+      image: "/packages/dandeli.png",
+      href: "/tour/dandeli-river-adventure",
       badge: "Group Trip",
     },
   ];
@@ -174,8 +175,8 @@ export default function DestinationPage() {
         "Pancha Rathas",
         "Krishna&#39;s Butter Ball",
       ],
-      image: "/southindia/ooty.png",
-      href: "/destinations/south-india/ooty/from-hyderabad",
+      image: "/packages/pondicherry10in1.png",
+      href: "/tour/pondicherry-mahabalipuram",
       badge: "Group Trip",
     },
     {
@@ -190,8 +191,8 @@ export default function DestinationPage() {
         "Ramana Maharshi Ashram",
         "French Colony",
       ],
-      image: "/southindia/ooty.png",
-      href: "/destinations/south-india/ooty/from-hyderabad",
+      image: "/hyd/4.png",
+      href: "/tour/arunachalam-pondicherry-ozem",
       badge: "Group Trip",
     },
   ];
@@ -208,8 +209,8 @@ export default function DestinationPage() {
         "Edakkal Caves",
         "Mysore Palace on return",
       ],
-      image: "/southindia/ooty.png",
-      href: "/destinations/south-india/ooty/from-hyderabad",
+      image: "/hyd/6.png",
+      href: "/tour/wayanad-weekend-gateway",
       badge: "Group Trip",
     },
     {
@@ -226,15 +227,15 @@ export default function DestinationPage() {
         "Alleppey Shikara ride",
         "4 Bangalore pickup points",
       ],
-      image: "/southindia/ooty.png",
-      href: "/destinations/south-india/ooty/from-hyderabad",
+      image: "/packages/kochiallepey.png",
+      href: "/tour/kochi-alleppey",
       badge: "Group Trip",
     },
     {
       title: "Kerala Full Circuit",
       price: "Kerala — Munnar + Alleppey + Varkala",
       subtitle:
-        "🚌 From Bangalore  ₹17,499 · 1 package 🚂 Hyderabad  Coming Soon",
+        "🚌 From Bangalore  ₹14,999 · 1 package 🚂 Hyderabad  Coming Soon",
       features: [
         "Munnar tea estates",
         "Echo Point",
@@ -244,8 +245,8 @@ export default function DestinationPage() {
         "4 breakfasts included ",
         "AC vehicle",
       ],
-      image: "/southindia/ooty.png",
-      href: "/destinations/south-india/ooty/from-hyderabad",
+      image: "/packages/kerala.png",
+      href: "/tour/kerala-backpacking",
       badge: "Group Trip",
     },
   ];
@@ -262,20 +263,20 @@ export default function DestinationPage() {
         "Araku coffee valley",
         "Vizag beach circuit",
       ],
-      image: "/southindia/ooty.png",
-      href: "/destinations/south-india/ooty/from-hyderabad",
+      image: "/southindia/araku.png",
+      href: "/tour/",
       badge: "Group Trip",
     },
-    {
-      title: "Andhra Pradesh — Coming Soon",
-      price: "Tamil Nadu — Tiruvannamalai",
-      subtitle:
-        "Tirupati (Tirumala Temple · Chittoor) and Puttaparthi circuits from Hyderabad in planning. Both are strong Hyderabad outbound destinations with high search volume. Expected launch: 2026.",
-      features: [],
-      image: "/southindia/ooty.png",
-      href: "/destinations/south-india/ooty/from-hyderabad",
-      badge: "Group Trip",
-    },
+    // {
+    //   title: "Andhra Pradesh — Coming Soon",
+    //   price: "Tamil Nadu — Tiruvannamalai",
+    //   subtitle:
+    //     "Tirupati (Tirumala Temple · Chittoor) and Puttaparthi circuits from Hyderabad in planning. Both are strong Hyderabad outbound destinations with high search volume. Expected launch: 2026.",
+    //   features: [],
+    //   image: "/southindia/ooty.png",
+    //   href: "/tour/",
+    //   badge: "Group Trip",
+    // },
   ];
   const faqs = [
     {

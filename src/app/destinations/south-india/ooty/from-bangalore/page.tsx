@@ -164,7 +164,8 @@ export default function DestinationPage() {
               Friday nights
             </div>
 
-            <button
+            <Link
+              href="/tour/ooty-coonoor-weekend-getaway"
               className="
         w-full
         mt-8 md:mt-10
@@ -180,10 +181,10 @@ export default function DestinationPage() {
       "
             >
               Book 2-Day Ooty →
-            </button>
+            </Link>
 
             <div className="mt-6 md:mt-8 text-[#4aa3ff] text-[16px] md:text-[20px] font-medium">
-              📞 +91 8886051052
+              <Link href="tel:+918886051052">📞 +91 8886051052</Link>
             </div>
           </div>
         </div>
@@ -251,7 +252,8 @@ export default function DestinationPage() {
               Thu & Fri weekly
             </div>
 
-            <button
+            <Link
+              href="/tour/ooty-coonoor-ex-blr"
               className="
         w-full
         mt-8 md:mt-10
@@ -267,10 +269,10 @@ export default function DestinationPage() {
       "
             >
               Book 3-Day Ooty + Nature →
-            </button>
+            </Link>
 
             <div className="mt-6 md:mt-8 text-[#4aa3ff] text-[16px] md:text-[20px] font-medium">
-              📞 +91 8886051052
+              <Link href="tel:+918886051052">📞 +91 8886051052</Link>
             </div>
           </div>
         </div>
@@ -335,7 +337,8 @@ export default function DestinationPage() {
               Thu & Fri weekly
             </div>
 
-            <button
+            <Link
+              href="/tour/isha-ooty-ex-blr"
               className="
         w-full
         mt-10
@@ -350,7 +353,7 @@ export default function DestinationPage() {
       "
             >
               Book Isha Foundation + Ooty →
-            </button>
+            </Link>
 
             <div className="mt-8 text-[#4aa3ff] text-[20px]">
               📞 +91 8886051052
@@ -654,21 +657,30 @@ export default function DestinationPage() {
                 <td className="p-4 bg-neutral-100"></td>
 
                 <td className="p-2">
-                  <button className="w-full bg-[#3d5f1e] hover:bg-[#314d18] text-white font-semibold py-2 transition">
+                  <Link
+                    href="/tour/ooty-coonoor-weekend-getaway"
+                    className="w-full bg-[#3d5f1e] hover:bg-[#314d18] text-white font-semibold p-2 transition"
+                  >
                     Book 2-Day Ooty →
-                  </button>
+                  </Link>
                 </td>
 
                 <td className="p-2">
-                  <button className="w-full bg-[#214d82] hover:bg-[#193b64] text-white font-semibold py-2 transition">
+                  <Link
+                    href="/tour/ooty-coonoor-ex-blr"
+                    className="w-full bg-[#214d82] hover:bg-[#193b64] text-white font-semibold p-2 transition"
+                  >
                     Book 3-Day Ooty Nature →
-                  </button>
+                  </Link>
                 </td>
 
                 <td className="p-2">
-                  <button className="w-full bg-[#7a34b2] hover:bg-[#642993] text-white font-semibold py-2 transition">
+                  <Link
+                    href="/tour/isha-ooty-ex-blr"
+                    className="w-full bg-[#7a34b2] hover:bg-[#642993] text-white font-semibold p-2 transition"
+                  >
                     Book Isha + Ooty →
-                  </button>
+                  </Link>
                 </td>
               </tr>
             </tbody>

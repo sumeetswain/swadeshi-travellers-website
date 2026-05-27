@@ -44,6 +44,7 @@ const packages = [
     ],
     footer: "Best for: weekend + meals included + bus pickup convenience",
     buttonText: "View 2-Day Wayanad Weekend →",
+    link: "/tour/wayanad-weekend-gateway",
   },
   {
     icon: "🚂",
@@ -63,6 +64,7 @@ const packages = [
     ],
     footer: "Best for: more days · train travel · Mysore Palace stop",
     buttonText: "View 3-Day Wayanad Train Tour →",
+    link: "/tour/wayanad-ex-blr",
   },
 ];
 const faqs = [
@@ -203,11 +205,12 @@ export default function DestinationPage() {
                       {pkg.footer}
                     </p>
 
-                    <button
-                      className={`w-full py-2 text-white text-[16px] font-bold transition ${pkg.button}`}
+                    <Link
+                      href={pkg.link}
+                      className={`w-full py-2 px-5 text-white text-[16px] font-bold transition ${pkg.button}`}
                     >
                       {pkg.buttonText}
-                    </button>
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -295,7 +298,8 @@ export default function DestinationPage() {
                 Friday nights
               </div>
 
-              <button
+              <Link
+                href="/tour/wayanad-weekend-gateway"
                 className="
           w-full
           mt-8
@@ -309,7 +313,7 @@ export default function DestinationPage() {
         "
               >
                 Book 2-Day Wayanad →
-              </button>
+              </Link>
 
               <div className="mt-8 text-[#2a6fc5] text-[18px]">
                 📞 +91 8886051052
@@ -386,7 +390,8 @@ export default function DestinationPage() {
                 Thu & Fri weekly
               </div>
 
-              <button
+              <Link
+                href="/tour/wayanad-ex-blr"
                 className="
           w-full
           mt-8
@@ -400,7 +405,7 @@ export default function DestinationPage() {
         "
               >
                 Book 3-Day Wayanad →
-              </button>
+              </Link>
 
               <div className="mt-8 text-[#2a6fc5] text-[18px]">
                 📞 +91 8886051052
@@ -626,15 +631,21 @@ export default function DestinationPage() {
                 <td className="border border-[#b5b5b5]"></td>
 
                 <td className="border border-[#b5b5b5] p-2">
-                  <button className="w-full bg-[#35591f] hover:bg-[#294518] transition text-white font-bold text-[18px] py-3">
+                  <Link
+                    href="/tour/wayanad-weekend-gateway"
+                    className="w-full bg-[#35591f] hover:bg-[#294518] transition text-white font-bold text-[18px] py-3 px-3"
+                  >
                     Book 2-Day Wayanad →
-                  </button>
+                  </Link>
                 </td>
 
                 <td className="border border-[#b5b5b5] p-2">
-                  <button className="w-full bg-[#214b78] hover:bg-[#183553] transition text-white font-bold text-[18px] py-3">
+                  <Link
+                    href="/tour/wayanad-ex-blr"
+                    className="w-full bg-[#214b78] hover:bg-[#183553] transition text-white font-bold text-[18px] py-3 px-3"
+                  >
                     Book 3-Day Wayanad →
-                  </button>
+                  </Link>
                 </td>
               </tr>
             </tbody>

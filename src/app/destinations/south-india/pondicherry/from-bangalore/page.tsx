@@ -3,6 +3,7 @@ import FAQ from "@/components/FAQs";
 import FinalCTA from "@/components/FinalCTA";
 import Reviews from "@/components/Reviews";
 import Image from "next/image";
+import Link from "next/link";
 
 import React from "react";
 
@@ -126,8 +127,7 @@ export default function DestinationPage() {
             </button>
 
             <button className="bg-[#c90000] text-white font-bold text-[18px] py-2 flex items-center justify-center gap-2 hover:opacity-90 transition">
-              <span>📞</span>
-              Book Now: +91 8886051052
+              <Link href="tel:+918886051052">Book Now +91 8886051052</Link>
             </button>
           </div>
         </div>
@@ -175,9 +175,12 @@ export default function DestinationPage() {
                     Best for: budget · bus pickup · quick weekend
                   </p>
 
-                  <button className="w-full bg-[#355f1d] text-white text-[15px] font-bold py-2">
+                  <Link
+                    href="/tour/pondicherry-weekend-gateaway-ex-banglore"
+                    className="w-full px-5 py-3 bg-[#355f1d] text-white text-[15px] font-bold "
+                  >
                     Book 2D Pondicherry ➜
-                  </button>
+                  </Link>
                 </div>
               </div>
 
@@ -218,9 +221,12 @@ export default function DestinationPage() {
                     Best for: nature + heritage · complete Pondicherry
                   </p>
 
-                  <button className="w-full bg-[#214b78] text-white text-[15px] font-bold py-2">
+                  <Link
+                    href="/tour/pondicherry-ex-blr"
+                    className="w-full px-5 py-3 bg-[#214b78] text-white text-[15px] font-bold "
+                  >
                     Book 3D Mangrove Tour ➜
-                  </button>
+                  </Link>
                 </div>
               </div>
 
@@ -261,9 +267,12 @@ export default function DestinationPage() {
                     Best for: spiritual seekers · unique dual-city
                   </p>
 
-                  <button className="w-full bg-[#6b2fa0] text-white text-[15px] font-bold py-2">
+                  <Link
+                    href="/tour/arunachalam-pondicherry-ex-blr"
+                    className="w-full px-5 py-3 bg-[#6b2fa0] text-white text-[15px] font-bold"
+                  >
                     Book Arunachalam + Pondi ➜
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -585,21 +594,30 @@ export default function DestinationPage() {
                 <td className="bg-[#f2f2f2] border border-neutral-400 p-3"></td>
 
                 <td className="bg-[#dfe7d7] border border-neutral-400 p-2">
-                  <button className="w-full bg-[#355f1d] hover:bg-[#2b4d17] text-white font-bold text-[14px] py-2 transition">
+                  <Link
+                    href="/tour/pondicherry-weekend-gateaway-ex-banglore"
+                    className="w-full bg-[#355f1d] hover:bg-[#2b4d17] text-white font-bold text-[14px] py-2 px-5  transition"
+                  >
                     Book 2D Pondicherry ➜
-                  </button>
+                  </Link>
                 </td>
 
                 <td className="bg-[#e4e8f1] border border-neutral-400 p-2">
-                  <button className="w-full bg-[#214b78] hover:bg-[#193b64] text-white font-bold text-[14px] py-2 transition">
+                  <Link
+                    href="/tour/pondicherry-ex-blr"
+                    className="w-full bg-[#214b78] hover:bg-[#193b64] text-white font-bold text-[14px] py-2 px-5  transition"
+                  >
                     Book 3D Mangrove Tour ➜
-                  </button>
+                  </Link>
                 </td>
 
                 <td className="bg-[#eadff0] border border-neutral-400 p-2">
-                  <button className="w-full bg-[#6b2fa0] hover:bg-[#56257f] text-white font-bold text-[14px] py-2 transition">
+                  <Link
+                    href="/tour/arunachalam-pondicherry-ex-blr"
+                    className="w-full bg-[#6b2fa0] hover:bg-[#56257f] text-white font-bold text-[14px] py-2 px-5 transition"
+                  >
                     Book Arunachalam + Pondi ➜
-                  </button>
+                  </Link>
                 </td>
               </tr>
             </tbody>
@@ -663,12 +681,15 @@ export default function DestinationPage() {
                 per person · 2D/1N
               </p>
 
-              <button className="w-full mt-6 bg-[#355f1d] hover:bg-[#294915] transition text-white font-bold text-[15px] py-3">
+              <Link
+                href="/tour/pondicherry-weekend-gateaway-ex-banglore"
+                className="w-full mt-6 bg-[#355f1d] hover:bg-[#294915] transition text-white font-bold text-[15px] py-3"
+              >
                 Book 2-Day Pondicherry ➜
-              </button>
+              </Link>
 
               <div className="mt-5 text-[#2b65a8] text-[14px]">
-                📞 +91 8886051052
+                <Link href="tel:+918886051052">📞 +91 8886051052</Link>
               </div>
             </div>
           </div>
@@ -737,12 +758,15 @@ export default function DestinationPage() {
                 per person · 3D/2N
               </p>
 
-              <button className="w-full mt-6 bg-[#214b78] hover:bg-[#193a5e] transition text-white font-bold text-[15px] py-3">
+              <Link
+                href="/tour/pondicherry-ex-blr"
+                className="w-full mt-6 bg-[#214b78] hover:bg-[#193a5e] transition text-white font-bold text-[15px] py-3"
+              >
                 Book 3D Mangrove + Heritage Tour ➜
-              </button>
+              </Link>
 
               <div className="mt-5 text-[#2b65a8] text-[14px]">
-                📞 +91 8886051052
+                <Link href="tel:+918886051052">📞 +91 8886051052</Link>
               </div>
             </div>
           </div>
@@ -812,12 +836,15 @@ export default function DestinationPage() {
                 per person · 3D/2N
               </p>
 
-              <button className="w-full mt-6 bg-[#6b2fa0] hover:bg-[#55237f] transition text-white font-bold text-[15px] py-3">
+              <Link
+                href="/tour/arunachalam-pondicherry-ex-blr"
+                className="w-full mt-6 bg-[#6b2fa0] hover:bg-[#55237f] transition text-white font-bold text-[15px] py-3"
+              >
                 Book Arunachalam + Pondicherry ➜
-              </button>
+              </Link>
 
               <div className="mt-5 text-[#2b65a8] text-[14px]">
-                📞 +91 8886051052
+                <Link href="tel:+918886051052">📞 +91 8886051052</Link>
               </div>
             </div>
           </div>
