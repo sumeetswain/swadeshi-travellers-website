@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     default: "Swadeshi",
     template: "%s | Swadeshi",
   },
+  icons: {
+    icon: "/STC_Logo.ico",
+  },
 };
 export default function RootLayout({
   children,
