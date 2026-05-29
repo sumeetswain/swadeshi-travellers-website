@@ -72,7 +72,7 @@ const faqs = [
     question:
       "Are all the Dandeli water sports really included in the ₹5,999 price?",
     answer:
-      "Yes. The STC 3-day Gokarna + Dandeli package (₹5,999) includes kayaking, zorbing, boating, and river swimming — all four water activities — in the stated package price. This is confirmed in the inclusions list. There are no separate charges for these activities on Day 1. River rafting and zipline are not confirmed as included in the Bangalore package — please call +91 8886051052 to confirm their status before booking if these are priorities.",
+      "Yes. The STC 3-day Gokarna + Dandeli package (₹5,999) includes kayaking, zorbing, boating, and river swimming — all four water activities — in the stated package price. This is confirmed in the inclusions list. There are no separate charges for these activities on Day 1. River rafting and zipline are not confirmed as included in the Bangalore package — please call +91 9705051052 to confirm their status before booking if these are priorities.",
   },
   {
     question: "What is the best time to visit Gokarna from Bangalore?",
@@ -83,7 +83,7 @@ const faqs = [
     question:
       "Is the bus pickup convenient from different parts of Bangalore for the 2-day package?",
     answer:
-      "The 2-day Gokarna bus (Package A) has 3 pickup points covering east, south, and central Bangalore: Marathahalli — Tansi Honda at 9:00 PM, Silk Board — Nahdi Mandi Restaurant at 10:00 PM, and Majestic — Metro Station East Entrance at 11:00 PM. Friday nights only. The 3-day Gokarna + Dandeli train package departs from KSR Bengaluru Railway Station (Krantivira Sangolli Rayanna) on Thursday and Friday evenings. Exact KSR departure time: confirm with operations at +91 8886051052.",
+      "The 2-day Gokarna bus (Package A) has 3 pickup points covering east, south, and central Bangalore: Marathahalli — Tansi Honda at 9:00 PM, Silk Board — Nahdi Mandi Restaurant at 10:00 PM, and Majestic — Metro Station East Entrance at 11:00 PM. Friday nights only. The 3-day Gokarna + Dandeli train package departs from KSR Bengaluru Railway Station (Krantivira Sangolli Rayanna) on Thursday and Friday evenings. Exact KSR departure time: confirm with operations at +91 9705051052.",
   },
 ];
 const features = [
@@ -137,11 +137,11 @@ export default function DestinationPage() {
         />
         <div className="w-[90%] lg:w-[30%] mx-auto mt-5">
           <Link
-            href="tel:+918886051052"
+            href="tel:+919705051052"
             className="flex items-center gap-2 hover:underline bg-brand px-5 py-3 w-full text-white text-center justify-center rounded-2xl"
           >
             <Phone size={16} />
-            Not sure which package? Call us at +91 8886051052
+            Not sure which package? Call us at +91 9705051052
           </Link>
         </div>
         <PackageCarousel items={gokarna} title="Choose Your Gokarna Journey" />
@@ -248,7 +248,7 @@ export default function DestinationPage() {
             </Link>
 
             <div className="mt-6 text-[#2870c7] text-[16px] md:text-[18px] font-medium">
-              <Link href="tel:+918886051052">📞 +91 8886051052</Link>
+              <Link href="tel:+919705051052">📞 +91 9705051052</Link>
             </div>
           </div>
         </div>
@@ -334,7 +334,7 @@ export default function DestinationPage() {
             </Link>
 
             <div className="mt-7 text-[#2870c7] text-[18px]">
-              <Link href="tel:+918886051052">📞 +91 8886051052</Link>
+              <Link href="tel:+919705051052">📞 +91 9705051052</Link>
             </div>
           </div>
         </div>

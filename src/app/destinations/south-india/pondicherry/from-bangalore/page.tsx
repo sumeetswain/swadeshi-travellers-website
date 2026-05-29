@@ -127,7 +127,7 @@ export default function DestinationPage() {
             </button>
 
             <button className="bg-[#c90000] text-white font-bold text-[18px] py-2 flex items-center justify-center gap-2 hover:opacity-90 transition">
-              <Link href="tel:+918886051052">Book Now +91 8886051052</Link>
+              <Link href="tel:+919705051052">Book Now +91 9705051052</Link>
             </button>
           </div>
         </div>
@@ -689,7 +689,7 @@ export default function DestinationPage() {
               </Link>
 
               <div className="mt-5 text-[#2b65a8] text-[14px]">
-                <Link href="tel:+918886051052">📞 +91 8886051052</Link>
+                <Link href="tel:+919705051052">📞 +91 9705051052</Link>
               </div>
             </div>
           </div>
@@ -766,7 +766,7 @@ export default function DestinationPage() {
               </Link>
 
               <div className="mt-5 text-[#2b65a8] text-[14px]">
-                <Link href="tel:+918886051052">📞 +91 8886051052</Link>
+                <Link href="tel:+919705051052">📞 +91 9705051052</Link>
               </div>
             </div>
           </div>
@@ -844,7 +844,7 @@ export default function DestinationPage() {
               </Link>
 
               <div className="mt-5 text-[#2b65a8] text-[14px]">
-                <Link href="tel:+918886051052">📞 +91 8886051052</Link>
+                <Link href="tel:+919705051052">📞 +91 9705051052</Link>
               </div>
             </div>
           </div>

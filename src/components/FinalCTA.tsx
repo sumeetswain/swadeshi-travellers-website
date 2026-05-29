@@ -34,7 +34,7 @@ const FinalCTA: React.FC<FinalCTAProps> = ({
   thirdLink,
   thirdLabel,
 
-  phone = "+91 8886051052",
+  phone = "+91 9705051052",
   instagram = "@swadeshi_traveller",
   website = "https://www.swadeshitraveller.com",
 }) => {

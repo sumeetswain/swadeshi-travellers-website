@@ -34,7 +34,7 @@ const faqs = [
   {
     question: "Is the UNESCO Nilgiri Mountain Railway toy train guaranteed?",
     answer:
-      "Yes. The STC 3-day Gokarna + Dandeli package (₹5,999) includes kayaking, zorbing, boating, and river swimming — all four water activities — in the stated package price. This is confirmed in the inclusions list. There are no separate charges for these activities on Day 1. River rafting and zipline are not confirmed as included in the Bangalore package — please call +91 8886051052 to confirm their status before booking if these are priorities.",
+      "Yes. The STC 3-day Gokarna + Dandeli package (₹5,999) includes kayaking, zorbing, boating, and river swimming — all four water activities — in the stated package price. This is confirmed in the inclusions list. There are no separate charges for these activities on Day 1. River rafting and zipline are not confirmed as included in the Bangalore package — please call +91 9705051052 to confirm their status before booking if these are priorities.",
   },
   {
     question: "What is the best time to visit Ooty from Bangalore?",
@@ -99,11 +99,11 @@ export default function DestinationPage() {
         />
         <div className="w-[90%] lg:w-[30%] mx-auto my-5">
           <Link
-            href="tel:+918886051052"
+            href="tel:+919705051052"
             className="flex items-center gap-2 hover:underline bg-brand px-5 py-3 w-full text-white text-center justify-center rounded-2xl"
           >
             <Phone size={16} />
-            Not sure which package? Call us at +91 8886051052
+            Not sure which package? Call us at +91 9705051052
           </Link>
         </div>
         {/* Package 1 */}
@@ -184,7 +184,7 @@ export default function DestinationPage() {
             </Link>
 
             <div className="mt-6 md:mt-8 text-[#4aa3ff] text-[16px] md:text-[20px] font-medium">
-              <Link href="tel:+918886051052">📞 +91 8886051052</Link>
+              <Link href="tel:+919705051052">📞 +91 9705051052</Link>
             </div>
           </div>
         </div>
@@ -272,7 +272,7 @@ export default function DestinationPage() {
             </Link>
 
             <div className="mt-6 md:mt-8 text-[#4aa3ff] text-[16px] md:text-[20px] font-medium">
-              <Link href="tel:+918886051052">📞 +91 8886051052</Link>
+              <Link href="tel:+919705051052">📞 +91 9705051052</Link>
             </div>
           </div>
         </div>
@@ -356,7 +356,7 @@ export default function DestinationPage() {
             </Link>
 
             <div className="mt-8 text-[#4aa3ff] text-[20px]">
-              📞 +91 8886051052
+              📞 +91 9705051052
             </div>
           </div>
         </div>

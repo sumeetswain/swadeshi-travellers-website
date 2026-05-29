@@ -17,7 +17,7 @@ const defaultFaqs = [
   {
     question: "Do you offer packages from both Bangalore and Hyderabad?",
     answer:
-      "Yes — STC runs group tour packages every Thursday and Friday from both cities. Bangalore packages depart from Marathahalli, Silk Board, and Majestic by bus, or from KSR Bengaluru Railway Station by train. Hyderabad packages depart from Nampally, Kacheguda, Begumpet, and Lingampally by train. Both cities have separate package portfolios — check the relevant section on this page or call us at +91 8886051052.",
+      "Yes — STC runs group tour packages every Thursday and Friday from both cities. Bangalore packages depart from Marathahalli, Silk Board, and Majestic by bus, or from KSR Bengaluru Railway Station by train. Hyderabad packages depart from Nampally, Kacheguda, Begumpet, and Lingampally by train. Both cities have separate package portfolios — check the relevant section on this page or call us at +91 9705051052.",
   },
   {
     question: "Are train tickets included in the package price?",
@@ -27,7 +27,7 @@ const defaultFaqs = [
   {
     question: "How do I confirm my booking?",
     answer:
-      "Pay 50% advance to confirm your seat. The remaining 50% is due 1 day before departure. For bookings made within 3 days of departure, 100% payment is required upfront. Payment confirmation is shared digitally. Call +91 8886051052 or message @swadeshi_traveller_bangalore on Instagram to book.",
+      "Pay 50% advance to confirm your seat. The remaining 50% is due 1 day before departure. For bookings made within 3 days of departure, 100% payment is required upfront. Payment confirmation is shared digitally. Call +91 9705051052 or message @swadeshi_traveller_bangalore on Instagram to book.",
   },
   {
     question: "Is food included in the packages?",

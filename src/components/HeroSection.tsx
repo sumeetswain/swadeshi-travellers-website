@@ -84,7 +84,7 @@ export default function HeroSection() {
 
       <div className="absolute z-10 bottom-6 left-1/2 transform -translate-x-1/2 w-full px-4 pb-12 flex justify-center text-white text-sm sm:text-base">
         <div className="px-4 py-2 rounded-full text-center">
-          📞 +91 8886051052 &nbsp; | &nbsp; Every Thursday & Friday &nbsp; |
+          📞 +91 9705051052 &nbsp; | &nbsp; Every Thursday & Friday &nbsp; |
           &nbsp; Pickup from your city
         </div>
       </div>

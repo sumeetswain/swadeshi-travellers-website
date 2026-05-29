@@ -407,7 +407,7 @@ Swadeshi Traveller Community is building group tour packages to all of this — 
           </a>
 
           <p className="mt-4 text-sm text-black/80 flex items-center gap-2 flex-wrap justify-center">
-            <span>📞 Or call us: +91 8886051052</span>
+            <span>📞 Or call us: +91 9705051052</span>
             <span>•</span>
             <span>@swadeshi_traveller_bangalore</span>
           </p>
@@ -481,11 +481,11 @@ Swadeshi Traveller Community is building group tour packages to all of this — 
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-black mt-5">
             {/* Phone */}
             <a
-              href="tel:+918886051052"
+              href="tel:+919705051052"
               className="flex items-center gap-2 hover:underline"
             >
               <Phone size={16} />
-              +91 8886051052
+              +91 9705051052
             </a>
 
             <span className="hidden md:block text-gray-500">|</span>

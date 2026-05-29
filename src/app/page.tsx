@@ -36,7 +36,7 @@ const deals = [
     icon: <Users />,
     title: "Group Discount",
     description:
-      "Travelling with 8+ friends? Ask us about group pricing. The more you bring, the better it gets. Call: +91 8886051052.",
+      "Travelling with 8+ friends? Ask us about group pricing. The more you bring, the better it gets. Call: +91 9705051052.",
   },
   {
     icon: <RotateCcw />,
@@ -507,11 +507,11 @@ The STC portfolio covers South India (Ooty, Coorg, Wayanad, Kerala, Gokarna, Pon
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-black mt-5">
             {/* Phone */}
             <a
-              href="tel:+918886051052"
+              href="tel:+919705051052"
               className="flex items-center gap-2 hover:underline"
             >
               <Phone size={16} />
-              +91 8886051052
+              +91 9705051052
             </a>
 
             <span className="hidden md:block text-gray-500">|</span>

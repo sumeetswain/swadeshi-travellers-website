@@ -147,11 +147,11 @@ export default function DestinationPage() {
         />
         <div className="w-[90%] lg:w-[30%] mx-auto mt-5">
           <Link
-            href="tel:+918886051052"
+            href="tel:+919705051052"
             className="flex items-center gap-2 hover:underline bg-brand px-5 py-3 w-full text-white text-center justify-center rounded-2xl"
           >
             <Phone size={16} />
-            Not sure which package? Call us at +91 8886051052
+            Not sure which package? Call us at +91 9705051052
           </Link>
         </div>
         <PackageCarousel items={kerala} title="Choose Your Kerala Journey" />

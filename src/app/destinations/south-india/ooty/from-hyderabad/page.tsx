@@ -172,7 +172,7 @@ export default function DestinationPage() {
             </Link>
 
             <div className="mt-5 md:mt-6 text-[#2b73b8] text-[14px] md:text-[15px] font-medium">
-              <Link href="tel:+918886051052">📞 +91 8886051052</Link>
+              <Link href="tel:+919705051052">📞 +91 9705051052</Link>
             </div>
           </div>
         </div>
@@ -260,7 +260,7 @@ export default function DestinationPage() {
             </Link>
 
             <div className="mt-5 md:mt-6 text-[#2b73b8] text-[14px] md:text-[15px] font-medium">
-              <Link href="tel:+918886051052">📞 +91 8886051052</Link>
+              <Link href="tel:+919705051052">📞 +91 9705051052</Link>
             </div>
           </div>
         </div>
