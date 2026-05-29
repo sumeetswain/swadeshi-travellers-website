@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Menu, ChevronDown, X } from "lucide-react";
+import Image from "next/image";
 
 type DestinationPlace = { label: string; href: string };
 type DestinationRegion = {
@@ -69,8 +70,19 @@ const Navbar = () => {
     <nav className="w-full bg-brand shadow-md fixed top-0 left-0 z-50">
       {/* Main Navbar */}
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
-        <Link href="/" className="text-white font-bold text-xl">
-          Swadeshi
+        <Link
+          href="/"
+          className="flex items-center gap-2 text-white font-bold text-xl"
+        >
+          <Image
+            src="/STC_Logo.png"
+            alt="Swadeshi Logo"
+            width={48}
+            height={48}
+            className="object-contain"
+          />
+
+          <span>Swadeshi Travellers</span>
         </Link>
 
         {/* Desktop Links */}
