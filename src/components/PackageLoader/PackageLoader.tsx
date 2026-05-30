@@ -42,23 +42,44 @@ export function PackageLoader({ title, category }: PackageLoaderProps) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const params: {
+        const baseParams: {
           api_key: string;
           category?: string;
         } = {
           api_key: API_KEY,
         };
 
-        // only add category if present
+        const hyderabadParams: {
+          api_key: string;
+          category?: string;
+        } = {
+          api_key: process.env.NEXT_PUBLIC_HYDERABAD_API_KEY as string,
+        };
+
+        // add category if present
         if (category) {
-          params.category = category;
+          baseParams.category = category;
+          hyderabadParams.category = category;
         }
 
-        const res = await axios.get(`${API_ENDPOINT}/event-details/`, {
-          params,
-        });
+        // make both requests together
+        const [res1, res2] = await Promise.all([
+          axios.get(`${API_ENDPOINT}/event-details/`, {
+            params: baseParams,
+          }),
+          axios.get(`${API_ENDPOINT}/event-details/`, {
+            params: hyderabadParams,
+          }),
+        ]);
 
-        setDataArray([Object.values(res.data) as Trip[]]);
+        // convert objects to arrays
+        const data1 = Object.values(res1.data) as Trip[];
+        const data2 = Object.values(res2.data) as Trip[];
+
+        // combine arrays
+        const combinedData = [...data1, ...data2];
+
+        setDataArray([combinedData]);
       } catch (error) {
         console.error(error);
       }
