@@ -49,13 +49,42 @@ export default function TrekPage() {
   const [data, setData] = React.useState<TrekEvent[]>([]);
   useEffect(() => {
     const fetchData = async () => {
-      await axios
-        .get(`${API_ENDPOINT}/event-details?slug=${slug}&api_key=${API_KEY}`)
-        .then((res) => {
-          setData(Object.values(res.data) as TrekEvent[]);
+      try {
+        // first request with normal API key
+        const res1 = await axios.get(`${API_ENDPOINT}/event-details`, {
+          params: {
+            slug,
+            api_key: API_KEY,
+          },
         });
+
+        const data1 = Object.values(res1.data || {}) as TrekEvent[];
+
+        // if data exists, use it
+        if (data1.length > 0) {
+          setData(data1);
+          return;
+        }
+
+        // fallback request with hyderabad key
+        const res2 = await axios.get(`${API_ENDPOINT}/event-details`, {
+          params: {
+            slug,
+            api_key: process.env.NEXT_PUBLIC_HYDERABAD_API_KEY,
+          },
+        });
+
+        const data2 = Object.values(res2.data || {}) as TrekEvent[];
+
+        setData(data2);
+      } catch (error) {
+        console.error("Error fetching trek data:", error);
+      }
     };
-    fetchData();
+
+    if (slug) {
+      fetchData();
+    }
   }, [slug]);
 
   // ================= UI =================
