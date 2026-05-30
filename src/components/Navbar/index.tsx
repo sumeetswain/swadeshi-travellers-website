@@ -82,7 +82,7 @@ const Navbar = () => {
             className="object-contain"
           />
 
-          <span>Swadeshi Travellers</span>
+          <span>Swadeshi Traveller</span>
         </Link>
 
         {/* Desktop Links */}
