@@ -495,6 +495,14 @@ export default function DestinationPage() {
           content="Every package on this page departs from Hyderabad by train or bus on Thursday or Friday evening — and returns you to Hyderabad by Sunday night. Tickets, vehicle, accommodation, and a trip captain are all included in the price. You choose the destination. We handle everything else."
         />
       </div>
+      <PackageLoader
+        title="Weekend Trips from Hyderabad"
+        category="weekend-trips-hyderabad"
+      />
+      <PackageLoader
+        title="Backpacking Trips from Hyderabad"
+        category="backpacking-trips-hyderabad"
+      />
       <section className="w-full bg-[#efefef] p-3 md:p-6">
         <h2 className="text-2xl md:text-3xl font-bold text-[#2d6bb0] mb-5">
           All 13 Packages from Hyderabad — Quick View

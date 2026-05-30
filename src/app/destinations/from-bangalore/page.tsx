@@ -14,6 +14,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { PackageLoader } from "@/components/PackageLoader/PackageLoader";
 
 export const metadata = {
   title:
@@ -443,6 +444,14 @@ export default function DestinationPage() {
           title="13+ Group Tour Packages. Weekly Thursday & Friday Departures. Bangalore's Most Trusted Travel Community"
           content="South India, Kerala, Karnataka, Tamil Nadu, Pondicherry, Gokarna — STC runs fixed weekly departures from Bangalore to 13+ destinations, every Thursday and Friday. Bus pickups from Marathahalli, Silk Board, and Majestic. Train departures from KSR Bengaluru Railway Station. Certified trip captains. From ₹3,999. Everything organised. You just show up."
         />
+        <PackageLoader
+          title="Backpacking Trips from Bangalore"
+          category="backpacking-trips-bangalore"
+        />
+        {/* <PackageLoader
+          title="Weekend Trips from Bangalore"
+          category="weekend-trips-bangalore"
+        /> */}
         <div className="w-[90%] md:w-[85%] mx-auto my-12">
           {/* Heading */}
           <h2 className="text-[#2d67a3] text-[38px] font-bold mb-8 leading-tight">
