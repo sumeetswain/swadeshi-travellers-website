@@ -91,7 +91,7 @@ const rajasthan = [
       "Jantar Mantar",
       "Nahargarh Fort",
     ],
-    image: "/westindia/rajasthan.png",
+    image: "/rajasthan/jaipur.png",
 
     badge: "Group Trip",
   },
@@ -105,7 +105,7 @@ const rajasthan = [
       "Jaswant Thada",
       "Clock Tower Market",
     ],
-    image: "/inc/6.png",
+    image: "/rajasthan/jodhpur.png",
 
     badge: "Group Trip",
   },
@@ -120,7 +120,7 @@ const rajasthan = [
       "Sajjangarh",
       "Fateh Sagar Lake",
     ],
-    image: "/westindia/rajasthan.png",
+    image: "/rajasthan/udaipur.png",
 
     badge: "Group Trip",
   },
@@ -134,7 +134,7 @@ const rajasthan = [
       "Camel safari",
       "Patwon Ki Haveli",
     ],
-    image: "/inc/6.png",
+    image: "/rajasthan/jaisalmer.png",
 
     badge: "Group Trip",
   },
@@ -150,7 +150,7 @@ const northindia = [
       "Kashi Vishwanath Temple",
       "Sarnath",
     ],
-    image: "/southindia/ooty.png",
+    image: "/spiritual/varanasi.png",
 
     badge: "Group Trip",
   },
@@ -165,7 +165,7 @@ const northindia = [
       "Yamunotri",
       "Helicopter option",
     ],
-    image: "/southindia/ooty.png",
+    image: "/spiritual/kedarnath.png",
 
     badge: "Group Trip",
   },
@@ -178,7 +178,7 @@ const northindia = [
       "Wagah Border ceremony",
       "Jallianwala Bagh",
     ],
-    image: "/southindia/ooty.png",
+    image: "/spiritual/amritsar.png",
 
     badge: "Group Trip",
   },
@@ -193,7 +193,7 @@ const northindia = [
       "Kanak Bhawan",
       "Nageshwarnath",
     ],
-    image: "/southindia/ooty.png",
+    image: "/spiritual/ayodhya.png",
 
     badge: "Group Trip",
   },
@@ -210,7 +210,7 @@ const kashmir = [
       "India Gate",
       "Fatehpur Sikri",
     ],
-    image: "/southindia/ooty.png",
+    image: "/spiritual/delhiagra.png",
 
     badge: "Group Trip",
   },
@@ -225,7 +225,7 @@ const kashmir = [
       "Sonamarg",
       "Mughal Gardens",
     ],
-    image: "/southindia/ooty.png",
+    image: "/spiritual/kashmir.png",
 
     badge: "Group Trip",
   },
@@ -239,7 +239,7 @@ const kashmir = [
       "Jakhu Temple",
       "Kasauli brewery walk",
     ],
-    image: "/southindia/ooty.png",
+    image: "/spiritual/shimla.png",
 
     badge: "Group Trip",
   },
@@ -248,7 +248,7 @@ const kashmir = [
     price: "Uttarakhand — Himalayan foothills",
     subtitle: "The Queen of Hill Stations",
     features: ["Kempty Falls", "Gun Hill", "Lal Tibba", "Dehradun Clock Tower"],
-    image: "/southindia/ooty.png",
+    image: "/spiritual/dehradun.png",
 
     badge: "Group Trip",
   },
