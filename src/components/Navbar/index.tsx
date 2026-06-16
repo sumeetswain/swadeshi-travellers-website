@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Menu, ChevronDown, X } from "lucide-react";
 import Image from "next/image";
+import { AnimatePresence } from "framer-motion";
+import CustomTripsPopup from "../CustomTripsPopup";
 
 type DestinationPlace = { label: string; href: string };
 type DestinationRegion = {
@@ -57,6 +59,7 @@ const departuresNav = [
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [customTripsOpen, setCustomTripsOpen] = useState(false);
 
   const toggleSidebar = () => {
     setSidebarOpen((prev) => !prev);
@@ -146,6 +149,13 @@ const Navbar = () => {
               ))}
             </div>
           </div>
+
+          <button
+            onClick={() => setCustomTripsOpen(true)}
+            className="bg-white text-brand font-semibold px-4 py-2 rounded-full hover:bg-white/90 transition"
+          >
+            Custom Trips
+          </button>
         </div>
 
         {/* Sidebar Toggle Button */}
@@ -244,8 +254,24 @@ const Navbar = () => {
               ))}
             </div>
           </div>
+
+          <button
+            onClick={() => {
+              closeSidebar();
+              setCustomTripsOpen(true);
+            }}
+            className="w-full mt-4 bg-white text-brand font-semibold px-4 py-2.5 rounded-full hover:bg-white/90 transition"
+          >
+            Custom Trips
+          </button>
         </div>
       </div>
+
+      <AnimatePresence>
+        {customTripsOpen && (
+          <CustomTripsPopup onClose={() => setCustomTripsOpen(false)} />
+        )}
+      </AnimatePresence>
     </nav>
   );
 };
