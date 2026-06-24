@@ -12,6 +12,9 @@ import React from "react";
 export const metadata = {
   title:
     "Ooty Tour Package from Bangalore 2026 — ₹5,399 Onwards | UNESCO Toy Train | Mysore Palace | Swadeshi Traveller",
+  alternates: {
+    canonical: "/destinations/south-india/ooty/from-bangalore",
+  },
   description:
     "Book Ooty group tour packages from Bangalore from ₹5,399. 2-day bus tour — pickup at Marathahalli, Silk Board & Majestic. 3-day train tour: UNESCO toy train confirmed, Bundipuri Forest & Mysore Palace from KSR. Isha Foundation + Ooty also available. Thu & Fri departures.",
   keywords:

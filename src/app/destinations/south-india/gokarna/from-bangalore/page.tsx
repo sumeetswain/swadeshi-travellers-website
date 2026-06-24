@@ -15,6 +15,9 @@ import React from "react";
 export const metadata = {
   title:
     "Gokarna Trip from Bangalore 2026 — ₹5,199 Onwards | Mirjan Fort, Om Beach, Murudeshwar & Dandeli | STC",
+  alternates: {
+    canonical: "/destinations/south-india/gokarna/from-bangalore",
+  },
   description:
     "Book Gokarna group tour packages from Bangalore from ₹5,199. 2-day bus tour — pickup at Marathahalli, Silk Board & Majestic. Mirjan Fort, Om Beach, Kudle Beach, Jatayu Teertha, Murudeshwar Temple. 3-day train tour — Dandeli water sports (kayaking, zorbing, boating, river swimming) ALL INCLUDED + Vibhooti Falls + Nirvana Beach. From KSR every Thu & Fri",
   keywords:

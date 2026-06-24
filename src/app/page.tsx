@@ -411,6 +411,9 @@ const stcFeatures = [
 export const metadata = {
   title:
     "Group Tour Packages from Bangalore & Hyderabad | STC — ₹3,999 Onwards | Ooty, Coorg, Wayanad, Kerala & More",
+  alternates: {
+    canonical: "/",
+  },
   description:
     "Book group tour packages from Bangalore & Hyderabad from ₹3,999. Weekly departures every Thu & Fri. Ooty, Coorg, Wayanad, Kerala, Gokarna, Pondicherry, Hampi, Araku & Lonavala. Train tickets included. MSME & ATOAI Certified. 4.8 Google Rating.",
   keywords:

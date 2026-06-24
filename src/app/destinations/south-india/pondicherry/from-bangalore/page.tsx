@@ -10,6 +10,9 @@ import React from "react";
 export const metadata = {
   title:
     "Pondicherry Tour Packages from Bangalore 2026 — ₹4,599 Onwards | Swadeshi Traveller",
+  alternates: {
+    canonical: "/destinations/south-india/pondicherry/from-bangalore",
+  },
   description:
     "Book Pondicherry group tour packages from Bangalore from ₹4,599. 2-day bus tour: 11 sights, pickup at Majestic/Domlur/Marathahalli/Silk Board. 3-day train tour via Pichavaram Mangrove + Mahabalipuram Shore Temple. Arunachalam + Pondicherry spiritual tour. Thu & Fri departures from KSR.",
   keywords:

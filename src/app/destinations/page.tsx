@@ -4,6 +4,9 @@ import React from "react";
 
 export const metadata = {
   title: "Destinations",
+  alternates: {
+    canonical: "/destinations",
+  },
   description:
     "Explore Swadeshi Traveller destinations across South India, North India, and international group trips.",
 };

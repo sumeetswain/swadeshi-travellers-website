@@ -20,6 +20,9 @@ import React from "react";
 export const metadata = {
   title:
     "Wayanad Tour Package from Bangalore 2026 — ₹5,999 Onwards | Meals Included | Chembra Trek & Mysore Palace | STC",
+  alternates: {
+    canonical: "/destinations/south-india/wayanad/from-bangalore",
+  },
   description:
     "Book Wayanad group tour packages from Bangalore from ₹5,999. 2-day bus tour with meals included — pickup at Marathahalli, Silk Board & Majestic. Banasura Sagar Dam, zipline, Chembra Peak trek, 900 Kandi Glass Bridge, Pookode Lake. 3-day train tour with Mysore Palace from KSR. Thu & Fri departures.",
   keywords:

@@ -24,6 +24,9 @@ import FinalCTA from "@/components/FinalCTA";
 export const metadata = {
   title:
     "South India Tour Packages 2026 — Ooty, Coorg, Wayanad, Kerala, Gokarna, Pondicherry & More | STC",
+  alternates: {
+    canonical: "/destinations/south-india",
+  },
   description:
     "Group tour packages to South India — Karnataka (Ooty, Coorg, Chikmagalur, Gokarna, Hampi), Tamil Nadu (Pondicherry, Arunachalam), Kerala (Wayanad, Kochi, Alleppey, Munnar), Andhra Pradesh (Araku, Vizag). From ₹3,999. Weekly Thu &amp; Fri departures from Bangalore and Hyderabad.",
   keywords:

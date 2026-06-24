@@ -22,6 +22,9 @@ const trips = [
 
 export const metadata = {
   title: "Ooty | Swadeshi Traveller",
+  alternates: {
+    canonical: "/destinations/south-india/ooty",
+  },
   description:
     "Explore Ooty with Swadeshi Traveller. Curated tour packages from Bangalore and Hyderabad. Experience the Nilgiri hills, UNESCO toy train, tea plantations, waterfalls, and Isha Foundation. Book your unforgettable Ooty trip today!",
   keywords:

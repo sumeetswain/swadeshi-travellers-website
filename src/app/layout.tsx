@@ -12,6 +12,7 @@ const inter = Inter({
   variable: "--font-inter",
 });
 export const metadata: Metadata = {
+  metadataBase: new URL("https://swadeshitraveller.com"),
   title: {
     default: "Swadeshi",
     template: "%s | Swadeshi",

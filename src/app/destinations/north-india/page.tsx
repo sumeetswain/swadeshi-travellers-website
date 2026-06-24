@@ -317,6 +317,9 @@ const faqs = [
 export const metadata = {
   title:
     "North India Tour Packages — Rishikesh, Manali, Rajasthan &amp; Kashmir | Coming Soon | STC",
+  alternates: {
+    canonical: "/destinations/north-india",
+  },
   description:
     "North India group tour packages from Bangalore &amp; Hyderabad — coming soon. Rishikesh, Manali, Rajasthan, Kashmir, Varanasi, Kedarnath &amp; more. Register your interest to be notified when packages launch. ⭐ 4.8 Google Rating · MSME Certified.",
   keywords:

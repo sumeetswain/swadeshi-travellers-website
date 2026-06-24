@@ -19,6 +19,9 @@ import { PackageLoader } from "@/components/PackageLoader/PackageLoader";
 export const metadata = {
   title:
     "Tour Packages from Bangalore 2026 — Ooty, Coorg, Wayanad, Kerala, Gokarna & More | STC | From ₹3,999",
+  alternates: {
+    canonical: "/destinations/from-bangalore",
+  },
   description:
     "Book group tour packages from Bangalore from ₹3,999. Weekly Thu & Fri departures. Ooty, Coorg, Wayanad, Kerala, Gokarna, Pondicherry, Chikmagalur. Bus from Marathahalli/Silk Board/Majestic. Train from KSR. MSME & ATOAI Certified. 4.8 Google Rating",
   keywords:

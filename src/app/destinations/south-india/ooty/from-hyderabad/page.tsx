@@ -12,6 +12,9 @@ import React from "react";
 export const metadata = {
   title:
     "Ooty Trip from Hyderabad 2026 — 2 Packages | Toy Train, Wildlife & Isha Foundation | ₹7,199 Onwards | Swadeshi Traveller",
+  alternates: {
+    canonical: "/destinations/south-india/ooty/from-hyderabad",
+  },
   description:
     "2 Ooty group tour packages from Hyderabad. Pkg 1 (₹7,199): Mudumalai Tiger Reserve, Pykara Waterfalls, Nilgiri toy train, tea factory, boat ride. Pkg 2 (₹7,499): Isha Foundation, Adiyogi Laser Show, toy train, chocolate factory. Both depart Kacheguda 7PM Thu/Fri.",
   keywords:

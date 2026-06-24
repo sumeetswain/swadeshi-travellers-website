@@ -13,6 +13,9 @@ import React from "react";
 export const metadata = {
   title:
     "Coorg Tour Package from Bangalore 2026 — ₹3,999 Onwards | Abbey Falls, Mandalpatti & Mysore | STC",
+  alternates: {
+    canonical: "/destinations/south-india/coorg/from-bangalore",
+  },
   description:
     "Book Coorg group tour packages from Bangalore from ₹3,999. 2-day bus tour — pickup at Marathahalli, Silk Board & Majestic. Mandalpatti Peak, Abbey Falls, Zipline, Glass Bridge, Raja Seat, Nisargadhama. 3-day train tour: Coorg + Chikmagalur — Mullayanagiri Peak, Belur Temple, Thu & Fri from KSR.",
   keywords:

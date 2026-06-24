@@ -26,6 +26,9 @@ import FinalCTA from "@/components/FinalCTA";
 export const metadata = {
   title:
     "Kerala Packages from Bangalore 2026 — ₹6,399 Onwards | Kochi, Alleppey, Munnar & Varkala | STC",
+  alternates: {
+    canonical: "/destinations/south-india/kerala/from-bangalore",
+  },
   description:
     "Book Kerala group tour packages from Bangalore from ₹6,399. 2-day Kochi + Alleppey tour — Jew Town, Fort Kochi, Marine Drive, Alleppey Shikara ride. 4-day Kerala circuit — Munnar tea gardens, Alleppey backwaters, Varkala cliff beach. 4 breakfasts included in 4-day package.",
   keywords:

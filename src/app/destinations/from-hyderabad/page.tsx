@@ -9,6 +9,9 @@ import React from "react";
 export const metadata = {
   title:
     "Tour Packages from Hyderabad 2026 — 13 Weekend Trips | Thu & Fri Departures | From ₹4,999 | Swadeshi Traveller",
+  alternates: {
+    canonical: "/destinations/from-hyderabad",
+  },
   description:
     "13 group tour packages departing from Hyderabad every Thursday and Friday. Gokarna · Ooty · Hampi · Coorg · Wayanad · Pondicherry · Araku · Lonavala and more. Train and bus from Kacheguda and Nampally. From ₹4,999 per person. Return by Sunday night. MSME · ATOAI certified",
   keywords:

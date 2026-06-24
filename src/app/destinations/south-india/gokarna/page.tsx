@@ -10,6 +10,9 @@ import React from "react";
 
 export const metadata = {
   title: "Hyderabad Tour Packages",
+  alternates: {
+    canonical: "/destinations/south-india/gokarna",
+  },
 };
 const trips = [
   {
