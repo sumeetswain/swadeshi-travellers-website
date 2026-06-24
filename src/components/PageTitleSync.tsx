@@ -70,10 +70,6 @@ export default function PageTitleSync() {
 function getRouteTitle(pathname: string) {
   const normalizedPathname = normalizePathname(pathname);
 
-  if (normalizedPathname.startsWith("/tour/")) {
-    return getSlugTitle(normalizedPathname.replace("/tour/", ""));
-  }
-
   return ROUTE_TITLES[normalizedPathname];
 }
 
@@ -81,14 +77,6 @@ function normalizePathname(pathname: string) {
   const normalizedPathname = pathname.replace(/\/+$/, "");
 
   return normalizedPathname || "/";
-}
-
-function getSlugTitle(slug: string) {
-  return decodeURIComponent(slug)
-    .split("-")
-    .filter(Boolean)
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
 }
 
 function formatTitle(title: string) {
