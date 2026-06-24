@@ -356,9 +356,9 @@ export default function DestinationPage() {
       <FinalCTA
         title="Every South India Destination. Every Weekend. From ₹3,999."
         description="Experience the diverse landscapes of South India with our carefully curated packages. From the coastal charm of Tamil Nadu to the spiritual heritage of Kerala and the vibrant culture of Andhra Pradesh, we have something for every traveler."
-        primaryLink="/destinations/bangalore"
+        primaryLink="/destinations/from-bangalore"
         primaryLabel="View All Bangalore Packages →"
-        secondaryLink="/destinations/hyderabad"
+        secondaryLink="/destinations/from-hyderabad"
         secondaryLabel="View All Hyderabad Packages →"
       />
     </div>
