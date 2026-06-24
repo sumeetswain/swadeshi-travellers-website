@@ -96,9 +96,9 @@ const ContactForm = ({
     <div
       className={`w-full max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] my-12 ${className}`}
     >
-      <h1 className="text-2xl font-bold text-[#22aa22] mb-2 text-center">
+      <p className="text-2xl font-bold text-[#22aa22] mb-2 text-center">
         {title}
-      </h1>
+      </p>
 
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
