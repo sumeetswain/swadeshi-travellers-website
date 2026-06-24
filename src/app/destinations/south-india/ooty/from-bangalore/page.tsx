@@ -4,7 +4,6 @@ import FAQ from "@/components/FAQs";
 import Reviews from "@/components/Reviews";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import { BadgeCheck, Compass, Phone, Star, Train } from "lucide-react";
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 

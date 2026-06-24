@@ -2,6 +2,12 @@
 import CuratedCategories from "@/components/CuratedCategories";
 import React from "react";
 
+export const metadata = {
+  title: "Destinations",
+  description:
+    "Explore Swadeshi Traveller destinations across South India, North India, and international group trips.",
+};
+
 export default function BhutanPage() {
   const trips = [
     {

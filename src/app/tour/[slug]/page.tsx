@@ -1,9 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Head from "next/head";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
 import { useParams } from "next/navigation";
 import axios from "axios";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -40,13 +38,32 @@ type TrekEvent = {
   price?: number | string;
 };
 
+function getSlugTitle(slug: string | string[] | undefined) {
+  const normalizedSlug = Array.isArray(slug) ? slug[0] : slug;
+
+  if (!normalizedSlug) {
+    return "Tour";
+  }
+
+  return normalizedSlug
+    .split("-")
+    .filter(Boolean)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
+
 export default function TrekPage() {
-  const [open, setOpen] = useState<number | null>(null);
   const [activeTab, setActiveTab] = useState("inclusions");
 
   const { slug } = useParams();
   //   console.log("Slug:", slug);
   const [data, setData] = React.useState<TrekEvent[]>([]);
+  const tourTitle = data[0]?.name || getSlugTitle(slug);
+
+  useEffect(() => {
+    document.title = `${tourTitle} | Swadeshi`;
+  }, [tourTitle]);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -90,9 +107,6 @@ export default function TrekPage() {
   // ================= UI =================
   return (
     <>
-      <Head>
-        <title>{data[0]?.name} | Swadeshi</title>
-      </Head>
       <div className="w-full min-h-screen bg-gray-50">
         <BookingWidget eventSlug={slug as string} />
 
